@@ -1,0 +1,5 @@
+.cache*
+Downloads*
+.backups*
+VirtualMachines*
+.local/share/Steam*
