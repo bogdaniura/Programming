@@ -1,0 +1,64 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int n, x, as = 1, d = 0;
+stack<int> a, b, c;
+string s;
+bool posibil = true, gata = false;
+
+int main()
+{
+    cin >> n;
+    for(int i = 1;i <= n;i++){
+        cin >> x;
+        a.push(x);
+    }
+    do{
+        if(not a.empty()){
+            if(a.top() == as){
+                a.pop(); s += "A C\n"; as++; d++;
+            }
+            else{
+                if(not b.empty()){
+                    if(b.top() == as){
+                        b.pop(); s += "B C\n"; as++; d++;
+                    }
+                    else{
+                        if(a.top() < b.top()){
+                            b.push(a.top());
+                            a.pop(); s += "A B\n"; d++;
+                        }
+                        else{
+                            posibil = false;
+                        }
+                    }
+                }
+                else{
+                    b.push(a.top());
+                    a.pop(); s += "A B\n"; d++;
+                }
+
+            }
+        }
+        else{
+            if(not b.empty()){
+                if(b.top() == as){
+                    b.pop(); s += "B C\n"; as++; d++;
+                }
+                else
+                    posibil = false;
+            }
+            else
+                gata = true;
+        }
+    }while(posibil and not gata);
+    if(posibil){
+        cout << d << endl << s;
+    }
+    else
+        cout << 0;
+
+
+    return 0;
+}

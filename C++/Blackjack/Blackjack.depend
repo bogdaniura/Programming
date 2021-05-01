@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1579952337 source:d:\bogdan\c++ projects\blackjack\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+

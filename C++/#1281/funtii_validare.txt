@@ -1,0 +1,68 @@
+bool valid(int l, int c){
+   for(int i = 1;i <= c-1;i++){
+      if(a[l][i] == 1){
+         return false;
+      }
+   }
+   for(int i = c+1;i <= n;i++){
+      if(a[l][i] == 1){
+         return false;
+      }
+   }
+   for(int i = 1;i <= l-1;i++){
+      if(a[i][c] == 1){
+         return false;
+      }
+   }
+   for(int i = l+1;i <= n;i++){
+         if(a[i][c] == 1){
+            return false;
+         }
+   }
+   for(int i = l+1, int j = c+1;i <= n and j <= n;i++, j++){
+      if(a[i][j] == 1){
+            return false;
+         }
+   }
+   for(int i = l+1, int j = c-1;i <= n and j >= 1;i++, j--){
+      if(a[i][j] == 1){
+            return false;
+         }
+   }
+   for(int i = l-1, int j = c-1;i >= 1 and j >= 1;i--, j--){
+      if(a[i][j] == 1){
+            return false;
+         }
+   }
+   for(int i = l-1, int j = c+1;i >= 1 and j <= n;i--, j++){
+      if(a[i][j] == 1){
+            return false;
+         }
+   }
+}
+
+for (int l1 = 1; l1 <= n; l1++) //parcurgen matricea
+   {
+      for (int c1 = 1; c1 <= n; c1++)
+      {
+         if (a[l1][c1] == 1) // cand am gasit 1
+         {
+            for (int l2 = 1; l1 <= n; l1++) //verificam daca mai exista o regina pe aceeasi coloana
+            {
+               if (a[l2][c1] == 1 and l2 != l1) //daca da, nu e valid
+               {
+                  return false; //iesim din funtie
+               }
+            }
+            for (int c2 = 1; c2 <= n; c2++) ////verificam daca mai exista o regina pe aceeasi linie
+            {
+               if (a[l1][c2] == 1 and c2 != c1) //daca da, nu e valid
+               {
+                  return false; //iesim din funtie
+               }
+            }
+
+            //un for ca sa verificam ca nu exista 1 pe diagonala
+         }
+      }
+   }

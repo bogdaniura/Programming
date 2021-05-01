@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script>
+      mo = 0;
+
+      document.write('<div id="poza" style="position:absolute; top:', 100, '; left:', 100, '">')
+      document.write('<a href="#" onclick="setmouseover()">')
+      document.write('<img id="im" src="11.jpg" border="0">');
+      document.write('</a></div>')
+
+      function setmouseover() {
+        mo = 1-mo;
+      }
+
+      function miscare () {
+        if (mo == 1) {
+          poza.style.top = event.y-80;
+          poza.style.left = event.x-80;
+        }
+      }
+    </script>
+    <title>Donald si Mickey</title>
+  </head>
+  <body onmousemove="miscare()">
+  </body>
+</html>

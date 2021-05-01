@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1582307647 source:d:\bogdan\c++ projects\exp\main.cpp
+	<iostream>
+
+1574361377 source:d:\bogdan\c++ projects\exp\data.in.c
+
+1574328978 source:c:\bogdan\c++\exp\data.in.c
+
+1601579406 source:c:\bogdan\c++\exp\main.cpp
+	<fstream>
+

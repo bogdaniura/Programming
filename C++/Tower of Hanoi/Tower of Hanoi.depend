@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1583681264 source:d:\bogdan\c++ projects\tower of hanoi\main.cpp
+	<iostream>
+	<stack>
+	<bits/stdc++.h>
+
+1599142818 source:c:\bogdan\c++\tower of hanoi\main.cpp
+	<iostream>
+	<stack>
+	<bits/stdc++.h>
+

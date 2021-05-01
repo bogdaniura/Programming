@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+string a, b, p;
+int sa, sb, i;
+char c;
+int main() {
+  cin >> a >> b;
+  sa = a.size();
+  sb = b.size();
+  for(i = 0; i < sa; i++){
+      c = a[i];
+    if(b.find(c) != string::npos and b.find(p) == string::npos)
+      p = p+c;}
+      cout << p;
+}

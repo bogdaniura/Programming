@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1599159788 source:c:\bogdan\c++\toh1.1\main.cpp
+	<iostream>
+	<stack>
+	<bits/stdc++.h>
+

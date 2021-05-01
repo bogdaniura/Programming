@@ -1,0 +1,17 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+int pariu, mana;
+using namespace std;
+int carte(){
+int ln = 1,un = 10, carte;
+    carte = ln+rand() % static_cast<int>(un-ln+1);
+    cout << carte << endl;
+     return carte;
+}
+
+int main(){
+    cin >> pariu;
+    mana = carte() + carte();
+    cout << mana;
+}

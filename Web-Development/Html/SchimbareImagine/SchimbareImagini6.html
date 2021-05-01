@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <script>
+    ttop = 10; lleft = 100; size = 160;
+    transportam = 0;
+    aux = new Image();
+    zmax = 100;
+    var topC, leftC, topD, leftD, topS, leftS;
+
+    for (i = 0; i <= 11; i++) {
+      div_numar = `
+          <div
+            id="n"
+            style="
+              position:absolute;
+              top:550;
+              left:0;
+              color:white;
+              font:Tahoma;
+              font-weight:bold;
+              width:30;
+              text-align:center;
+              z-index:1"
+          >` + i + `
+          </div>`
+      document.write(div_numar)
+    }
+    // Punem piesele:
+    for (var i = 0; i <= 2; i++) {
+      for (var j = 0; j <= 3; j++) {
+        var vTop = ttop + i * size
+        var vLeft = lleft + j * size
+        document.write('<div id="poza" style="position:absolute; top:', vTop, '; left:', vLeft, '">')
+        document.write('<a href="#" onclick="i=', i * 4 + j, '; mouseclick()">')
+        var vSrc = (i + 1) + "" + (j + 1) + ".jpg"
+        document.write('<img id="im" src=', vSrc, ' border="0">')
+        document.write('</a></div>')
+      }
+    }
+
+    // !! Elimina "px" si returneaza un numar.
+    function getInt(s) {
+      ppx = s.indexOf("px");
+      return parseInt(s.substr(0, ppx));
+    }
+
+    function mouseclick() {
+      var ss, sd, sc; // stilul sursei, respectiv al destinatiei
+      var gasit;
+
+      transportam = 1 - transportam;
+      if (transportam) { // Intram in modul de transportare a pozei.
+        ss = poza[i].style; // stilul pozei curente
+        topS = ss.top; leftS = ss.left; // pozitia pozei pe care o transportam
+      }
+      else { // Punem poza la destinatie.
+        sc = poza[i].style; // stilul pozei curente
+        topC = sc.top; leftC = sc.left; nTopC = getInt(topC); nLeftC = getInt(leftC);
+        gasit = 0;
+        // Cautam coordonatele destinatiei:
+        for (var d = 0; d <= 11; d++) {
+          if (d != i) { // Nu comparam cu poza curenta.
+            sd = poza[d].style; // stilul destinatiei
+            topD = sd.top; leftD = sd.left; nTopD = getInt(topD); nLeftD = getInt(leftD);
+            if ((Math.abs(nTopC - nTopD) <= 50) && (Math.abs(nLeftC - nLeftD) <= 50)) { // !! suficient de aproape de destinatie
+              gasit = 1;
+              sd.top = topS; sd.left = leftS; // Punem imaginea de la destinatie pe pozitia sursei.
+              sc.top = topD; sc.left = leftD; // Punem imaginea in miscare la destinatie.
+            }
+          }
+        }
+        if (gasit == 0) { // Miscarea a fost gresita.
+          sc.top = topS; sc.left = leftS; // Punem piesa de unde am luat-o.
+        }
+      }
+    }
+
+    var iv = 0
+    var i = 0
+
+    function miscare() { // pentru miscarea mouseului: trebuie sa nu apara cifra daca se iese din figura
+      if ((event.x >= lleft) && (event.x <= lleft + size * 4)) {
+        if (i != iv) {
+          n[iv].style.top = 600; n[iv].style.color = "white"; // Ascundem numarul vechi
+          n[i].style.top = 500; n[i].style.color = "blue";    // Aratam numarul nou
+          iv = i; // indicele vechi
+        }
+        n[i].style.left = event.x   // Pozitionam numarul.
+        cerc.style.left = event.x - 1 // Pozitionam cercul.
+      }
+      if (transportam) {
+        var s = poza[i].style;
+        s.top = event.y - 80; s.left = event.x - 80;
+        s.zIndex = ++zmax; // !! Ca sa se miste deasupra celorlate piese.
+      }
+    }
+
+    // Amesteca piesele inainte de inceperea jocului.
+    function amesteca() {
+      cuvant.style.color = "FF0000"
+      console.log(cuvant.style)
+      for (i = 1; i <= 10; i++) {
+        i1 = Math.floor(Math.random() * 12); i2 = Math.floor(Math.random() * 12);
+        aux.src = im[i1].src; im[i1].src = im[i2].src; im[i2].src = aux.src
+      }
+    }
+
+  </script>
+  <title>Donald si Mickey</title>
+</head>
+
+<body onmousemove="miscare()">
+  <div id="linie" style="position: absolute; top: 508; left: 100">
+    <img src="linie.bmp"></img>
+  </div>
+  <div id="cerc" style="position: absolute; top: 494; left: 0">
+    <img src="cerc.bmp"></img>
+  </div>
+  <div id="cuvant" onMouseOver="amesteca()" onMouseOut="cuvant.style.color='000000'"
+    style="position:absolute; top:240; left:5; background-color:lightblue">
+    Amesteca!
+  </div>
+</body>
+
+</html>

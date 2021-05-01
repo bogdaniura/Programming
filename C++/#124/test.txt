@@ -1,0 +1,27 @@
+test.txt
+3
+
+bt(3)
+k1 = 1
+a[1] = 3
+valid 1
+solutie 0
+ bt(2)
+ k1 = 2
+ a[2] = 3
+ valid 0
+ a[2] = 2
+ valid 1
+ solutie 0
+  bt(3)
+  a[3] = 3
+  valid 0
+  a[3] = 2
+  valid 0
+  a[3] = 1
+  valid 1
+  solutie 1
+
+
+a = 1 2 3
+

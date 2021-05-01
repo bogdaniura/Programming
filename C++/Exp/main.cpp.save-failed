@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+  int dl[] = {0, -2, -1, 1, 2, 2, 1, -1, -2};
+  int dc[] = {0, 1, 2, 2, 1, -1, -2, -2, -1};
+  int th[101][101];
+  int nl, nc, l, c;
+  int posibilitati(int l,int c){
+    int posibilitati, ln, cn;
+    for(int j = 1;j <= 7;j++){
+            ln = ln + dl[j];
+            cn = cn + dc[j];
+            if(ln >= 1 and ln <= nl and cn >= 1 and cn <= nc)
+                posibilitati++;}
+    return posibilitati;
+  }
+
+  int main () {
+    int ln, cn, imin, mutare = 2, minim = 7, p;
+    cin >> nl >> nc >> l >> c;
+    for(int i = 1;i <= nl;i++)
+        for(int j = 1;j <= nc;j++)
+            th[i][j] = 0;
+    th[l][c] = 1;
+    do{
+        int i;
+        for(i = 1;i <= 7;i++){
+            p = 0;
+            minim = 7;
+            ln = l + dl[i];
+            cn = c + dc[i];
+            p = posibilitati(ln, cn);
+            if(p > 0 and th[ln][cn] == 0)
+                if(p < minim){
+                    minim = p;
+                    imin = i;
+                }
+            }
+        l = l + dl[imin];
+        c = c + dc[imin];
+        th[l][c] = mutare;
+        mutare++;
+    for(int i = 1;i <= nl;i++){
+        if(i > 1)
+        cout << endl;
+        for(int j = 1;j <= nc;j++)
+            cout << th[i][j];}
+        cout <<  endl << endl;
+    }while(mutare > nl*nc);
+
+
+    return 0;
+  }
