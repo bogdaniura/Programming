@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -aP --exclude-from=exclusions /home/kgbeast/ /home/kgbeast/.backups/weekly
+rsync -r --exclude-from=exclusions /home/kgbeast/ /home/kgbeast/.backups/weekly
