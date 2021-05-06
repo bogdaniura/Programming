@@ -20,7 +20,8 @@ int divizori(int d)
             d1 += 2;
         }
     }
-    if(i * i == d){
+    if (i * i == d)
+    {
         d1++;
     }
     return d1;
