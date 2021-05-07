@@ -6,8 +6,24 @@ using namespace std;
 ifstream fin("atestat6.in");
 ofstream fout("atestat6.out");
 
-int k, a, diviz, p, u, ult;
+int k, a, diviz, p, u, ult, np, ni;
 bool f[100];
+
+void ncpi(int n, int &p, int &i)
+{
+    while (n > 0)
+    {
+        if (n % 2 == 0)
+        {
+            p++;
+        }
+        else
+        {
+            i++;
+        }  
+        n = n / 10;
+    }
+}
 
 int divizori(int d)
 {
@@ -45,11 +61,10 @@ int main()
             }
         }
     }
-    p = ult / 10;
-    u = ult % 10;
-    if (p % 2 == u % 2)
+    ncpi(ult, np, ni);
+    if (np * ni == 0)
     {
-        cout << "\n"
+        fout << "\n"
              << "DA";
     }
     else
