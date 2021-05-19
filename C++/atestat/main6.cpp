@@ -9,7 +9,7 @@ ofstream fout("atestat6.out");
 int k, a, diviz, p, u, ult, np, ni;
 bool f[100];
 
-void ncpi(int n, int &p, int &i)
+void ncpi(int n, int &p, int &i) //nr de cifre pare si impare
 {
     while (n > 0)
     {
@@ -25,7 +25,7 @@ void ncpi(int n, int &p, int &i)
     }
 }
 
-int divizori(int d)
+int divizori(int d) //aflam cati divizori proprii are numarul
 {
     int d1 = 0, i = 1;
 
@@ -63,7 +63,7 @@ int main()
     }
     ncpi(ult, np, ni);
     if (np * ni == 0)
-    {
+    {   
         fout << "\n"
              << "DA";
     }

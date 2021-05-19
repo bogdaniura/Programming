@@ -2,4 +2,4 @@
 
 #this is a test script
 
-konsole -e "htop"
+konsole -e "rsync -rv --exclude-from=exclusions /home/kgbeast/ /home/kgbeast/.backups/weekly"
