@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -rP /home/kgbeast/.barbarossa-mega/ /home/kgbeast/.barbarossa-not-synced #rsync
+rsync -rP /home/kgbeast/.barbarossamega/ /home/kgbeast/.barbarossa-not-synced #rsync
