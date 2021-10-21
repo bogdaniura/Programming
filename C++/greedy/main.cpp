@@ -21,6 +21,7 @@ void citire()
     {
         cin >> a[i].g >> a[i].p;
         a[i].e = a[i].p / a[i].g;
+        a[i].k = i;
     }
 }
 
@@ -54,6 +55,7 @@ void greedy()
             Gr = 0;
         }
         profit += a[i].p * x[i];
+        cout << a[i].k << ' ' << x[i] << "\n";
     }
 }
 
@@ -69,6 +71,5 @@ int main()
     greedy();
     afisare();
     
-
     return 0;
 }
