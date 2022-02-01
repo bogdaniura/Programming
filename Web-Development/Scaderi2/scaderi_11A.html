@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body {
+            font-family: Roboto;
+            font-size: 20px;
+        }
+
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            border: 3px solid green;
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h2>
+            Test cu scaderi
+        </h2>
+        <p id="scadere">
+
+        </p>
+        <input type="text" id="raspuns" name="raspuns" />
+        </br>
+        <button onclick='verifica()'>Verifica</button>
+        </br>
+        <label id="lCorect">...</label>
+        </br>
+        <button id="bEx_nou" disabled onclick='alt_exercitiu()'>Alt exercitiu</button>
+        </br>
+        <label id="lExercitii"></label>
+    </div>
+
+    <script>
+        var d = 0;
+        var s = 0;
+        var exercitii = 0;
+        var corecte = 0;
+
+        function verifica() {
+            var string_raspuns = raspuns.value;
+            var r = parseInt(string_raspuns);
+            if (r == d - s) {
+                lCorect.innerHTML = "🟢";
+            }
+            else {
+                lCorect.innerHTML = "🔴";
+            }
+            scadere.innerHTML += d - s;
+            bEx_nou.disabled = false;
+        }
+
+        function alt_exercitiu() {
+            d = Math.floor(Math.random() * 9) + 100;
+            s = Math.floor(Math.random() * 9) + 100;
+            if (d < s) {
+                var aux = d; d = s; s = aux;
+            }
+            var exercitiu = d + " - " + s + " = ";
+            scadere.innerHTML = exercitiu;
+            bEx_nou.disabled = true;
+            exercitii++;
+            lExercitii.innerHTML = exercitii;   
+        }
+
+        alt_exercitiu();
+    </script>
+
+</body>
+
+</html>
