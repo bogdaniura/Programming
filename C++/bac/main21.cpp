@@ -46,8 +46,6 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         in >> a;
-        // cout << abs(a) << ' ' << sumcif(a) << "\n";
-        // int b = abs(a);
         if (sumcif(abs(a)) < s)
         {
             v[++j] = a;
