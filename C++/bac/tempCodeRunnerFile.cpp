@@ -1,0 +1,1 @@
+addcif(abs(a));
