@@ -41,15 +41,15 @@ def ariedr():
     l1 = input("Introduceti primul numar: ")
     l2 = input("Introduceti al doilea numar: ")
     ariedr = int(l1) * int(l2)
-    print("Perimetrul dreptunghiului este: ", ariedr)
+    print("Aria dreptunghiului este: ", ariedr)
 
 
 if __name__ == '__main__':
     print('10%3 -> ', 10%3)
-    # suma()
-    # diferenta()
-    # inmultire()
-    # impartire()
-    # arie()
-    # perimetru()
-    # ariedr()
+    suma()
+    diferenta()
+    inmultire()
+    impartire()
+    arie()
+    perimetru()
+    ariedr()
