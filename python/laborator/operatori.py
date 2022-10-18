@@ -45,10 +45,11 @@ def ariedr():
 
 
 if __name__ == '__main__':
+    print('10%3 -> ', 10%3)
     # suma()
     # diferenta()
     # inmultire()
     # impartire()
     # arie()
     # perimetru()
-    ariedr()
+    # ariedr()
