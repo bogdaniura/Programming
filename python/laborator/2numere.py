@@ -31,10 +31,18 @@ def arie_volum_cub():
     print("Aria cubului este: ", aria)
     print("Volumul cubului este: ", volum)
 
+def eliminare_cifra():
+    print("Introduceti un numar de exact 3 cifre: ")
+    n = int(input())
+    unitati = n % 10
+    sute = n // 100
+    nce = sute * 10 + unitati
+    print("Numarul generat este: ", nce)
 
 
 if __name__ == "__main__":
     # adunare2()
     # adunare3()
     # capete_picioare()
-    arie_volum_cub()
+    # arie_volum_cub()
+    eliminare_cifra()
