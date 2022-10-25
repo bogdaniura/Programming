@@ -5,7 +5,6 @@ def adunare2():
     zeci = (n % 100) // 10
     print("Numarul rezultat prin adunarea cifrelor zecilor si unitatilor este: ", zeci + unitati)
 
-
 def adunare3():
     print("Introduceti un numar natural de 3 cifre: ")
     n = int(input())
@@ -14,7 +13,7 @@ def adunare3():
     sute = n // 100
     print("Numarul rezultat prin adunarea cifrelor sutelor, zecilor si unitatilor este: ", sute + zeci + unitati)
 
-def capetesipicioare():
+def capete_picioare():
     print("Introduceti numarul de gaini: ")
     G = int(input())
     print("Introduceti numarul de oi: ")
@@ -24,8 +23,18 @@ def capetesipicioare():
     print("Numarul de picioare este: ", nrpicioare)
     print("Numarul de capete este: ", nrcapete)
 
+def arie_volum_cub():
+    print("Introduceti lungimea laturii cubului: ")
+    latura = int(input())
+    aria = 6 * latura ** 2
+    volum = latura ** 3
+    print("Aria cubului este: ", aria)
+    print("Volumul cubului este: ", volum)
+
+
 
 if __name__ == "__main__":
     # adunare2()
     # adunare3()
-    capetesipicioare()
+    # capete_picioare()
+    arie_volum_cub()
