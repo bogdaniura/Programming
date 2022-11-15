@@ -46,22 +46,10 @@ def half_sort():
 
 
 def interschimbarepvuc():
-    pvgasita = False
-    cuvant = input()
-    for caracter in cuvant:
-        if caracter in "aeiou":
-            if pvgasita == False:
-                prima_vocala = caracter
-                pvgasita = True
-        else:
-            ultima_consoana
-
-
-def interschimbarepvuc2():
     cuvant = input()
     pvinlocuita = ucinlocuita = False
     cuvantnou = ""
-    
+
     for caracter in cuvant:
         if caracter in "aeiou":
             pv = caracter
@@ -71,21 +59,21 @@ def interschimbarepvuc2():
         if caracter not in "aeiou":
             uc = caracter
             break
-    
+
     for caracter in cuvant:
-        if(caracter == pv and not pvinlocuita):
+        if caracter == pv and not pvinlocuita:
             print(uc)
             cuvantnou += uc
         else:
-            if(caracter == uc and not ucinlocuita):
+            if caracter == uc and not ucinlocuita:
                 print(pv)
                 cuvantnou += pv
             else:
                 print(caracter)
                 cuvantnou += caracter
     print(cuvantnou)
-    
-    
+
+
 def inserare_asterisc():
     cuvant = input()
     cuvantnou = ""
@@ -100,13 +88,13 @@ def inserare_asterisc():
 
 def palindrom():
     nrcuv = int(input())
-    for c in range (0, nrcuv):
+    for c in range(0, nrcuv):
         cuvant = input()
         if cuvant == cuvant[::-1]:
             print(1)
         else:
             print(0)
-        
+
 
 if __name__ == "__main__":
     # inlocuire()
@@ -115,4 +103,3 @@ if __name__ == "__main__":
     # interschimbarepvuc2()
     # inserare_asterisc()
     palindrom()
-    

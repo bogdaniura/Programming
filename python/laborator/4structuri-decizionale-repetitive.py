@@ -60,7 +60,7 @@ def meniu():
                                 print("lista5")
                                 lista5()
                             else:
-                                print("optiunile disponibile sunt 1, 2, 3, 4, 5")
+                                print("optiunile disponibile sunt 1, 2, 3, 4, 5, 6, 7")
 
 
 def meniuloop():

@@ -7,7 +7,7 @@ def suma():
 def diferenta():
     a = input("Introduceti primul numar: ")
     b = input("Introduceti al doilea numar: ")
-    print("Diferenta este: ", int(a)-int(b))
+    print("Diferenta este: ", int(a) - int(b))
 
 
 def impartire():
@@ -44,11 +44,11 @@ def ariedr():
     print("Aria dreptunghiului este: ", ariadr)
 
 
-def funtie(a, b):
+def functie(a, b):
     print(int(a) + int(b))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # print('10%3 -> ', 10%3)
     # suma()
     # diferenta()
@@ -57,5 +57,4 @@ if __name__ == '__main__':
     # arie()
     # perimetru()
     # ariedr()
-    funtie(a=input(), b=input())
-    
+    functie(a=input(), b=input())

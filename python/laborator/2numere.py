@@ -3,7 +3,10 @@ def adunare2():
     n = int(input())
     unitati = n % 10
     zeci = (n % 100) // 10
-    print("Numarul rezultat prin adunarea cifrelor zecilor si unitatilor este: ", zeci + unitati)
+    print(
+        "Numarul rezultat prin adunarea cifrelor zecilor si unitatilor este: ",
+        zeci + unitati,
+    )
 
 
 def adunare3():
@@ -12,7 +15,10 @@ def adunare3():
     unitati = n % 10
     zeci = (n % 100) // 10
     sute = n // 100
-    print("Numarul rezultat prin adunarea cifrelor sutelor, zecilor si unitatilor este: ", sute + zeci + unitati)
+    print(
+        "Numarul rezultat prin adunarea cifrelor sutelor, zecilor si unitatilor este: ",
+        sute + zeci + unitati,
+    )
 
 
 def capete_picioare():
@@ -29,8 +35,8 @@ def capete_picioare():
 def arie_volum_cub():
     print("Introduceti lungimea laturii cubului: ")
     latura = int(input())
-    aria = 6 * latura ** 2
-    volum = latura ** 3
+    aria = 6 * latura**2
+    volum = latura**3
     print("Aria cubului este: ", aria)
     print("Volumul cubului este: ", volum)
 
@@ -50,7 +56,7 @@ def calcul_timp():
     print("Introduceti minutele: ")
     minutele = int(input())
     ora_noua = ora * 60 + minutele
-    print("Ora noua este: ", ora_noua//60, ":", ora_noua % 60)
+    print("Ora noua este: ", ora_noua // 60, ":", ora_noua % 60)
 
 
 def produs3():
