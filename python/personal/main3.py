@@ -72,6 +72,18 @@ def my_function(sir1, s):
     print(sirnou)
     
     
+def prime_factors(n):
+    for i in n/2:
+        if n % i == 0:
+            print(i)
+            p = 0
+            while n % i == 0:
+                n /= i
+                p += 1
+            print("^", p)
+    
+    
+    
 if __name__ == "__main__":
 
     sir1 = "Py thon PyCharm py charm"

@@ -1,7 +1,5 @@
-suma()
-    diferenta()
-    inmultire()
-    impartire()
-    arie()
-    perimetru()
-    
+
+    #     coloane_mat = []
+    #     for j in range(nc):
+    #         coloane_mat.append(int(input()))
+    #     mat.append(colo
