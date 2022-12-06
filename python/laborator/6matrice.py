@@ -67,7 +67,7 @@ def suma_pare_mat():
     nl = int(input())
     nc = int(input())
     mat = [[0] * nc for _ in range(nl)]
-    suma_pare = 0
+    suma_pare = suma_impare = 0
     
     for i in range(nl):
         for j in range(nc):
@@ -75,9 +75,11 @@ def suma_pare_mat():
     
     for i in range(nl):
         for j in range(nc):
-            if mat[i][j] % 2 == 0:
+            if mat[i][j] % 2 == 0 and mat[i][j] > 10:
                 suma_pare += mat[i][j]
-    print(suma_pare)
+            else:
+                suma_impare += mat[i][j]
+    print(suma_pare, suma_impare)
     
     
 if __name__ == "__main__":

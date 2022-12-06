@@ -1,2 +1,3 @@
-if 100 in lista:
-    
+
+    # pb2()
+    # pb3()
