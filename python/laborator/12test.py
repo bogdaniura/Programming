@@ -22,7 +22,7 @@ def pb2():
 def pb3():
     ht = {}
     for i in range(len(lista1)):
-        ht[lista1[i]] = lista1[i].upper() + "-" + str(i)
+        ht[lista1[i]] = lista1[i].upper() + "-" + str(i+1)
         print(lista1[i], ht[lista1[i]],sep = " -> " ,end = ",")
 
 
