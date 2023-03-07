@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1677510598 source:/home/kgbeast/Bogdan/Programming/C (CLang)/proiect1/main.c
+	<stdio.h>
+	<stdlib.h>
+
