@@ -1,4 +1,3 @@
 
-    # if n == 0:
-    #     return 0
-    # else:
+    # mat = [[0] * nc for _ in range(nl)]
+    # mat1 = [[0] * nc for _ in range(nl)]
