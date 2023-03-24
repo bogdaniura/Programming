@@ -61,7 +61,7 @@ void pb3() {
     }
 }
 
-void pb4() { //trebuie rulat cu -lm pe unele compilatoare
+void pb4() {  // trebuie rulat cu -lm pe unele compilatoare
     int n, e, nrp = 0, sumn = 0, prodp = 1;
     printf("introduceti un numar: ");
     scanf("%d", &n);
@@ -82,18 +82,21 @@ void pb4() { //trebuie rulat cu -lm pe unele compilatoare
 }
 
 void pb5() {
-    int n, f[1000001], maxim = 0, e;
+    int n, maxim = 0, e, fmax = 0;
     printf("introduceti un numar: ");
     scanf("%d", &n);
     for (int i = 1; i <= n; i++) {
         printf("introduceti mai multe numere: ");
         scanf("%d", &e);
-        f[e]++;
         if (e > maxim) {
             maxim = e;
+            fmax = 0;
+        }
+        if (e == maxim) {
+            fmax++;
         }
     }
-    printf("%d %d", maxim, f[maxim]);
+    printf("%d %d", maxim, fmax);
 }
 
 void pb6() {
@@ -110,7 +113,6 @@ void pb6() {
 
     cmmmc = ((aux_d * aux_i) / d);
     printf(" %d", cmmmc);
-    
 }
 
 void pb7() {
