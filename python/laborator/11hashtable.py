@@ -188,4 +188,4 @@ if __name__ == "__main__":
     # print(nume_min())
     print(
         criptare("the quick brown fox jumped over a lazy dog;", 1)
-    )  # tip = 1 for encryption, tip = 1 for decryption
+    )  # tip = 0 for encryption, tip = 1 for decryption
