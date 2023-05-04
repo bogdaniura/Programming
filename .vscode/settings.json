@@ -3,6 +3,7 @@
         "iostream": "cpp",
         "iosfwd": "cpp",
         "ostream": "cpp",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "vector": "c"
     }
 }
