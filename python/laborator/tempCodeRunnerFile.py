@@ -1,2 +1,2 @@
-e:
-    #     print(each)
+
+            noduri_parcurse.append(start)
