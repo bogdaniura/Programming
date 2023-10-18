@@ -1,0 +1,2 @@
+
+        #     textcriptat += caracter
