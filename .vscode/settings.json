@@ -4,7 +4,8 @@
         "iosfwd": "cpp",
         "ostream": "cpp",
         "stdlib.h": "c",
-        "vector": "c"
+        "vector": "c",
+        "*.tcc": "cpp"
     },
     "python.formatting.provider": "autopep8"
 }
