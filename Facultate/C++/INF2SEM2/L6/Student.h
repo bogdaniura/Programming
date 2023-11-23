@@ -6,10 +6,10 @@
 using namespace std;
 
 class Student {
-public:
     string nume, prenume, specializare;
     int an;
     float medie;
+public:
 
     Student(string nume, string prenume, string specializare, int an, float medie)
         : nume(nume), prenume(prenume), specializare(specializare), an(an), medie(medie) {}

@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <Student.h>
+#include <AltStudent.h>
 #include <Nod.h>
 
 using namespace std;
