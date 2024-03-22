@@ -1,0 +1,404 @@
+﻿-- statistica.sR_TAB_01 definition
+CREATE TABLE `sR_TAB_01` (
+  `judet` varchar(100) NOT NULL,
+  `recesamant_1948` int(11) NOT NULL,
+  `recesamant_1956` int(11) NOT NULL,
+  `recesamant_1966` int(11) NOT NULL,
+  `recesamant_1977` int(11) NOT NULL,
+  `recesamant_1992` int(11) NOT NULL,
+  `recesamant_2002` int(11) NOT NULL,
+  `recesamant_2011` int(11) NOT NULL,
+  `categorie_localitate` varchar(100) NOT NULL,
+  PRIMARY KEY (`judet`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_02 definition
+CREATE TABLE `sR_TAB_02` (
+  `Judet` varchar(100) NOT NULL,
+  `5 - 9` int(11) NOT NULL,
+  `10 - 14` int(11) NOT NULL,
+  `15 - 19` int(11) NOT NULL,
+  `20 - 24` int(11) NOT NULL,
+  `25 - 29` int(11) NOT NULL,
+  `30 - 34` int(11) NOT NULL,
+  `35 - 39` int(11) NOT NULL,
+  `40 - 44` int(11) NOT NULL,
+  `45 - 49` int(11) NOT NULL,
+  `55 - 59` int(11) NOT NULL,
+  `60 - 64` int(11) NOT NULL,
+  `65 - 69` int(11) NOT NULL,
+  `70 - 74` int(11) NOT NULL,
+  `75 - 79` int(11) NOT NULL,
+  `80 - 84` int(11) NOT NULL,
+  `85+` int(11) NOT NULL,
+  `Regiune` varchar(100) NOT NULL,
+  `Macroregiune` varchar(100) NOT NULL,
+  `Sex` varchar(100) NOT NULL,
+  `Tip Localitate` varchar(100) NOT NULL,
+  PRIMARY KEY (`Judet`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_03 definition
+CREATE TABLE `sR_TAB_03` (
+  `sex` varchar(100) NOT NULL,
+  `5 - 9` int(11) NOT NULL,
+  `10 - 14` int(11) NOT NULL,
+  `15 - 19` int(11) NOT NULL,
+  `20 - 24` int(11) NOT NULL,
+  `25 - 29` int(11) NOT NULL,
+  `30 - 34` int(11) NOT NULL,
+  `35 - 39` int(11) NOT NULL,
+  `40 - 44` int(11) NOT NULL,
+  `45 - 49` int(11) NOT NULL,
+  `55 - 59` int(11) NOT NULL,
+  `60 - 64` int(11) NOT NULL,
+  `65 - 69` int(11) NOT NULL,
+  `70 - 74` int(11) NOT NULL,
+  `75 - 79` int(11) NOT NULL,
+  `80 - 84` int(11) NOT NULL,
+  `85+` int(11) NOT NULL,
+  `Judet` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_04 definition
+CREATE TABLE `sR_TAB_04` (
+  `Necasatorit(a)` varchar(100) NOT NULL,
+  `Casatorit(a)` varchar(100) NOT NULL,
+  `Vaduv(a)` varchar(100) NOT NULL,
+  `Informatie_Nedisponibila` varchar(100) NOT NULL,
+  `Permisune_consensuala` varchar(100) NOT NULL,
+  `Macroregiune` varchar(100) NOT NULL,
+  `Zona_de_dezvoltare` varchar(100) NOT NULL,
+  `Sex` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_05 definition
+CREATE TABLE `sR_TAB_05` (
+  `Sex` varchar(100) NOT NULL,
+  `Necasatorit` varchar(100) NOT NULL,
+  `Casatorit(a)` varchar(100) NOT NULL,
+  `Vaduv(a)` varchar(100) NOT NULL,
+  `Info_indisponibila` varchar(100) NOT NULL,
+  `Pers_uniune_consensuala` varchar(100) NOT NULL,
+  `Judet` varchar(100) NOT NULL,
+  `Localitate` varchar(100) NOT NULL,
+  `Tip_Localitate` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_06 definition
+CREATE TABLE `sR_TAB_06` (
+  `sex` varchar(100) NOT NULL,
+  `0 - 14` varchar(100) NOT NULL,
+  `15 - 19` varchar(100) NOT NULL,
+  `20 - 24` varchar(100) NOT NULL,
+  `25 - 29` varchar(100) NOT NULL,
+  `30 - 34` varchar(100) NOT NULL,
+  `35 - 39` varchar(100) NOT NULL,
+  `40 - 44` varchar(100) NOT NULL,
+  `45 - 49` varchar(100) NOT NULL,
+  `55 - 59` varchar(100) NOT NULL,
+  `60 - 64` varchar(100) NOT NULL,
+  `65 - 69` varchar(100) NOT NULL,
+  `70 - 74` varchar(100) NOT NULL,
+  `75+` varchar(100) NOT NULL,
+  `Tip_Localitate` varchar(100) NOT NULL,
+  `Stare_civila` varchar(100) NOT NULL,
+  `Legal_sau_de_fapt` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_07 definition
+CREATE TABLE `sR_TAB_07` (
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL` varchar(100) NOT NULL,
+  `Romani` varchar(100) NOT NULL,
+  `Maghiari` varchar(100) NOT NULL,
+  `Romi` varchar(100) NOT NULL,
+  `Germani` varchar(100) NOT NULL,
+  `Ucraineni` varchar(100) NOT NULL,
+  `Turci` varchar(100) NOT NULL,
+  `Rusi Lipoveni` varchar(100) NOT NULL,
+  `Tatari` varchar(100) NOT NULL,
+  `Sarbi` varchar(100) NOT NULL,
+  `Slovaci` varchar(100) NOT NULL,
+  `Bulgari` varchar(100) NOT NULL,
+  `Croati` varchar(100) NOT NULL,
+  `Greci` varchar(100) NOT NULL,
+  `Italiani` varchar(100) NOT NULL,
+  `Evrei` varchar(100) NOT NULL,
+  `Cehi` varchar(100) NOT NULL,
+  `Polonezi` varchar(100) NOT NULL,
+  `Chinezi` varchar(100) NOT NULL,
+  `Armeni` varchar(100) NOT NULL,
+  `Caeni` varchar(100) NOT NULL,
+  `Albanezi` varchar(100) NOT NULL,
+  `Alte Etnii` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_08 definition
+CREATE TABLE `sR_TAB_08` (
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL` varchar(100) NOT NULL,
+  `Romani` varchar(100) NOT NULL,
+  `Maghiari` varchar(100) NOT NULL,
+  `Romi` varchar(100) NOT NULL,
+  `Germani` varchar(100) NOT NULL,
+  `Ucraineni` varchar(100) NOT NULL,
+  `Turci` varchar(100) NOT NULL,
+  `Rusi Lipoveni` varchar(100) NOT NULL,
+  `Tatari` varchar(100) NOT NULL,
+  `Sarbi` varchar(100) NOT NULL,
+  `Slovaci` varchar(100) NOT NULL,
+  `Bulgari` varchar(100) NOT NULL,
+  `Croati` varchar(100) NOT NULL,
+  `Greci` varchar(100) NOT NULL,
+  `Italiani` varchar(100) NOT NULL,
+  `Evrei` varchar(100) NOT NULL,
+  `Cehi` varchar(100) NOT NULL,
+  `Polonezi` varchar(100) NOT NULL,
+  `Chinezi` varchar(100) NOT NULL,
+  `Armeni` varchar(100) NOT NULL,
+  `Caeni` varchar(100) NOT NULL,
+  `Macedoneni` varchar(100) NOT NULL,
+  `Alte Etnii` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_09 definition
+CREATE TABLE `sR_TAB_09` (
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL` varchar(100) NOT NULL,
+  `Romana` varchar(100) NOT NULL,
+  `Maghiara` varchar(100) NOT NULL,
+  `Roma` varchar(100) NOT NULL,
+  `Germana` varchar(100) NOT NULL,
+  `Ucrainena` varchar(100) NOT NULL,
+  `Turca` varchar(100) NOT NULL,
+  `Rusa` varchar(100) NOT NULL,
+  `Tatara` varchar(100) NOT NULL,
+  `Sarba` varchar(100) NOT NULL,
+  `Slovaca` varchar(100) NOT NULL,
+  `Bulgara` varchar(100) NOT NULL,
+  `Croata` varchar(100) NOT NULL,
+  `Greaca` varchar(100) NOT NULL,
+  `Italiana` varchar(100) NOT NULL,
+  `Evreiasca` varchar(100) NOT NULL,
+  `Ceha` varchar(100) NOT NULL,
+  `Poloneza` varchar(100) NOT NULL,
+  `Chineza` varchar(100) NOT NULL,
+  `Armena` varchar(100) NOT NULL,
+  `Armeana` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_10 definition
+CREATE TABLE `sR_TAB_10` (
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL` varchar(100) NOT NULL,
+  `Romana` varchar(100) NOT NULL,
+  `Maghiara` varchar(100) NOT NULL,
+  `Roma` varchar(100) NOT NULL,
+  `Germana` varchar(100) NOT NULL,
+  `Ucrainena` varchar(100) NOT NULL,
+  `Turca` varchar(100) NOT NULL,
+  `Rusa` varchar(100) NOT NULL,
+  `Tatara` varchar(100) NOT NULL,
+  `Sarba` varchar(100) NOT NULL,
+  `Slovaca` varchar(100) NOT NULL,
+  `Bulgara` varchar(100) NOT NULL,
+  `Croata` varchar(100) NOT NULL,
+  `Greaca` varchar(100) NOT NULL,
+  `Italiana` varchar(100) NOT NULL,
+  `Evreiasca` varchar(100) NOT NULL,
+  `Ceha` varchar(100) NOT NULL,
+  `Poloneza` varchar(100) NOT NULL,
+  `Chineza` varchar(100) NOT NULL,
+  `Armena` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Idisa` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `MACROREGIUNEA REGIUNEA DE DEZVOLTARE JUDETUL 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_11 definition
+CREATE TABLE `sR_TAB_11` (
+  `ETNIA` varchar(100) NOT NULL,
+  `Romana` varchar(100) NOT NULL,
+  `Maghiara` varchar(100) NOT NULL,
+  `Roma` varchar(100) NOT NULL,
+  `Germana` varchar(100) NOT NULL,
+  `Ucrainena` varchar(100) NOT NULL,
+  `Turca` varchar(100) NOT NULL,
+  `Rusa` varchar(100) NOT NULL,
+  `Tatara` varchar(100) NOT NULL,
+  `Sarba` varchar(100) NOT NULL,
+  `Slovaca` varchar(100) NOT NULL,
+  `Bulgara` varchar(100) NOT NULL,
+  `Croata` varchar(100) NOT NULL,
+  `Greaca` varchar(100) NOT NULL,
+  `Italiana` varchar(100) NOT NULL,
+  `Evreiasca` varchar(100) NOT NULL,
+  `Ceha` varchar(100) NOT NULL,
+  `Poloneza` varchar(100) NOT NULL,
+  `Chineza` varchar(100) NOT NULL,
+  `Armena` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Idisa` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `ETNIA2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_12 definition
+CREATE TABLE `sR_TAB_12` (
+  `Macroregiunea` varchar(100) NOT NULL,
+  `Ortodoxa` varchar(100) NOT NULL,
+  `Romano-catolica` varchar(100) NOT NULL,
+  `Reformata` varchar(100) NOT NULL,
+  `Penticostala` varchar(100) NOT NULL,
+  `Greco-catolica` varchar(100) NOT NULL,
+  `Baptista` varchar(100) NOT NULL,
+  `Adventista_de_ziua_a_saptea` varchar(100) NOT NULL,
+  `Musulmana` varchar(100) NOT NULL,
+  `Unitariana` varchar(100) NOT NULL,
+  `Martorii_lui_Iehova` varchar(100) NOT NULL,
+  `Crestin_dupa_evanghelie` varchar(100) NOT NULL,
+  `Crestina_de_rit_vechi` varchar(100) NOT NULL,
+  `Evangelica_lutherana` varchar(100) NOT NULL,
+  `Ortodoxa_sarba` varchar(100) NOT NULL,
+  `Evangelica` varchar(100) NOT NULL,
+  `Evangelica_de_confesiune_augustana` varchar(100) NOT NULL,
+  `Mozaica` varchar(100) NOT NULL,
+  `Armeana` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Fara_religie` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Atei` varchar(100) NOT NULL,
+  `Macroregiunea 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_13 definition
+CREATE TABLE `sR_TAB_13` (
+  `Judet` varchar(100) NOT NULL,
+  `Ortodoxa` varchar(100) NOT NULL,
+  `Romano-catolica` varchar(100) NOT NULL,
+  `Reformata` varchar(100) NOT NULL,
+  `Penticostala` varchar(100) NOT NULL,
+  `Greco-catolica` varchar(100) NOT NULL,
+  `Baptista` varchar(100) NOT NULL,
+  `Adventista_de_ziua_a_saptea` varchar(100) NOT NULL,
+  `Musulmana` varchar(100) NOT NULL,
+  `Unitariana` varchar(100) NOT NULL,
+  `Martorii_lui_Iehova` varchar(100) NOT NULL,
+  `Crestin_dupa_evanghelie` varchar(100) NOT NULL,
+  `Crestina_de_rit_vechi` varchar(100) NOT NULL,
+  `Evangelica_lutherana` varchar(100) NOT NULL,
+  `Ortodoxa_sarba` varchar(100) NOT NULL,
+  `Evangelica` varchar(100) NOT NULL,
+  `Evangelica_de_confesiune_augustana` varchar(100) NOT NULL,
+  `Mozaica` varchar(100) NOT NULL,
+  `Armeana` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Fara_religie` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Atei` varchar(100) NOT NULL,
+  `Judet 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_14 definition
+CREATE TABLE `sR_TAB_14` (
+  `ETNIA` varchar(100) NOT NULL,
+  `Ortodoxa` varchar(100) NOT NULL,
+  `Romano-catolica` varchar(100) NOT NULL,
+  `Reformata` varchar(100) NOT NULL,
+  `Penticostala` varchar(100) NOT NULL,
+  `Greco-catolica` varchar(100) NOT NULL,
+  `Baptista` varchar(100) NOT NULL,
+  `Adventista_de_ziua_a_saptea` varchar(100) NOT NULL,
+  `Musulmana` varchar(100) NOT NULL,
+  `Unitariana` varchar(100) NOT NULL,
+  `Martorii_lui_Iehova` varchar(100) NOT NULL,
+  `Crestin_dupa_evanghelie` varchar(100) NOT NULL,
+  `Crestina_de_rit_vechi` varchar(100) NOT NULL,
+  `Evangelica_lutherana` varchar(100) NOT NULL,
+  `Ortodoxa_sarba` varchar(100) NOT NULL,
+  `Evangelica` varchar(100) NOT NULL,
+  `Evangelica_de_confesiune_augustana` varchar(100) NOT NULL,
+  `Mozaica` varchar(100) NOT NULL,
+  `Armeana` varchar(100) NOT NULL,
+  `Macedoneana` varchar(100) NOT NULL,
+  `Fara_religie` varchar(100) NOT NULL,
+  `Altele` varchar(100) NOT NULL,
+  `Atei` varchar(100) NOT NULL,
+  `Informatie_nedisponibila` varchar(100) NOT NULL,
+  `ETNIA 2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_15 definition
+CREATE TABLE `sR_TAB_15` (
+  `Macroregiunea` varchar(100) NOT NULL,
+  `Pop_stabila_10+ani` varchar(100) NOT NULL,
+  `Superior_din_care_universitar` varchar(100) NOT NULL,
+  `Postliceal_maistri` varchar(100) NOT NULL,
+  `Secundar_superior_liceal` varchar(100) NOT NULL,
+  `Secundar_superior_profesional_Ucenici` varchar(100) NOT NULL,
+  `Secundar_inferior_gimnazial` varchar(100) NOT NULL,
+  `Primar` varchar(100) NOT NULL,
+  `Fara_scoala_din_care_analfabete` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_16 definition
+CREATE TABLE `sR_TAB_16` (
+  `Macroregiunea` varchar(100) NOT NULL,
+  `Pop stabila 10+ani` varchar(100) NOT NULL,
+  `Superior_din_care_universitar` varchar(100) NOT NULL,
+  `Postliceal_maistri` varchar(100) NOT NULL,
+  `Secundar_superior_liceal` varchar(100) NOT NULL,
+  `Secundar_superior_profesional_Ucenici` varchar(100) NOT NULL,
+  `Secundar_inferior_gimnazial` varchar(100) NOT NULL,
+  `Primar` varchar(100) NOT NULL,
+  `Fara_scoala_din_care_analfabete` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_17 definition
+CREATE TABLE `sR_TAB_17` (
+  `Macroregiunea` varchar(100) NOT NULL,
+  `Pop stabila 10+ani` varchar(100) NOT NULL,
+  `Superior_din_care_universitar` varchar(100) NOT NULL,
+  `Postliceal_maistri` varchar(100) NOT NULL,
+  `Secundar_superior_liceal` varchar(100) NOT NULL,
+  `Secundar_superior_profesional_Ucenici` varchar(100) NOT NULL,
+  `Secundar_inferior_gimnazial` varchar(100) NOT NULL,
+  `Primar` varchar(100) NOT NULL,
+  `Fara_scoala_din_care_analfabete` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_18 definition
+CREATE TABLE `sR_TAB_18` (
+  `Macroregiunea` varchar(100) NOT NULL,
+  `Pop stabila 10+ani` varchar(100) NOT NULL,
+  `Superior_din_care_universitar` varchar(100) NOT NULL,
+  `Postliceal_maistri` varchar(100) NOT NULL,
+  `Secundar_superior_liceal` varchar(100) NOT NULL,
+  `Secundar_superior_profesional_Ucenici` varchar(100) NOT NULL,
+  `Secundar_inferior_gimnazial` varchar(100) NOT NULL,
+  `Primar` varchar(100) NOT NULL,
+  `Fara_scoala_din_care_analfabete` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_19 definition
+CREATE TABLE `sR_TAB_19` (
+  `Tara_de_destinatie` varchar(100) NOT NULL,
+  `Populatia_stabila` varchar(100) NOT NULL,
+  `0 - 14` varchar(100) NOT NULL,
+  `15 - 19` varchar(100) NOT NULL,
+  `20 - 24` varchar(100) NOT NULL,
+  `25 - 29` varchar(100) NOT NULL,
+  `30 - 34` varchar(100) NOT NULL,
+  `35 - 39` varchar(100) NOT NULL,
+  `40 - 44` varchar(100) NOT NULL,
+  `45 - 49` varchar(100) NOT NULL,
+  `55 - 59` varchar(100) NOT NULL,
+  `60 - 64` varchar(100) NOT NULL,
+  `65+` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+-- statistica.sR_TAB_20 definition
+CREATE TABLE `sR_TAB_20` (
+  `Tara_de_destinatie` varchar(100) NOT NULL,
+  `Pers_plecate_perioada_indelungita` varchar(100) NOT NULL,
+  `0 - 14` varchar(100) NOT NULL,
+  `15 - 19` varchar(100) NOT NULL,
+  `20 - 24` varchar(100) NOT NULL,
+  `25 - 29` varchar(100) NOT NULL,
+  `30 - 34` varchar(100) NOT NULL,
+  `35 - 39` varchar(100) NOT NULL,
+  `40 - 44` varchar(100) NOT NULL,
+  `45 - 49` varchar(100) NOT NULL,
+  `55 - 59` varchar(100) NOT NULL,
+  `60 - 64` varchar(100) NOT NULL,
+  `65+` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
