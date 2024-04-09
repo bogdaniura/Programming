@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acasă - Catalog Școlar</title>
+  <title>Profesori - Catalog Școlar</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
-  
 </head>
 <body>
     <!-- Meniul persistent -->
@@ -35,18 +34,28 @@
       </div>
     </nav>
 
-  <!-- Conținutul paginii -->
-  <div class="container">
-    <div class="jumbotron mt-5">
-      <h1 class="display-4">Bine ați venit în Catalogul Școlar!</h1>
-      <p class="lead">Aici puteți urmări notele și absențele elevilor, precum și comunicările cu profesorii.</p>
-      <hr class="my-4">
-      <p>Vă rugăm să vă autentificați pentru a accesa informațiile personalizate.</p>
-      <a class="btn btn-primary btn-lg" href="login.html" role="button">Autentificare</a>
+  <div class="container-fluid">
+    <div class="content-container">
+      <h2 class="text-center mb-4">Profesori</h2>
+      <!-- Chenarul (butoanele) pentru redirecționare -->
+      <div class="button-container">
+        <div class="button-item">
+          <a href="profesori_orar.html">Orar</a>
+        </div>
+        <div class="button-item">
+          <a href="profesori_note.html">Note</a>
+        </div>
+        <div class="button-item">
+          <a href="profesori_absente.html">Absențe</a>
+        </div>
+        <div class="button-item">
+          <a href="profesori_alte_informatii.html">Alte Informații</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS și jQuery (necesar pentru funcționalitatea meniului de tip burger pe dispozitive mobile) -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

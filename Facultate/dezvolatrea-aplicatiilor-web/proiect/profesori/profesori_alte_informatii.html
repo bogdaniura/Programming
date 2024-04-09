@@ -3,44 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevi - Catalog Școlar</title>
+  <title>Alte Informații pentru Profesori - Catalog Școlar</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <style>
-    /* Spațierea pentru a centra conținutul pe pagină */
-    body {
-      padding-top: 70px;
-    }
-    /* Stilizare pentru containerul conținutului */
-    .content-container {
-      width: 600px;
-      margin: auto;
-    }
-    /* Stilizare pentru chenarele (butoanele) */
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .button-item {
-      margin: 10px;
-    }
-    .button-item a {
-      display: block;
-      padding: 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .button-item a:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <!-- Meniul persistent -->
@@ -54,14 +21,17 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Acasă</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Elevi <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Note</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profesori</a>
+          <a class="nav-link" href="#">Absențe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">Orar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Altele</a>
         </li>
       </ul>
     </div>
@@ -69,20 +39,17 @@
 
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Elevi</h2>
+      <h2 class="text-center mb-4">Alte Informații pentru Profesori</h2>
       <!-- Chenarele (butoanele) pentru redirecționare -->
       <div class="button-container">
         <div class="button-item">
-          <a href="orar.html">Orar</a>
+          <a href="profesori_note.html" class="btn">Note Elevi</a>
         </div>
         <div class="button-item">
-          <a href="note.html">Note</a>
+          <a href="profesori_absente.html" class="btn">Absențe Elevi</a>
         </div>
         <div class="button-item">
-          <a href="absente.html">Absențe</a>
-        </div>
-        <div class="button-item">
-          <a href="alte_informatii.html">Alte Informații</a>
+          <a href="profesori_orar.html" class="btn">Orar Elevi</a>
         </div>
       </div>
     </div>
