@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autentificare - Catalog Școlar</title>
-  <!-- Bootstrap CSS -->
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+
   <style>
-    /* Spațierea pentru a centra formularul pe pagina */
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
-    /* Stilizare pentru containerul formularului */
+
     .login-container {
       width: 400px;
       padding: 20px;
@@ -24,10 +24,11 @@
     }
   </style>
 </head>
+
 <body>
   <div class="login-container">
     <h2 class="text-center mb-4">Autentificare</h2>
-    <!-- Formularul de login -->
+
     <form id="loginForm">
       <div class="form-group">
         <label for="userType">Tip utilizator</label>
@@ -47,31 +48,30 @@
       <button type="submit" class="btn btn-primary btn-block">Autentificare</button>
     </form>
   </div>
+  <button id="goBackButton">Înapoi</button>
 
-  <!-- Bootstrap JS și jQuery (necesar pentru funcționalitatea formularului) -->
+
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
-    // Gestionarea submit-ului formularului de login
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Oprirea comportamentului implicit de trimitere a formularului
-      
-      // Obținerea valorilor introduse în câmpurile de login
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
       var userType = document.getElementById("userType").value;
       var username = document.getElementById("username").value;
       var password = document.getElementById("password").value;
-      
-      // Simularea logicii de autentificare (poate fi înlocuită cu logica reală)
-      // Aici poți verifica credențialele și redirecționa utilizatorul în funcție de acestea
+
       if (userType === "elev") {
-        window.open("elevi.html", "_self"); // Deschide pagina pentru elevi în aceeași fereastră
+        window.open("elevi.html", "_self");
       } else if (userType === "profesor") {
-        window.open("profesori.html", "_self"); // Deschide pagina pentru profesori în aceeași fereastră
+        window.open("profesori.html", "_self");
       } else {
-        alert("Vă rugăm să selectați un tip de utilizator!"); // Mesaj de eroare în cazul în care utilizatorul nu a selectat un tip de utilizator
+        alert("Vă rugăm să selectați un tip de utilizator!");
       }
     });
   </script>
 </body>
+
 </html>

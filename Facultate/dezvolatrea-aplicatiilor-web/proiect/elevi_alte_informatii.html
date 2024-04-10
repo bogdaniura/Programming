@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Încarcă Motivare - Catalog Școlar</title>
+  <title>Alte Informații pentru Elevi - Catalog Școlar</title>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -37,27 +38,29 @@
     </div>
   </nav>
 
+
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Încarcă Motivare</h2>
-      <form enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="motivare">Motivare/Scutire:</label>
-          <textarea class="form-control" id="motivare" rows="5"></textarea>
+      <h2 class="text-center mb-4">Alte Informații pentru Elevi</h2>
+
+      <div class="button-container">
+        <div class="button-item">
+          <a href="elevi_informatii_personale.html" class="btn">Informații Personale</a>
         </div>
-        <div class="form-group">
-          <label for="imagine">Încarcă o imagine:</label>
-          <input type="file" class="form-control-file" id="imagine">
+        <div class="button-item">
+          <a href="elevi_contacteaza_profesorul.html" class="btn">Contactează Profesorul</a>
         </div>
-        <div class="form-group">
-          <label for="document">Încarcă un document:</label>
-          <input type="file" class="form-control-file" id="document">
+        <div class="button-item">
+          <a href="elevi_istoric_note.html" class="btn">Istoric Note</a>
         </div>
-        <button type="submit" class="btn btn-primary">Încarcă</button>
-      </form>
+        <div class="button-item">
+          <a href="elevi_istoric_absente.html" class="btn">Istoric Absențe</a>
+        </div>
+      </div>
     </div>
   </div>
   <button id="goBackButton">Înapoi</button>
+
 
 
   <script src="script.js"></script>

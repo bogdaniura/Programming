@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Încarcă Motivare - Catalog Școlar</title>
+  <title>Absențe Elevi - Catalog Școlar</title>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -39,25 +40,37 @@
 
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Încarcă Motivare</h2>
-      <form enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="motivare">Motivare/Scutire:</label>
-          <textarea class="form-control" id="motivare" rows="5"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="imagine">Încarcă o imagine:</label>
-          <input type="file" class="form-control-file" id="imagine">
-        </div>
-        <div class="form-group">
-          <label for="document">Încarcă un document:</label>
-          <input type="file" class="form-control-file" id="document">
-        </div>
-        <button type="submit" class="btn btn-primary">Încarcă</button>
-      </form>
+      <h2 class="text-center mb-4">Absențe Elevi</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Materie</th>
+            <th>Data Absenței</th>
+            <th>Tip Absență</th>
+            <th>Acțiune</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matematică</td>
+            <td>2024-04-02</td>
+            <td>Nemotivată</td>
+            <td><a href="incarca_motivare.html" class="btn btn-primary">Incarcă motivare</a></td>
+          </tr>
+          <tr>
+            <td>Limba și literatura română</td>
+            <td>2024-03-28</td>
+            <td>Motivată</td>
+            <td>-</td>
+          </tr>
+
+        </tbody>
+      </table>
     </div>
   </div>
   <button id="goBackButton">Înapoi</button>
+
 
 
   <script src="script.js"></script>

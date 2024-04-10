@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Note Profesori - Catalog Școlar</title>
-  <!-- Bootstrap CSS -->
+  <title>Orar Profesori - Catalog Școlar</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <!-- Meniul persistent -->
+
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Catalog Școlar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,65 +39,42 @@
 
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Note Profesori</h2>
-      <!-- Formular pentru adăugare notă -->
-      <form>
-        <div class="form-group">
-          <label for="elev">Elev:</label>
-          <select class="form-control" id="elev">
-            <option value="ion_popescu">Ion Popescu</option>
-            <option value="maria_ionescu">Maria Ionescu</option>
-            <!-- Alți elevi -->
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="materie">Materie:</label>
-          <input type="text" class="form-control" id="materie">
-        </div>
-        <div class="form-group">
-          <label for="nota">Notă:</label>
-          <input type="number" class="form-control" id="nota" min="1" max="10">
-        </div>
-        <div class="form-group">
-          <label for="data">Data:</label>
-          <input type="date" class="form-control" id="data">
-        </div>
-        <button type="submit" class="btn btn-primary">Adaugă Notă</button>
-      </form>
-      <hr>
-      <!-- Tabelul de note existente -->
-      <h3 class="text-center mb-4">Note Existente</h3>
+      <h2 class="text-center mb-4">Orar Profesori</h2>
+
       <table>
         <thead>
           <tr>
-            <th>Elev</th>
+            <th>Ziua</th>
+            <th>Ora</th>
             <th>Materie</th>
-            <th>Nota</th>
-            <th>Data</th>
+            <th>Clasa</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Ion Popescu</td>
+            <td>Luni</td>
+            <td>8:00 - 10:00</td>
             <td>Matematică</td>
-            <td>8</td>
-            <td>2024-04-01</td>
+            <td>Clasa a X-a</td>
           </tr>
           <tr>
-            <td>Maria Ionescu</td>
+            <td>Luni</td>
+            <td>10:30 - 12:30</td>
             <td>Fizică</td>
-            <td>9</td>
-            <td>2024-03-30</td>
+            <td>Clasa a XI-a</td>
           </tr>
-          <!-- Alte rânduri pentru note -->
+
         </tbody>
       </table>
     </div>
   </div>
+  <button id="goBackButton">Înapoi</button>
 
-  <!-- Bootstrap JS -->
+
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

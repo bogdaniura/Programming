@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevi - Catalog Școlar</title>
-  <!-- Bootstrap CSS -->
+  <title>Note Elevi - Catalog Școlar</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <!-- Meniul persistent -->
+
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Catalog Școlar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,30 +37,42 @@
     </div>
   </nav>
 
+
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Elevi</h2>
-      <!-- Chenarele (butoanele) pentru redirecționare -->
-      <div class="button-container">
-        <div class="button-item">
-          <a href="elevi_orar.html">Orar</a>
-        </div>
-        <div class="button-item">
-          <a href="elevi_note.html">Note</a>
-        </div>
-        <div class="button-item">
-          <a href="elevi_absente.html">Absențe</a>
-        </div>
-        <div class="button-item">
-          <a href="elevi_alte_informatii.html">Alte Informații</a>
-        </div>
-      </div>
+      <h2 class="text-center mb-4">Note Elevi</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Materie</th>
+            <th>Note</th>
+            <th>Medie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matematică</td>
+            <td>8, 9, 7</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Limba și literatura română</td>
+            <td>7, 8, 9, 6</td>
+            <td>7.5</td>
+          </tr>
+
+        </tbody>
+      </table>
     </div>
   </div>
+  <button id="goBackButton">Înapoi</button>
 
-  <!-- Bootstrap JS -->
+
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

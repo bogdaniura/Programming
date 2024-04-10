@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Încarcă Motivare - Catalog Școlar</title>
+  <title>Absențe Profesori - Catalog Școlar</title>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,22 +39,65 @@
 
   <div class="container">
     <div class="content-container">
-      <h2 class="text-center mb-4">Încarcă Motivare</h2>
-      <form enctype="multipart/form-data">
+      <h2 class="text-center mb-4">Absențe Profesori</h2>
+
+      <form>
         <div class="form-group">
-          <label for="motivare">Motivare/Scutire:</label>
-          <textarea class="form-control" id="motivare" rows="5"></textarea>
+          <label for="elev">Elev:</label>
+          <select class="form-control" id="elev">
+            <option value="ion_popescu">Ion Popescu</option>
+            <option value="maria_ionescu">Maria Ionescu</option>
+
+          </select>
         </div>
         <div class="form-group">
-          <label for="imagine">Încarcă o imagine:</label>
-          <input type="file" class="form-control-file" id="imagine">
+          <label for="materie">Materie:</label>
+          <input type="text" class="form-control" id="materie">
         </div>
         <div class="form-group">
-          <label for="document">Încarcă un document:</label>
-          <input type="file" class="form-control-file" id="document">
+          <label for="data">Data Absenței:</label>
+          <input type="date" class="form-control" id="data">
         </div>
-        <button type="submit" class="btn btn-primary">Încarcă</button>
+        <div class="form-group">
+          <label for="tip">Tip Absență:</label>
+          <select class="form-control" id="tip">
+            <option value="motivata">Motivată</option>
+            <option value="nemotivata">Nemotivată</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Adaugă Absență</button>
       </form>
+      <hr>
+
+      <h3 class="text-center mb-4">Absențe Existente</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Elev</th>
+            <th>Materie</th>
+            <th>Data Absenței</th>
+            <th>Tip Absență</th>
+            <th>Motivare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ion Popescu</td>
+            <td>Matematică</td>
+            <td>2024-04-02</td>
+            <td>Nemotivată</td>
+            <td><a href="incarca_motivare.html" class="btn btn-primary btn-sm">Incarcă motivare</a></td>
+          </tr>
+          <tr>
+            <td>Maria Ionescu</td>
+            <td>Fizică</td>
+            <td>2024-03-28</td>
+            <td>Motivată</td>
+            <td>-</td>
+          </tr>
+
+        </tbody>
+      </table>
     </div>
   </div>
   <button id="goBackButton">Înapoi</button>
