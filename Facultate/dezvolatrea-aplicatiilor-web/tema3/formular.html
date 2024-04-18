@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+
+<body>
+    <form action="formular.php" method="get">
+        <label for="nume">Nume:</label>
+        <input type="text" name="nume"><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+
+        <label for="telefon">Telefon:</label>
+        <input type="text" name="telefon"><br>
+
+        <label>Gen:</label>
+        <input type="radio" name="gen" value="masculin">
+        <label for="masculin">Masculin</label>
+        <input type="radio" name="gen" value="feminin">
+        <label for="feminin">Feminin</label>
+        <input type="radio" name="gen" value="non-binar">
+        <label for="non-binar">Non-Binar</label><br>
+
+        <label for="interese">Interese:</label><br>
+        <input type="checkbox" name="interese[]" value="sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" name="interese[]" value="muzica">
+        <label for="muzica">Muzică</label><br>
+        <input type="checkbox" name="interese[]" value="calatorii">
+        <label for="calatorii">Călătorii</label><br>
+
+        <label for="descriere">Descriere:</label><br>
+        <textarea name="descriere" rows="4" cols="50"></textarea><br>
+
+        <label for="oras">Oraș:</label>
+        <select name="oras">
+            <option value="București">București</option>
+            <option value="Cluj">Cluj</option>
+            <option value="Timișoara">Timișoara</option>
+            <option value="Baia Mare">Baia Mare</option>
+        </select><br>
+
+        <input type="submit" value="Trimite">
+    </form>
+
+</body>
+
+</html>
