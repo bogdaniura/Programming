@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Căutare Absențe</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Căutare Absențe</h2>
+    <form action="search_absences.php" method="get">
+      <div class="form-group">
+        <label for="nume">Nume:</label>
+        <input type="text" class="form-control" id="nume" name="nume">
+      </div>
+      <div class="form-group">
+        <label for="materie">Materie:</label>
+        <input type="text" class="form-control" id="materie" name="materie">
+      </div>
+      <div class="form-group">
+        <label for="data_absenta">Data Absenței:</label>
+        <input type="date" class="form-control" id="data_absenta" name="data_absenta">
+      </div>
+      <div class="form-group">
+        <label for="tip_absenta">tip Absenței:</label>
+        <select class="form-control" id="tip_absenta" name="tip_absenta">
+          <option value="">Selectează</option>
+          <option value="motivata">Motivată</option>
+          <option value="nemotivata">Nemotivată</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Caută</button>
+    </form>
+  </div>
+  <button id="goBackButton">Înapoi</button>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
