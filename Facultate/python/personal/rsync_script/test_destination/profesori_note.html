@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Profesori - Catalog Școlar</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Catalog Școlar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./start.html">Acasă</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./elevi.html">Elevi <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./profesori.html">Profesori</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="content-container">
+      <h2 class="text-center mb-4">Note Profesori</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="elev">Elev:</label>
+          <select class="form-control" id="elev">
+            <option value="ion_popescu">Ion Popescu</option>
+            <option value="maria_ionescu">Maria Ionescu</option>
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="materie">Materie:</label>
+          <input type="text" class="form-control" id="materie">
+        </div>
+        <div class="form-group">
+          <label for="nota">Notă:</label>
+          <input type="number" class="form-control" id="nota" min="1" max="10">
+        </div>
+        <div class="form-group">
+          <label for="data">Data:</label>
+          <input type="date" class="form-control" id="data">
+        </div>
+        <button type="submit" class="btn btn-primary">Adaugă Notă</button>
+      </form>
+      <hr>
+    </div>
+  </div>
+  <button id="goBackButton">Înapoi</button>
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

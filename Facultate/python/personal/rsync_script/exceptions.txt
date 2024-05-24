@@ -1,0 +1,1 @@
+/home/kgbeast/Bogdan/Programming/Facultate/python/personal/rsync_script/test_source/uploads/*

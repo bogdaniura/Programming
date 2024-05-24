@@ -1,0 +1,3 @@
+fabric; python_version < "3.9"
+Fabric39; python_version >= "3.9"
+tabulate

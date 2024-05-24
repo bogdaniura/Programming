@@ -1,0 +1,12 @@
+# Hosts file
+hosts.txt
+
+# Paramiko logs
+paramiko.log
+
+# .pyc files
+*.pyc
+
+# Python virtualenv
+venv
+venv3

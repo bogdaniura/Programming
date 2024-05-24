@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de Admin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Încarcă stilurile CSS personalizate -->
+</head>
+<body>
+  <!-- Meniul persistent -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Catalog Școlar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acasă</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Utilizatori</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Note</a>
+        </li>
+        <!-- Alte elemente de navigare -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conținutul paginii -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <!-- Formular pentru selectarea și modificarea elevului -->
+        <form>
+          <!-- Listă de selectare a elevilor -->
+          <div class="form-group">
+            <label for="studentSelect">Selectează Elevul:</label>
+            <select class="form-control" id="studentSelect" name="studentSelect">
+              <option value="student1">Elevul 1</option>
+              <option value="student2">Elevul 2</option>
+              <option value="student3">Elevul 3</option>
+              <!-- Adaugă opțiuni pentru fiecare elev -->
+            </select>
+          </div>
+
+          <!-- Câmpuri pentru modificarea informațiilor despre elev -->
+          <div class="form-group">
+            <label for="studentName">Nume:</label>
+            <input type="text" class="form-control" id="studentName" name="studentName">
+          </div>
+
+          <div class="form-group">
+            <label for="studentGrade">Notă:</label>
+            <input type="text" class="form-control" id="studentGrade" name="studentGrade">
+          </div>
+
+          <!-- Alte câmpuri pentru alte informații de modificat -->
+
+          <!-- Butonul de submit pentru salvarea modificărilor -->
+          <button type="submit" class="btn btn-primary">Salvează Modificările</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Încarcă scriptul JavaScript -->
+  <script src="script.js"></script>
+  <!-- Încarcă Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
