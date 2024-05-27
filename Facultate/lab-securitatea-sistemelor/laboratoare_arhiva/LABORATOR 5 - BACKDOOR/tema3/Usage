@@ -1,0 +1,7 @@
+ 1. Run the Server: Execute the server script on the target machine (only with permission).
+
+        cmd: python server.py
+
+ 2. Run the Client: Execute the client script on your machine to connect to the server.
+
+        cmd: python client.py

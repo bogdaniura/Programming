@@ -1,0 +1,1 @@
+[ctrl]l[backspace][shift_r]#the quick brown fox jumped over a lazy dog[delete][enter][ctrl]w[esc]

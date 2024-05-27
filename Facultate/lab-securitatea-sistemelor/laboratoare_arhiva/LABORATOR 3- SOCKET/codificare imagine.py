@@ -5,7 +5,7 @@ import stepic
 # Open the image using the open() function of the Image module 
 # by passing the image filename/path as an argument to it
 # in which the secret message will be stored.
-gvn_image = Image.open("sampleimage.png")
+gvn_image = Image.open("./sampleimage.png")
 # Give some random secret message and store it in a variable
 secret_msg = "AM CODIFICAT ACEASTA IMAGINE"
 # Convert the above given secret message into UTF-8 format using the encode() function
