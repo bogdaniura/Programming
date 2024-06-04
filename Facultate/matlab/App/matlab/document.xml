@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body><w:p><w:pPr><w:pStyle w:val="code"/></w:pPr><w:r><w:t><![CDATA[classdef App < matlab.apps.AppBase
+
+    % Properties that correspond to app components
+    properties (Access = public)
+        UIFigure                      matlab.ui.Figure
+        RotateCounterClockWiseButton  matlab.ui.control.Button
+        RotateClockWiseButton         matlab.ui.control.Button
+        YouhavetocheckonGrayScaletouseBlurLabel  matlab.ui.control.Label
+        GrayScaleCheckBox             matlab.ui.control.CheckBox
+        AddImageButton                matlab.ui.control.Button
+        CatButton                     matlab.ui.control.Button
+        DogButton                     matlab.ui.control.Button
+        BlurSlider                    matlab.ui.control.Slider
+        BlurSliderLabel               matlab.ui.control.Label
+        MotionBlurSlider              matlab.ui.control.Slider
+        MotionBlurSliderLabel         matlab.ui.control.Label
+        Image                         matlab.ui.control.Image
+    end
+
+    
+    properties (Access = private)
+        OriginalImage % Description
+    end
+    
+    methods (Access = public)
+        
+        function results = updateImageDisplay(app)
+            % Start with the original image
+            currentImage = app.OriginalImage;
+        
+            % Apply grayscale if checkbox is checked
+            if app.GrayScaleCheckBox.Value && size(currentImage, 3) == 3
+                currentImage = rgb2gray(currentImage);
+                % Convert grayscale back to RGB format to satisfy the Image component requirement
+                currentImage = repmat(currentImage, [1 1 3]);
+            end
+
+            % Apply Gaussian blur if grayscale is checked and slider value > 0
+            if app.GrayScaleCheckBox.Value
+                gaussianValue = app.BlurSlider.Value;
+                if gaussianValue > 0
+                    currentImage = imgaussfilt(currentImage, gaussianValue);
+                end
+            end
+        
+            % Apply motion blur based on slider value
+            sliderValue = app.MotionBlurSlider.Value;
+            if sliderValue > 0
+                len = max(1, sliderValue * 5);  % Ensure a minimum length of 1 for blur effect
+                theta = 45;  % Fixed angle of 45 degrees
+                h = fspecial('motion', len, theta);
+                currentImage = imfilter(currentImage, h, 'replicate');
+            end
+        
+            % Update the displayed image
+            app.Image.ImageSource = currentImage;
+        end
+    end
+    
+
+    % Callbacks that handle component events
+    methods (Access = private)
+
+        % Button pushed function: DogButton
+        function DogButtonPushed(app, event)
+            app.OriginalImage = imread('../App/Images/Dog.jpeg');
+            app.Image.ImageSource = app.OriginalImage;
+            app.GrayScaleCheckBox.Value = false;   % Reset the checkbox
+            app.MotionBlurSlider.Value = 0;        % Reset the slider
+            updateImageDisplay(app);              % Initial display update
+        end
+
+        % Button pushed function: CatButton
+        function CatButtonPushed(app, event)
+            app.OriginalImage = imread('../App/Images/Cat.jpeg');
+            app.Image.ImageSource = app.OriginalImage;
+            app.GrayScaleCheckBox.Value = false;   % Reset the checkbox
+            app.MotionBlurSlider.Value = 0;        % Reset the slider
+            updateImageDisplay(app);              % Initial display update
+        end
+
+        % Button pushed function: AddImageButton
+        function AddImageButtonPushed(app, event)
+            [file, path] = uigetfile({'*.jpg;*.png;*.gif;*.bmp', 'All Image Files'; ...
+                              '*.*', 'All Files' }, 'Select an Image');
+            if isequal(file, 0)
+                disp('User selected Cancel');
+            else
+                fullPath = fullfile(path, file);
+                app.OriginalImage = imread(fullPath);  % Load and store the original image
+                app.GrayScaleCheckBox.Value = false;   % Reset the checkbox
+                app.MotionBlurSlider.Value = 0;        % Reset the slider
+                updateImageDisplay(app);              % Initial display update
+            end
+        end
+
+        % Value changed function: MotionBlurSlider
+        function MotionBlurSliderValueChanged(app, event)
+            if app.GrayScaleCheckBox.Value
+                return;  % Do not apply blur if the grayscale is checked
+            end
+            updateImageDisplay(app);  % Update the image display
+        end
+
+        % Value changed function: GrayScaleCheckBox
+        function GrayScaleCheckBoxValueChanged(app, event)
+            if app.GrayScaleCheckBox.Value
+                app.MotionBlurSlider.Value = 0;  % Set motion blur to 0 when grayscale is checked
+            end
+            
+            updateImageDisplay(app);  % Call to update the image based on the current UI settings
+        end
+
+        % Value changed function: BlurSlider
+        function BlurSliderValueChanged(app, event)
+            if app.GrayScaleCheckBox.Value
+                updateImageDisplay(app);  % Only update if the grayscale is checked
+            end
+            
+        end
+
+        % Button pushed function: RotateClockWiseButton
+        function RotateClockWiseButtonPushed(app, event)
+             % Rotate the image 90 degrees clockwise
+            app.OriginalImage = imrotate(app.OriginalImage, -90);
+        
+            % Update the image display
+            updateImageDisplay(app);
+        end
+
+        % Button pushed function: RotateCounterClockWiseButton
+        function RotateCounterClockWiseButtonPushed(app, event)
+            % Rotate the image 90 degrees counter-clockwise
+            app.OriginalImage = imrotate(app.OriginalImage, 90);
+        
+            % Update the image display
+            updateImageDisplay(app);
+        end
+    end
+
+    % Component initialization
+    methods (Access = private)
+
+        % Create UIFigure and components
+        function createComponents(app)
+
+            % Get the file path for locating images
+            pathToMLAPP = fileparts(mfilename('fullpath'));
+
+            % Create UIFigure and hide until all components are created
+            app.UIFigure = uifigure('Visible', 'off');
+            app.UIFigure.Color = [1 1 1];
+            app.UIFigure.Position = [100 100 672 423];
+            app.UIFigure.Name = 'MATLAB App';
+
+            % Create Image
+            app.Image = uiimage(app.UIFigure);
+            app.Image.Position = [38 68 335 326];
+
+            % Create MotionBlurSliderLabel
+            app.MotionBlurSliderLabel = uilabel(app.UIFigure);
+            app.MotionBlurSliderLabel.HorizontalAlignment = 'right';
+            app.MotionBlurSliderLabel.Position = [391 220 73 22];
+            app.MotionBlurSliderLabel.Text = 'Motion - Blur';
+
+            % Create MotionBlurSlider
+            app.MotionBlurSlider = uislider(app.UIFigure);
+            app.MotionBlurSlider.Limits = [0 10];
+            app.MotionBlurSlider.ValueChangedFcn = createCallbackFcn(app, @MotionBlurSliderValueChanged, true);
+            app.MotionBlurSlider.Position = [475 230 153 3];
+
+            % Create BlurSliderLabel
+            app.BlurSliderLabel = uilabel(app.UIFigure);
+            app.BlurSliderLabel.HorizontalAlignment = 'right';
+            app.BlurSliderLabel.Position = [438 133 26 22];
+            app.BlurSliderLabel.Text = 'Blur';
+
+            % Create BlurSlider
+            app.BlurSlider = uislider(app.UIFigure);
+            app.BlurSlider.Limits = [0 10];
+            app.BlurSlider.ValueChangedFcn = createCallbackFcn(app, @BlurSliderValueChanged, true);
+            app.BlurSlider.Position = [478 143 150 3];
+
+            % Create DogButton
+            app.DogButton = uibutton(app.UIFigure, 'push');
+            app.DogButton.ButtonPushedFcn = createCallbackFcn(app, @DogButtonPushed, true);
+            app.DogButton.Position = [528 374 100 23];
+            app.DogButton.Text = 'Dog';
+
+            % Create CatButton
+            app.CatButton = uibutton(app.UIFigure, 'push');
+            app.CatButton.ButtonPushedFcn = createCallbackFcn(app, @CatButtonPushed, true);
+            app.CatButton.Position = [528 324 100 23];
+            app.CatButton.Text = 'Cat';
+
+            % Create AddImageButton
+            app.AddImageButton = uibutton(app.UIFigure, 'push');
+            app.AddImageButton.ButtonPushedFcn = createCallbackFcn(app, @AddImageButtonPushed, true);
+            app.AddImageButton.Position = [528 274 100 23];
+            app.AddImageButton.Text = 'Add Image';
+
+            % Create GrayScaleCheckBox
+            app.GrayScaleCheckBox = uicheckbox(app.UIFigure);
+            app.GrayScaleCheckBox.ValueChangedFcn = createCallbackFcn(app, @GrayScaleCheckBoxValueChanged, true);
+            app.GrayScaleCheckBox.Text = 'GrayScale';
+            app.GrayScaleCheckBox.Position = [391 112 78 22];
+
+            % Create YouhavetocheckonGrayScaletouseBlurLabel
+            app.YouhavetocheckonGrayScaletouseBlurLabel = uilabel(app.UIFigure);
+            app.YouhavetocheckonGrayScaletouseBlurLabel.HorizontalAlignment = 'center';
+            app.YouhavetocheckonGrayScaletouseBlurLabel.VerticalAlignment = 'bottom';
+            app.YouhavetocheckonGrayScaletouseBlurLabel.FontSize = 14;
+            app.YouhavetocheckonGrayScaletouseBlurLabel.Position = [386 154 285 22];
+            app.YouhavetocheckonGrayScaletouseBlurLabel.Text = 'You have to check on GrayScale to use Blur';
+
+            % Create RotateClockWiseButton
+            app.RotateClockWiseButton = uibutton(app.UIFigure, 'push');
+            app.RotateClockWiseButton.ButtonPushedFcn = createCallbackFcn(app, @RotateClockWiseButtonPushed, true);
+            app.RotateClockWiseButton.Icon = fullfile(pathToMLAPP, 'Icons', 'arrow-clockwise.svg');
+            app.RotateClockWiseButton.IconAlignment = 'center';
+            app.RotateClockWiseButton.Position = [455 361 38 33];
+            app.RotateClockWiseButton.Text = '';
+
+            % Create RotateCounterClockWiseButton
+            app.RotateCounterClockWiseButton = uibutton(app.UIFigure, 'push');
+            app.RotateCounterClockWiseButton.ButtonPushedFcn = createCallbackFcn(app, @RotateCounterClockWiseButtonPushed, true);
+            app.RotateCounterClockWiseButton.Icon = fullfile(pathToMLAPP, 'Icons', 'arrow-counter-clockwise.svg');
+            app.RotateCounterClockWiseButton.IconAlignment = 'center';
+            app.RotateCounterClockWiseButton.Position = [401 361 38 33];
+            app.RotateCounterClockWiseButton.Text = '';
+
+            % Show the figure after all components are created
+            app.UIFigure.Visible = 'on';
+        end
+    end
+
+    % App creation and deletion
+    methods (Access = public)
+
+        % Construct app
+        function app = App
+
+            % Create UIFigure and components
+            createComponents(app)
+
+            % Register the app with App Designer
+            registerApp(app, app.UIFigure)
+
+            if nargout == 0
+                clear app
+            end
+        end
+
+        % Code that executes before app deletion
+        function delete(app)
+
+            % Delete UIFigure when app is deleted
+            delete(app.UIFigure)
+        end
+    end
+end]]></w:t></w:r></w:p></w:body></w:document>
