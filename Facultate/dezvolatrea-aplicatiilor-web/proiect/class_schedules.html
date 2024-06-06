@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Class Schedules - Catalog Școlar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .form-container,
+        .list-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbarPlaceholder"></div> <!-- Placeholder for the dynamic navbar -->
+    <script src="dynamic_navbar.js"></script><br>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Adăugare/Modificare Orar</h2>
+            <form id="scheduleForm">
+                <input type="hidden" id="scheduleId" name="scheduleId">
+                <div class="form-group">
+                    <label for="classId">Clasă</label>
+                    <select class="form-control" id="classId" name="classId">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Materie</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="dayOfWeek">Ziua Săptămânii</label>
+                    <select class="form-control" id="dayOfWeek" name="dayOfWeek" required>
+                        <option value="Monday">Luni</option>
+                        <option value="Tuesday">Marți</option>
+                        <option value="Wednesday">Miercuri</option>
+                        <option value="Thursday">Joi</option>
+                        <option value="Friday">Vineri</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="startTime">Ora de Început</label>
+                    <input type="time" class="form-control" id="startTime" name="startTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="endTime">Ora de Sfârșit</label>
+                    <input type="time" class="form-control" id="endTime" name="endTime" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvează Orar</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Lista Orar</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Clasă</th>
+                        <th>Materie</th>
+                        <th>Ziua Săptămânii</th>
+                        <th>Ora de Început</th>
+                        <th>Ora de Sfârșit</th>
+                        <th>Acțiuni</th>
+                    </tr>
+                </thead>
+                <tbody id="schedulesList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('scheduleForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const actionUrl = this.querySelector('#scheduleId').value ? 'update_schedule.php' : 'add_schedule.php';
+
+            fetch(actionUrl, {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                        loadSchedules(); // Reload schedules list
+                        this.reset(); // Reset form after submission
+                        document.getElementById('scheduleId').value = ''; // Clear hidden scheduleId input
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error: ' + error.message);
+                });
+        });
+
+        function loadSchedules() {
+            fetch('get_schedules.php')
+                .then(response => {
+                    if (!response.ok) {
+                        return response.text().then(text => { throw new Error(text); });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        const schedulesList = document.getElementById('schedulesList');
+                        schedulesList.innerHTML = ''; // Clear previous entries
+                        data.schedules.forEach(schedule => {
+                            const row = `<tr>
+                            <td>${schedule.id}</td>
+                            <td>${schedule.class_name}</td>
+                            <td>${schedule.subject}</td>
+                            <td>${schedule.day_of_week}</td>
+                            <td>${schedule.start_time}</td>
+                            <td>${schedule.end_time}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm" onclick="editSchedule(${schedule.id})">Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteSchedule(${schedule.id})">Delete</button>
+                            </td>
+                        </tr>`;
+                            schedulesList.innerHTML += row; // Append new row
+                        });
+                    } else {
+                        document.getElementById('schedulesList').innerHTML = `<tr><td colspan="7">${data.message}</td></tr>`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading schedules:', error);
+                    alert('Error loading schedules: ' + error.message);
+                });
+        }
+
+
+
+        function editSchedule(scheduleId) {
+            fetch(`get_schedule.php?id=${scheduleId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('scheduleId').value = data.schedule.id;
+                        document.getElementById('classId').value = data.schedule.class_id;
+                        document.getElementById('subject').value = data.schedule.subject;
+                        document.getElementById('dayOfWeek').value = data.schedule.day_of_week;
+                        document.getElementById('startTime').value = data.schedule.start_time;
+                        document.getElementById('endTime').value = data.schedule.end_time;
+                    } else {
+                        alert(data.message); // Show error message
+                    }
+                })
+                .catch(error => alert('Error: ' + error));
+        }
+
+        function deleteSchedule(scheduleId) {
+            if (confirm('Are you sure you want to delete this schedule?')) {
+                fetch(`delete_schedule.php?id=${scheduleId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);
+                        loadSchedules();
+                    })
+                    .catch(error => alert('Error: ' + error));
+            }
+        }
+
+        function loadClasses() {
+            fetch('get_classes.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const classIdSelect = document.getElementById('classId');
+                        classIdSelect.innerHTML = ''; // Clear previous options
+                        data.classes.forEach(classItem => {
+                            const option = document.createElement('option');
+                            option.value = classItem.id;
+                            option.textContent = `${classItem.class_name} (${classItem.grade_level})`;
+                            classIdSelect.appendChild(option); // Append new option
+                        });
+                    } else {
+                        alert(data.message); // Show error message
+                    }
+                })
+                .catch(error => alert('Error: ' + error));
+        }
+
+        // Load classes and schedules initially
+        loadClasses();
+        loadSchedules();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

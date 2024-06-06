@@ -1,180 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Gestionare Utilizatori</title>
+    <title>Admin Dashboard - Catalog Școlar</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body,
-        html {
+        body, html {
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
         }
-
         .container {
-            width: 80%;
-            margin: 20px auto;
+            margin-top: 50px;
         }
-
-        .form-container,
-        .list-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-            margin-bottom: 20px;
+        .card {
+            margin: 20px;
         }
-
-        table {
-            width: 100%;
-            margin-top: 20px;
+        .card-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            width: 100px;
         }
     </style>
 </head>
-
 <body>
     <div id="navbarPlaceholder"></div> <!-- Placeholder for the dynamic navbar -->
     <script src="dynamic_navbar.js"></script><br>
+
     <div class="container">
-        <div class="form-container">
-            <h2>Adăugare/Modificare Utilizator</h2>
-            <form id="userForm">
-                <input type="hidden" id="userId" name="userId">
-                <div class="form-group">
-                    <label for="userType">Tip utilizator</label>
-                    <select class="form-control" id="userType" name="userType">
-                        <option value="elev">Elev</option>
-                        <option value="profesor">Profesor</option>
-                        <option value="admin">Admin</option>
-                    </select>
+        <h1 class="text-center">Admin Dashboard</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Users</h5>
+                        <a href="admin_add_user.html" class="btn btn-primary">Go</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="username">Nume de utilizator</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Classes</h5>
+                        <a href="view_classes.html" class="btn btn-primary">Go</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="password">Parolă</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Class Schedules</h5>
+                        <a href="class_schedules.html" class="btn btn-primary">Go</a>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Salvează Utilizator</button>
-            </form>
-        </div>
-        <div class="list-container">
-            <h2>Lista Utilizatori</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nume Utilizator</th>
-                        <th>Tip Utilizator</th>
-                        <th>Acțiuni</th>
-                    </tr>
-                </thead>
-                <tbody id="usersList"></tbody>
-            </table>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">View Teachers</h5>
+                        <a href="view_teachers.html" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
-
-    <script>
-        document.getElementById('userForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const formData = new FormData(this);
-            const actionUrl = this.querySelector('#userId').value ? 'update_user.php' : 'add_user.php';
-
-            fetch(actionUrl, {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => response.json())
-                .then(data => {
-                    alert(data.message);
-                    loadUsers(); // Reload users list
-                    this.reset(); // Reset form after submission
-                    document.getElementById('userId').value = ''; // Clear hidden userId input
-                })
-                .catch(error => alert('Error: ' + error));
-        });
-
-        function loadUsers() {
-            fetch('get_users.php')
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        const usersList = document.getElementById('usersList');
-                        usersList.innerHTML = ''; // Clear previous entries
-                        data.users.forEach(user => {
-                            const row = `<tr>
-                            <td>${user.id}</td>
-                            <td>${user.username}</td>
-                            <td>${user.user_type}</td>
-                            <td>
-                                <button class="btn btn-warning btn-sm" onclick="editUser(${user.id})">Edit</button>
-                                <button class="btn btn-danger btn-sm" onclick="deleteUser(${user.id})">Delete</button>
-                            </td>
-                        </tr>`;
-                            usersList.innerHTML += row; // Append new row
-                        });
-                    } else {
-                        document.getElementById('usersList').innerHTML = `<tr><td colspan="4">${data.message}</td></tr>`;
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading users:', error);
-                    alert('Error loading users: ' + error);
-                });
-        }
-
-        function editUser(userId) {
-            fetch(`get_user.php?id=${userId}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        document.getElementById('userId').value = data.user.id;
-                        document.getElementById('userType').value = data.user.user_type;
-                        document.getElementById('username').value = data.user.username;
-                        document.getElementById('password').placeholder = 'Leave blank to keep the same';
-                    } else {
-                        alert(data.message); // Show error message
-                    }
-                })
-                .catch(error => alert('Error: ' + error));
-        }
-
-        function deleteUser(userId) {
-            if (confirm('Are you sure you want to delete this user?')) {
-                fetch(`delete_users.php?id=${userId}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data.success) {
-                        alert(data.message);
-                        loadUsers(); // Reload users list
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Error: ' + error.message);
-                });
-            }
-        }
-        
-
-        // Load users initially
-        loadUsers();
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

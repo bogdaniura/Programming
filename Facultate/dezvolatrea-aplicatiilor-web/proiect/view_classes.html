@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Classes - Catalog Școlar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .form-container, .list-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Adăugare/Modificare Clasă</h2>
+            <form id="classForm">
+                <input type="hidden" id="classId" name="classId">
+                <div class="form-group">
+                    <label for="className">Nume Clasă</label>
+                    <input type="text" class="form-control" id="className" name="className" required>
+                </div>
+                <div class="form-group">
+                    <label for="gradeLevel">Nivel de Școlarizare</label>
+                    <input type="text" class="form-control" id="gradeLevel" name="gradeLevel" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvează Clasă</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Lista Clase</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nume Clasă</th>
+                        <th>Nivel de Școlarizare</th>
+                        <th>Acțiuni</th>
+                    </tr>
+                </thead>
+                <tbody id="classesList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('classForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const actionUrl = this.querySelector('#classId').value ? 'update_class.php' : 'add_class.php';
+    
+            fetch(actionUrl, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                loadClasses(); // Reload classes list
+                this.reset(); // Reset form after submission
+                document.getElementById('classId').value = ''; // Clear hidden classId input
+            })
+            .catch(error => alert('Error: ' + error));
+        });
+    
+        function loadClasses() {
+            fetch('get_classes.php')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const classesList = document.getElementById('classesList');
+                    classesList.innerHTML = ''; // Clear previous entries
+                    data.classes.forEach(classItem => {
+                        const row = `<tr>
+                            <td>${classItem.id}</td>
+                            <td>${classItem.class_name}</td>
+                            <td>${classItem.grade_level}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm" onclick="editClass(${classItem.id})">Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteClass(${classItem.id})">Delete</button>
+                            </td>
+                        </tr>`;
+                        classesList.innerHTML += row; // Append new row
+                    });
+                } else {
+                    document.getElementById('classesList').innerHTML = `<tr><td colspan="4">${data.message}</td></tr>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error loading classes:', error);
+                alert('Error loading classes: ' + error);
+            });
+        }
+    
+        function editClass(classId) {
+            fetch(`get_class.php?id=${classId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('classId').value = data.class.id;
+                    document.getElementById('className').value = data.class.class_name;
+                    document.getElementById('gradeLevel').value = data.class.grade_level;
+                } else {
+                    alert(data.message); // Show error message
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error: ' + error.message);
+            });
+        }
+        
+    
+        function deleteClass(classId) {
+            if (confirm('Are you sure you want to delete this class?')) {
+                fetch(`delete_class.php?id=${classId}`)
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    loadClasses();
+                })
+                .catch(error => alert('Error: ' + error));
+            }
+        }
+    
+        // Load classes initially
+        loadClasses();
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
