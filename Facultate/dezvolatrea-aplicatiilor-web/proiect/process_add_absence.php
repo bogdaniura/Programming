@@ -46,29 +46,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mysqli_close($db);
 }
 ?>
-
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Procesare Absența</title>
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-  <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-  <h2>Procesare Absența</h2>
-  <div class="grid-container">
-    <div class="callout">
-      <?php echo $message; ?>
-    </div>
-    <a href="add_absence.html" class="button">Înapoi la formular</a>
-    <a href="view_absences.php" class="button">Vizualizare Absențe</a>
-  </div>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-</body>
-</html>
