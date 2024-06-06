@@ -32,34 +32,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adăugare Notă</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css"> <!-- Stilurile CSS personalizate -->
   <link rel="stylesheet" href="styles2.css"> <!-- Stilurile CSS personalizate -->
 </head>
 <body>
   <!-- Meniul persistent -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Catalog Școlar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acasă</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Utilizatori</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Note</a>
-        </li>
-        <!-- Alte elemente de navigare -->
-      </ul>
-    </div>
-  </nav>
+  <div id="navbarPlaceholder"></div> <!-- Placeholder for the dynamic navbar -->
+    <script src="dynamic_navbar.js"></script><br>
 
   <!-- Conținutul paginii -->
   <div class="container mt-5">

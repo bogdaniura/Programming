@@ -1,53 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informații Personale - Elevi - Catalog Școlar</title>
-
+  <title>Welcome - Catalog Școlar</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      padding-top: 60px;
+    }
+  </style>
 </head>
-
 <body>
-
   <div id="navbarPlaceholder"></div> <!-- Placeholder for the dynamic navbar -->
     <script src="dynamic_navbar.js"></script><br>
 
-
-  <h2 class="text-center mb-4">Informații Personale</h2>
-  <div class="content_container">
-
-    <table>
-      <tr>
-        <th>Câmp</th>
-        <th>Valoare</th>
-      </tr>
-      <tr>
-        <td>Nume</td>
-        <td>Popescu Ion</td>
-      </tr>
-      <tr>
-        <td>Clasă</td>
-        <td>9A</td>
-      </tr>
-      <tr>
-        <td>Data nașterii</td>
-        <td>01/01/2006</td>
-      </tr>
-
-    </table>
+  <div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="content-container text-center">
+      <h2 class="mb-4">Bun venit la Catalog Școlar</h2>
+      <p>Nu sunt afișate multe informații aici.</p>
+      <div class="text-center mt-4">
+        <a href="logout.php" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
   </div>
-  <button id="goBackButton">Înapoi</button>
 
-
-
-  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
