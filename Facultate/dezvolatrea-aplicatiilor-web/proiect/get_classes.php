@@ -1,32 +1,23 @@
 <?php
-header('Content-Type: application/json'); // Ensure the content type is set to JSON
+require 'db.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "catalog";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . $conn->connect_error]);
-    exit;
-}
-
-$response = ['success' => false, 'classes' => [], 'message' => 'No classes found'];
-
-$sql = "SELECT id, class_name, grade_level FROM classes";
+$sql = "SELECT * FROM classes";
 $result = $conn->query($sql);
 
-if ($result && $result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $response['classes'][] = $row;
+$response = [];
+if ($result->num_rows > 0) {
+    $classes = [];
+    while($row = $result->fetch_assoc()) {
+        $classes[] = $row;
     }
     $response['success'] = true;
-    $response['message'] = 'Classes loaded successfully';
+    $response['classes'] = $classes;
+} else {
+    $response['success'] = false;
+    $response['message'] = "No classes found.";
 }
 
 $conn->close();
+
 echo json_encode($response);
 ?>

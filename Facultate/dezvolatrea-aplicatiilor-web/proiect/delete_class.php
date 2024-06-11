@@ -1,39 +1,23 @@
 <?php
-header('Content-Type: application/json'); // Ensure the content type is set to JSON
+require 'db.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "catalog";
+$classId = $_GET['id'];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = "DELETE FROM classes WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $classId);
 
-if ($conn->connect_error) {
-    echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . $conn->connect_error]);
-    exit;
-}
-
-$response = ['success' => false, 'message' => ''];
-
-if (isset($_GET['id'])) {
-    $classId = $_GET['id'];
-
-    $stmt = $conn->prepare("DELETE FROM classes WHERE id = ?");
-    $stmt->bind_param("i", $classId);
-
-    if ($stmt->execute()) {
-        $response['success'] = true;
-        $response['message'] = 'Class deleted successfully';
-    } else {
-        $response['message'] = 'Error deleting class: ' . $stmt->error;
-    }
-
-    $stmt->close();
+$response = [];
+if ($stmt->execute()) {
+    $response['success'] = true;
+    $response['message'] = "Class deleted successfully.";
 } else {
-    $response['message'] = 'Class ID not specified';
+    $response['success'] = false;
+    $response['message'] = "Error deleting class: " . $stmt->error;
 }
 
+$stmt->close();
 $conn->close();
+
 echo json_encode($response);
 ?>

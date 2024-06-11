@@ -1,41 +1,25 @@
 <?php
-header('Content-Type: application/json'); // Ensure the content type is set to JSON
+require 'db.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "catalog";
+$classId = $_GET['id'];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = "SELECT * FROM classes WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $classId);
+$stmt->execute();
+$result = $stmt->get_result();
 
-if ($conn->connect_error) {
-    echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . $conn->connect_error]);
-    exit;
-}
-
-$response = ['success' => false, 'class' => null, 'message' => ''];
-
-if (isset($_GET['id'])) {
-    $classId = $_GET['id'];
-
-    $stmt = $conn->prepare("SELECT id, class_name, grade_level FROM classes WHERE id = ?");
-    $stmt->bind_param("i", $classId);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        $response['success'] = true;
-        $response['class'] = $result->fetch_assoc();
-    } else {
-        $response['message'] = 'Class not found';
-    }
-
-    $stmt->close();
+$response = [];
+if ($result->num_rows > 0) {
+    $response['success'] = true;
+    $response['class'] = $result->fetch_assoc();
 } else {
-    $response['message'] = 'Class ID not specified';
+    $response['success'] = false;
+    $response['message'] = "Class not found.";
 }
 
+$stmt->close();
 $conn->close();
+
 echo json_encode($response);
 ?>
