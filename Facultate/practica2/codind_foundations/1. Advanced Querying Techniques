@@ -1,0 +1,177 @@
+1. Advanced Querying Techniques
+
+    Complex Joins:
+        Using multiple joins and advanced join conditions.
+
+        sql
+
+    SELECT e.name, d.name AS department, p.name AS project
+    FROM employees e
+    INNER JOIN departments d ON e.department_id = d.id
+    LEFT JOIN projects p ON e.project_id = p.id;
+
+Self Joins:
+
+    Using self joins to relate rows within the same table.
+
+    sql
+
+        SELECT a.name AS employee, b.name AS manager
+        FROM employees a
+        INNER JOIN employees b ON a.manager_id = b.id;
+
+2. Subqueries and Nested Queries
+
+    Advanced Subqueries:
+        Using subqueries for complex filtering and data retrieval.
+
+        sql
+
+    SELECT name
+    FROM employees
+    WHERE salary > (SELECT AVG(salary) FROM employees);
+
+Correlated Subqueries:
+
+    Writing correlated subqueries that reference the outer query.
+
+    sql
+
+        SELECT name, salary
+        FROM employees e1
+        WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e1.department_id = e2.department_id);
+
+3. Window Functions
+
+    Introduction to Window Functions:
+        Using window functions for advanced analytics.
+
+        sql
+
+    SELECT name, salary,
+           RANK() OVER (ORDER BY salary DESC) AS salary_rank
+    FROM employees;
+
+Partitioning Data:
+
+    Partitioning data within window functions.
+
+    sql
+
+        SELECT name, department_id, salary,
+               AVG(salary) OVER (PARTITION BY department_id) AS avg_department_salary
+        FROM employees;
+
+4. Common Table Expressions (CTEs)
+
+    Using CTEs:
+        Simplifying complex queries with CTEs.
+
+        sql
+
+        WITH department_salaries AS (
+          SELECT department_id, AVG(salary) AS avg_salary
+          FROM employees
+          GROUP BY department_id
+        )
+        SELECT e.name, ds.avg_salary
+        FROM employees e
+        INNER JOIN department_salaries ds ON e.department_id = ds.department_id;
+
+5. Transactions and Concurrency
+
+    Understanding Transactions:
+        Using transactions to ensure data integrity.
+
+        sql
+
+    START TRANSACTION;
+    UPDATE accounts SET balance = balance - 100 WHERE account_id = 1;
+    UPDATE accounts SET balance = balance + 100 WHERE account_id = 2;
+    COMMIT;
+
+Isolation Levels:
+
+    Understanding and setting isolation levels for transactions.
+
+    sql
+
+        SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+6. Indexing and Performance Optimization
+
+    Creating and Managing Indexes:
+        Improving query performance with indexes.
+
+        sql
+
+    CREATE INDEX idx_salary ON employees(salary);
+
+Analyzing Query Performance:
+
+    Using EXPLAIN to analyze query execution plans.
+
+    sql
+
+        EXPLAIN SELECT * FROM employees WHERE salary > 50000;
+
+    Optimizing Queries:
+        Tips and techniques for query optimization.
+
+7. Advanced Data Types and Functions
+
+    Working with JSON Data:
+        Storing and querying JSON data.
+
+        sql
+
+    SELECT name, data->>'email' AS email
+    FROM users
+    WHERE data->'preferences'->>'newsletter' = 'true';
+
+Using Array Data Types:
+
+    Storing and querying array data types.
+
+    sql
+
+        SELECT id, unnest(tags) AS tag
+        FROM articles;
+
+8. Stored Procedures and Triggers
+
+    Creating Stored Procedures:
+        Writing and using stored procedures.
+
+        sql
+
+    DELIMITER //
+    CREATE PROCEDURE AddEmployee(IN name VARCHAR(100), IN position VARCHAR(100), IN salary DECIMAL(10, 2))
+    BEGIN
+      INSERT INTO employees (name, position, salary) VALUES (name, position, salary);
+    END //
+    DELIMITER ;
+
+Using Triggers:
+
+    Automating actions with triggers.
+
+    sql
+
+        CREATE TRIGGER before_employee_update
+        BEFORE UPDATE ON employees
+        FOR EACH ROW
+        SET NEW.last_modified = NOW();
+
+9. Database Design and Normalization
+
+    Normalization:
+        Applying normalization principles to design efficient databases.
+
+        plaintext
+
+    First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), and Boyce-Codd Normal Form (BCNF).
+
+Denormalization:
+
+    Understanding when and how to denormalize for performance.

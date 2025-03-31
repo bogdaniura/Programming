@@ -1,24 +1,34 @@
 <?php
 require 'db.php';
 
+header('Content-Type: application/json');
+
 $classId = $_POST['classId'];
 $className = $_POST['className'];
 $gradeLevel = $_POST['gradeLevel'];
-
-$sql = "UPDATE classes SET class_name = ?, grade_level = ? WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssi", $className, $gradeLevel, $classId);
+$formationYear = $_POST['formationYear'];
 
 $response = [];
-if ($stmt->execute()) {
-    $response['success'] = true;
-    $response['message'] = "Class updated successfully.";
+
+if ($classId && $className && $gradeLevel && $formationYear) {
+    $sql = "UPDATE classes SET class_name = ?, grade_level = ?, formation_year = ? WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssii", $className, $gradeLevel, $formationYear, $classId);
+
+    if ($stmt->execute()) {
+        $response['success'] = true;
+        $response['message'] = "Class updated successfully.";
+    } else {
+        $response['success'] = false;
+        $response['message'] = "Error updating class: " . $stmt->error;
+    }
+
+    $stmt->close();
 } else {
     $response['success'] = false;
-    $response['message'] = "Error updating class: " . $stmt->error;
+    $response['message'] = "Invalid input.";
 }
 
-$stmt->close();
 $conn->close();
 
 echo json_encode($response);

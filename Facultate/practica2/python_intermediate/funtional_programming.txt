@@ -1,0 +1,65 @@
+funtional_programming
+===Funtional Programming===
+Functional programming is a style of programming that (as the name suggests) is based around functions. 
+
+A key part of functional programming is higher-order functions. Higher-order functions take other functions as arguments, or return them as results.
+Functional programming seeks to use pure functions. Pure functions have no side effects, and return a value that depends only on their arguments.
+
+This is how functions in math work: for example, the cos(x) will, for the same value of x, always return the same result.
+Using pure functions has both advantages and disadvantages. 
+
+Pure functions are:
+
+- easier to reason about and test.
+
+- more efficient. Once the function has been evaluated for an input, the result can be stored and referred to the next time the function of that input is needed, reducing the number of times the function is called. This is called memoization.
+
+- easier to run in parallel.
+===Lambdas===
+Creating a function normally (using def) assigns it to a variable with its name automatically. 
+
+Python allows us to create functions on-the-fly, provided that they are created using lambda syntax. 
+
+This approach is most commonly used when passing a simple function as an argument to another function. The syntax is shown in the next example and consists of the lambda keyword followed by a list of arguments, a colon, and the expression to evaluate and return. 
+Lambda functions aren't as powerful as named functions. 
+
+They can only do things that require a single expression -- usually equivalent to a single line of code.
+===Map and Filters===
+The built-in functions map and filter are very useful higher-order functions that operate on lists (or similar objects called iterables). 
+
+The function map takes a function and an iterable as arguments, and returns a new iterable with the function applied to each argument.
+The function filter filters an iterable by leaving only the items that match a condition (also called a predicate).
+===Generators===
+Generators are a type of iterable, like lists or tuples. 
+
+Unlike lists, they don't allow indexing with arbitrary indices, but they can still be iterated through with for loops. 
+
+They can be created using functions and the yield statement.
+Due to the fact that they yield one item at a time, generators don't have the memory restrictions of lists. 
+
+In fact, they can be infinite!
+Finite generators can be converted into lists by passing them as arguments to the list function.
+===Decorators===
+Decorators provide a way to modify functions using other functions. 
+
+This is ideal when you need to extend the functionality of functions that you don't want to modify.
+===Recursion===
+Recursion is a very important concept in functional programming. 
+
+The fundamental part of recursion is self-reference -- functions calling themselves. It is used to solve problems that can be broken up into easier sub-problems of the same type.
+
+A classic example of a function that is implemented recursively is the factorial function, which finds the product of all positive integers below a specified number. 
+
+For example, 5! (5 factorial) is 5 * 4 * 3 * 2 * 1 (120). To implement this recursively, notice that 5! = 5 * 4!, 4! = 4 * 3!, 3! = 3 * 2!, and so on. Generally, n! = n * (n-1)!. 
+
+Furthermore, 1! = 1. This is known as the base case, as it can be calculated without performing any more factorials. 
+
+Below is a recursive implementation of the factorial function.
+Recursion can also be indirect. One function can call a second, which calls the first, which calls the second, and so on. This can occur with any number of functions.
+===*args and **kwargs===
+Python allows you to have functions with varying numbers of arguments.
+
+Using *args as a function parameter enables you to pass an arbitrary number of arguments to that function. The arguments are then accessible as the tuple args in the body of the function.
+**kwargs (standing for keyword arguments) allows you to handle named arguments that you have not defined in advance.
+
+The keyword arguments return a dictionary in which the keys are the argument names, and the values are the argument values.

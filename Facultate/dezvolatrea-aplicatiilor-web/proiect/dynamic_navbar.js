@@ -53,3 +53,4 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('User type not found in session storage');
     }
 });
+

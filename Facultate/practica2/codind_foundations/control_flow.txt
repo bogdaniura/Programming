@@ -1,0 +1,234 @@
+1. Introduction to Control Flow
+
+    Overview of Control Flow:
+        Understanding the importance of control flow in programming.
+        Examples of control flow in real-world scenarios.
+
+2. Conditional Statements
+
+    If Statements:
+        Basic syntax and usage.
+
+        python
+
+if condition:
+    # code block
+
+Example:
+
+python
+
+    age = 18
+    if age >= 18:
+        print("You are an adult.")
+
+Elif and Else Statements:
+
+    Extending if statements with elif and else.
+
+    python
+
+if condition1:
+    # code block
+elif condition2:
+    # code block
+else:
+    # code block
+
+Example:
+
+python
+
+    score = 85
+    if score >= 90:
+        grade = 'A'
+    elif score >= 80:
+        grade = 'B'
+    else:
+        grade = 'C'
+    print(grade)  # Output: B
+
+Nested Conditions:
+
+    Using conditions within conditions.
+
+    python
+
+if condition1:
+    if condition2:
+        # code block
+
+Example:
+
+python
+
+        num = 10
+        if num > 0:
+            if num % 2 == 0:
+                print("Positive even number.")
+
+3. Loops
+
+    For Loops:
+        Iterating over sequences (lists, tuples, strings).
+
+        python
+
+for item in sequence:
+    # code block
+
+Example:
+
+python
+
+    for i in range(5):
+        print(i)
+
+While Loops:
+
+    Repeating actions as long as a condition is true.
+
+    python
+
+while condition:
+    # code block
+
+Example:
+
+python
+
+    count = 0
+    while count < 5:
+        print(count)
+        count += 1
+
+Nested Loops:
+
+    Using loops within loops.
+
+    python
+
+    for i in range(3):
+        for j in range(3):
+            print(i, j)
+
+Loop Control Statements:
+
+    Using break to exit a loop.
+
+    python
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+Using continue to skip the current iteration.
+
+python
+
+        for i in range(10):
+            if i % 2 == 0:
+                continue
+            print(i)
+
+4. List Comprehensions
+
+    Basic List Comprehensions:
+        Creating lists using a concise syntax.
+
+        python
+
+[expression for item in iterable if condition]
+
+Example:
+
+python
+
+    squares = [x**2 for x in range(10)]
+
+Nested List Comprehensions:
+
+    Using nested loops in list comprehensions.
+
+    python
+
+        matrix = [[j for j in range(5)] for i in range(3)]
+
+5. Exception Handling
+
+    Basic Exception Handling:
+        Using try and except blocks.
+
+        python
+
+try:
+    # code block
+except ExceptionType:
+    # code block
+
+Example:
+
+python
+
+    try:
+        result = 10 / 0
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
+
+Handling Multiple Exceptions:
+
+    Catching different types of exceptions.
+
+    python
+
+try:
+    # code block
+except (ExceptionType1, ExceptionType2):
+    # code block
+
+Example:
+
+python
+
+    try:
+        value = int("abc")
+    except (ValueError, TypeError):
+        print("Invalid input!")
+
+Else and Finally Clauses:
+
+    Using else for code that runs if no exception occurs.
+
+    python
+
+try:
+    # code block
+except ExceptionType:
+    # code block
+else:
+    # code block
+
+Using finally for code that always runs.
+
+python
+
+try:
+    # code block
+except ExceptionType:
+    # code block
+finally:
+    # code block
+
+Example:
+
+python
+
+try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print("Division successful!")
+finally:
+    print("Execution finished.")

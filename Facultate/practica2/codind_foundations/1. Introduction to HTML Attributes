@@ -1,0 +1,218 @@
+1. Introduction to HTML Attributes
+
+    What are Attributes?
+        Understanding the purpose and structure of HTML attributes.
+        Syntax: attribute="value".
+
+        html
+
+        <tagname attribute="value">Content</tagname>
+
+    Common Attributes:
+        Overview of frequently used HTML attributes.
+
+2. Global Attributes
+
+    Class:
+        Using the class attribute to apply CSS styles.
+
+        html
+
+    <p class="intro">This is an introductory paragraph.</p>
+
+ID:
+
+    Using the id attribute for unique element identification and styling.
+
+    html
+
+    <p id="main-paragraph">This is the main paragraph.</p>
+
+Style:
+
+    Inline CSS with the style attribute.
+
+    html
+
+    <p style="color: blue;">This is a blue paragraph.</p>
+
+Title:
+
+    Adding tooltips with the title attribute.
+
+    html
+
+    <p title="This is a tooltip.">Hover over this paragraph.</p>
+
+Lang:
+
+    Specifying the language of the element's content.
+
+    html
+
+    <p lang="en">This is an English paragraph.</p>
+
+Data-*:
+
+    Using custom data attributes for embedding custom data.
+
+    html
+
+        <div data-user-id="12345">User Information</div>
+
+3. Attributes for Links and Media
+
+    Href:
+        Using the href attribute in anchor tags to define the link destination.
+
+        html
+
+    <a href="https://www.example.com">Visit Example</a>
+
+Target:
+
+    Specifying where to open the linked document.
+
+    html
+
+    <a href="https://www.example.com" target="_blank">Open in new tab</a>
+
+Src:
+
+    Specifying the source file for images, audio, and video.
+
+    html
+
+    <img src="image.jpg" alt="Description">
+    <audio src="audio.mp3" controls></audio>
+    <video src="video.mp4" controls></video>
+
+Alt:
+
+    Providing alternative text for images.
+
+    html
+
+        <img src="image.jpg" alt="A beautiful scenery">
+
+4. Attributes for Forms
+
+    Action and Method:
+        Specifying the form submission URL and HTTP method.
+
+        html
+
+    <form action="/submit" method="post">
+      <input type="text" name="username">
+      <input type="submit" value="Submit">
+    </form>
+
+Name:
+
+    Naming form elements for server-side processing.
+
+    html
+
+    <input type="text" name="username">
+
+Placeholder:
+
+    Adding placeholder text in input fields.
+
+    html
+
+    <input type="text" placeholder="Enter your name">
+
+Value:
+
+    Defining the default value of an input element.
+
+    html
+
+    <input type="text" value="Default Text">
+
+Disabled and Readonly:
+
+    Disabling form elements or making them read-only.
+
+    html
+
+        <input type="text" disabled>
+        <input type="text" readonly>
+
+5. Event Attributes
+
+    Onclick:
+        Handling click events.
+
+        html
+
+    <button onclick="alert('Button clicked!')">Click me</button>
+
+Onchange:
+
+    Handling changes to form elements.
+
+    html
+
+    <input type="text" onchange="alert('Value changed!')">
+
+Onmouseover and Onmouseout:
+
+    Handling mouse events.
+
+    html
+
+        <p onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Hover over this text.</p>
+
+6. HTML5 Data Attributes
+
+    Custom Data Attributes:
+        Embedding custom data in HTML elements using data-*.
+
+        html
+
+    <div data-product-id="1234">Product Information</div>
+
+Accessing Data Attributes with JavaScript:
+
+    Using JavaScript to interact with data attributes.
+
+    html
+
+        <script>
+          const product = document.querySelector('div');
+          console.log(product.dataset.productId);  // Output: 1234
+        </script>
+
+7. SEO and Accessibility Attributes
+
+    Meta Tags:
+        Using meta tags for SEO and accessibility.
+
+        html
+
+    <meta name="description" content="A description of the webpage for SEO.">
+    <meta name="keywords" content="HTML, attributes, tutorial">
+
+Role and Aria-*:
+
+    Enhancing accessibility with ARIA roles and properties.
+
+    html
+
+        <div role="banner">Banner content</div>
+        <button aria-label="Close">X</button>
+
+8. Deprecated Attributes
+
+    Avoiding Deprecated Attributes:
+        Understanding which attributes are deprecated and their modern replacements.
+
+        html
+
+<!-- Deprecated -->
+<font color="red">Red text</font>
+
+<!-- Modern Replacement -->
+<p style="color: red;">Red text</p>

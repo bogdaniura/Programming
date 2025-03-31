@@ -1,0 +1,198 @@
+1. Advanced Select Statements
+
+    Complex Select Queries:
+        Using aliases, column expressions, and functions.
+
+        sql
+
+    SELECT CONCAT(first_name, ' ', last_name) AS full_name, salary * 1.1 AS new_salary
+    FROM employees;
+
+Conditional Expressions:
+
+    Using CASE statements for conditional logic.
+
+    sql
+
+        SELECT name, 
+               CASE 
+                 WHEN salary > 50000 THEN 'High'
+                 WHEN salary > 30000 THEN 'Medium'
+                 ELSE 'Low'
+               END AS salary_level
+        FROM employees;
+
+2. Joins and Subqueries
+
+    Advanced Joins:
+        Using different types of joins and join conditions.
+
+        sql
+
+    SELECT e.name, d.name AS department, p.name AS project
+    FROM employees e
+    INNER JOIN departments d ON e.department_id = d.id
+    LEFT JOIN projects p ON e.project_id = p.id;
+
+Subqueries:
+
+    Writing subqueries for data retrieval and filtering.
+
+    sql
+
+        SELECT name
+        FROM employees
+        WHERE salary > (SELECT AVG(salary) FROM employees);
+
+3. Window Functions
+
+    Introduction to Window Functions:
+        Using window functions for advanced data analysis.
+
+        sql
+
+    SELECT name, salary, 
+           RANK() OVER (ORDER BY salary DESC) AS salary_rank
+    FROM employees;
+
+Partitioning Data:
+
+    Applying partitioning in window functions.
+
+    sql
+
+        SELECT department_id, name, salary, 
+               AVG(salary) OVER (PARTITION BY department_id) AS avg_salary
+        FROM employees;
+
+4. Common Table Expressions (CTEs)
+
+    Using CTEs:
+        Simplifying complex queries with CTEs.
+
+        sql
+
+        WITH department_salaries AS (
+          SELECT department_id, AVG(salary) AS avg_salary
+          FROM employees
+          GROUP BY department_id
+        )
+        SELECT e.name, ds.avg_salary
+        FROM employees e
+        INNER JOIN department_salaries ds ON e.department_id = ds.department_id;
+
+5. Aggregation and Grouping
+
+    Advanced Aggregation:
+        Using aggregate functions with grouping and filtering.
+
+        sql
+
+    SELECT department_id, COUNT(*) AS employee_count, AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department_id
+    HAVING AVG(salary) > 50000;
+
+Grouping Sets and Rollup:
+
+    Advanced grouping techniques for multi-level aggregations.
+
+    sql
+
+        SELECT department_id, position, AVG(salary)
+        FROM employees
+        GROUP BY GROUPING SETS ((department_id), (department_id, position));
+
+6. Performance Optimization
+
+    Indexing:
+        Using indexes to improve query performance.
+
+        sql
+
+    CREATE INDEX idx_salary ON employees(salary);
+
+Query Optimization:
+
+    Analyzing and optimizing queries with EXPLAIN.
+
+    sql
+
+        EXPLAIN SELECT * FROM employees WHERE salary > 50000;
+
+7. Advanced Data Types and Functions
+
+    Working with JSON Data:
+        Storing and querying JSON data.
+
+        sql
+
+    SELECT name, data->>'email' AS email
+    FROM users
+    WHERE data->'preferences'->>'newsletter' = 'true';
+
+Using Array Data Types:
+
+    Storing and querying array data types.
+
+    sql
+
+        SELECT id, unnest(tags) AS tag
+        FROM articles;
+
+8. Transactions and Concurrency
+
+    Using Transactions:
+        Ensuring data integrity with transactions.
+
+        sql
+
+    START TRANSACTION;
+    UPDATE accounts SET balance = balance - 100 WHERE account_id = 1;
+    UPDATE accounts SET balance = balance + 100 WHERE account_id = 2;
+    COMMIT;
+
+Isolation Levels:
+
+    Setting and understanding isolation levels.
+
+    sql
+
+        SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+9. Stored Procedures and Triggers
+
+    Creating Stored Procedures:
+        Writing and using stored procedures.
+
+        sql
+
+    DELIMITER //
+    CREATE PROCEDURE AddEmployee(IN name VARCHAR(100), IN position VARCHAR(100), IN salary DECIMAL(10, 2))
+    BEGIN
+      INSERT INTO employees (name, position, salary) VALUES (name, position, salary);
+    END //
+    DELIMITER ;
+
+Using Triggers:
+
+    Automating actions with triggers.
+
+    sql
+
+        CREATE TRIGGER before_employee_update
+        BEFORE UPDATE ON employees
+        FOR EACH ROW
+        SET NEW.last_modified = NOW();
+
+10. Practical Applications
+
+    Examples:
+        Writing complex queries to solve real-world problems.
+
+        sql
+
+    SELECT e.name, d.name AS department, AVG(salary) OVER (PARTITION BY department_id) AS avg_salary
+    FROM employees e
+    INNER JOIN departments d ON e.department_id = d.id;
+

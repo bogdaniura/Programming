@@ -1,0 +1,165 @@
+getting_started.txt
+
+1. Setting Up Your Environment
+
+    Install Python: Download and install Python from the official website.
+    Install an IDE: Set up Jupyter Notebook, VS Code, or PyCharm for writing and running Python code.
+
+2. Python Basics
+
+    Printing to Console: Use print() to display text or variables.
+
+    python
+
+print("Hello, World!")
+
+Comments: Use # for single-line comments and """ ... """ for multi-line comments.
+
+python
+
+# This is a single-line comment
+"""
+This is a
+multi-line comment
+"""
+
+Basic Arithmetic Operations: Perform addition (+), subtraction (-), multiplication (*), division (/), integer division (//), modulus (%), and exponentiation (**).
+
+python
+
+    print(2 + 3)  # Output: 5
+    print(10 / 2)  # Output: 5.0
+
+3. Variables and Data Types
+
+    Variables: Declare and assign values to variables.
+
+    python
+
+x = 5
+y = "Hello"
+
+Data Types: Understand integers, floats, strings, and booleans.
+
+python
+
+    age = 30  # Integer
+    height = 5.9  # Float
+    name = "Alice"  # String
+    is_student = True  # Boolean
+
+4. User Input and Output
+
+    Input Function: Use input() to get user input.
+
+    python
+
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+
+5. Control Structures
+
+    Conditional Statements: Use if, elif, and else to control the flow of the program.
+
+    python
+
+if age > 18:
+    print("Adult")
+elif age == 18:
+    print("Just turned adult")
+else:
+    print("Minor")
+
+Loops: Use for and while loops to repeat actions.
+
+python
+
+    for i in range(5):
+        print(i)
+
+    while x > 0:
+        print(x)
+        x -= 1
+
+6. Data Structures
+
+    Lists: Create and manipulate lists.
+
+    python
+
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+Tuples: Create and use tuples.
+
+python
+
+my_tuple = (1, 2, 3)
+print(my_tuple[1])  # Output: 2
+
+Dictionaries: Use dictionaries for key-value pairs.
+
+python
+
+my_dict = {"name": "Alice", "age": 25}
+print(my_dict["name"])  # Output: Alice
+
+Sets: Create and use sets.
+
+python
+
+    my_set = {1, 2, 3}
+    my_set.add(4)
+    print(my_set)  # Output: {1, 2, 3, 4}
+
+7. Functions
+
+    Defining Functions: Create functions to encapsulate code.
+
+    python
+
+    def greet(name):
+        return f"Hello, {name}!"
+
+    print(greet("Alice"))  # Output: Hello, Alice!
+
+8. File Handling and Exception Handling
+
+    File Handling: Read from and write to files.
+
+    python
+
+with open('file.txt', 'r') as file:
+    content = file.read()
+
+with open('file.txt', 'w') as file:
+    file.write("Hello, World!")
+
+Exception Handling: Use try, except, and finally to handle errors.
+
+python
+
+    try:
+        result = 10 / 0
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
+    finally:
+        print("Execution finished.")
+
+9. Basic Object-Oriented Programming (OOP)
+
+    Classes and Objects: Define classes and create objects.
+
+    python
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+person = Person("Alice", 25)
+print(person.greet())  # Output: Hello, my name is Alice and I am 25 years old.

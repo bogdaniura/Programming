@@ -1,0 +1,245 @@
+Going Deeper with HTML
+1. Advanced HTML Structure
+
+    Doctype and Metadata:
+        Understanding different DOCTYPE declarations.
+
+        html
+
+<!DOCTYPE html>
+
+Using meta tags for character sets, viewport settings, and SEO.
+
+html
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A deep dive into HTML.">
+
+2. Semantic HTML
+
+    Advanced Semantic Elements:
+        Using <main>, <nav>, <article>, <section>, <header>, <footer>, and <aside> to improve document structure.
+
+        html
+
+        <main>
+          <article>
+            <header>
+              <h1>Article Title</h1>
+              <p>Published on <time datetime="2024-06-21">June 21, 2024</time></p>
+            </header>
+            <section>
+              <h2>Section Title</h2>
+              <p>Content goes here.</p>
+            </section>
+            <footer>
+              <p>Article footer.</p>
+            </footer>
+          </article>
+        </main>
+
+3. Forms and Input Types
+
+    Advanced Form Elements:
+        Using new input types like date, color, range, and more.
+
+        html
+
+    <form>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" name="volume" min="0" max="100">
+      <input type="submit" value="Submit">
+    </form>
+
+Form Validation:
+
+    Using HTML5 validation attributes like required, pattern, min, max.
+
+    html
+
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8">
+          <input type="submit" value="Submit">
+        </form>
+
+4. Multimedia Elements
+
+    Advanced Audio and Video:
+        Customizing audio and video controls.
+
+        html
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="600">
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+
+Embedding External Media:
+
+    Embedding YouTube videos and other external media.
+
+    html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+5. Canvas and SVG
+
+    Drawing with the Canvas Element:
+        Basics of the <canvas> element and 2D drawing context.
+
+        html
+
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 150, 75);
+    </script>
+
+Scalable Vector Graphics (SVG):
+
+    Using SVG for vector graphics.
+
+    html
+
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+
+6. Advanced Tables
+
+    Complex Table Structures:
+        Using <thead>, <tbody>, and <tfoot> for table sections.
+
+        html
+
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Footer 1</td>
+          <td>Footer 2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+Table Accessibility:
+
+    Enhancing table accessibility with scope and aria attributes.
+
+    html
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Header 1</th>
+              <th scope="col">Header 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Row 1 Data 1</td>
+              <td>Row 1 Data 2</td>
+            </tr>
+          </tbody>
+        </table>
+
+7. Web Accessibility
+
+    ARIA Roles and Properties:
+        Using ARIA to enhance accessibility.
+
+        html
+
+        <button aria-label="Close" aria-hidden="true">X</button>
+
+    Semantic HTML for Accessibility:
+        Best practices for using semantic HTML to improve accessibility.
+
+8. HTML APIs
+
+    Geolocation API:
+        Using the Geolocation API to get user location.
+
+        html
+
+    <button onclick="getLocation()">Get Location</button>
+    <script>
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          console.log("Geolocation is not supported by this browser.");
+        }
+      }
+
+      function showPosition(position) {
+        console.log("Latitude: " + position.coords.latitude + 
+        " Longitude: " + position.coords.longitude);
+      }
+    </script>
+
+Drag and Drop API:
+
+    Implementing drag and drop functionality.
+
+    html
+
+        <div id="drag1" draggable="true" ondragstart="drag(event)">Drag me</div>
+        <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">Drop here</div>
+        <script>
+          function allowDrop(event) {
+            event.preventDefault();
+          }
+
+          function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+          }
+
+          function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+          }
+        </script>
+
+9. Responsive Web Design
+
+    Viewport and Media Queries:
+        Using the viewport meta tag and media queries to create responsive designs.
+
+        html
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+</style>

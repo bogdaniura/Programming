@@ -5,13 +5,14 @@ header('Content-Type: application/json');
 
 $className = isset($_POST['className']) ? $_POST['className'] : null;
 $gradeLevel = isset($_POST['gradeLevel']) ? $_POST['gradeLevel'] : null;
+$formationYear = isset($_POST['formationYear']) ? $_POST['formationYear'] : null;
 
 $response = [];
 
-if ($className && $gradeLevel) {
-    $sql = "INSERT INTO classes (class_name, grade_level) VALUES (?, ?)";
+if ($className && $gradeLevel && $formationYear) {
+    $sql = "INSERT INTO classes (class_name, grade_level, formation_year) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $className, $gradeLevel);
+    $stmt->bind_param("ssi", $className, $gradeLevel, $formationYear);
 
     if ($stmt->execute()) {
         $response['success'] = true;
@@ -30,3 +31,4 @@ if ($className && $gradeLevel) {
 $conn->close();
 
 echo json_encode($response);
+?>

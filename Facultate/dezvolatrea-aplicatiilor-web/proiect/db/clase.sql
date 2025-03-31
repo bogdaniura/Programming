@@ -53,3 +53,19 @@ INSERT INTO class_schedules (class_id, schedule_id) VALUES
 (2, 2),  -- Class 2A are Science
 (3, 3);  -- Class 3A are History
 
+ALTER TABLE classes
+DROP COLUMN professor; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

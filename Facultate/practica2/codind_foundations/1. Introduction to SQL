@@ -1,0 +1,151 @@
+1. Introduction to SQL
+
+    What is SQL?
+        Understanding the role and importance of SQL in database management.
+        Brief history and evolution of SQL.
+    Setting Up Your Environment:
+        Installing a database management system (DBMS) like MySQL, PostgreSQL, or SQLite.
+        Introduction to database tools (e.g., MySQL Workbench, pgAdmin, SQLite Browser).
+
+2. Basics of SQL
+
+    Database and Table Creation:
+        Creating databases and tables.
+
+        sql
+
+    CREATE DATABASE my_database;
+    USE my_database;
+    CREATE TABLE employees (
+      id INT AUTO_INCREMENT,
+      name VARCHAR(100),
+      position VARCHAR(100),
+      salary DECIMAL(10, 2),
+      PRIMARY KEY (id)
+    );
+
+Inserting Data:
+
+    Inserting records into tables.
+
+    sql
+
+        INSERT INTO employees (name, position, salary)
+        VALUES ('John Doe', 'Manager', 60000.00);
+
+3. Querying Data
+
+    Basic Select Statements:
+        Retrieving data from tables.
+
+        sql
+
+    SELECT * FROM employees;
+    SELECT name, position FROM employees;
+
+Filtering Data with WHERE:
+
+    Using the WHERE clause to filter results.
+
+    sql
+
+        SELECT * FROM employees WHERE salary > 50000;
+        SELECT * FROM employees WHERE position = 'Manager';
+
+4. Advanced Querying Techniques
+
+    Sorting Results with ORDER BY:
+        Sorting query results.
+
+        sql
+
+    SELECT * FROM employees ORDER BY salary DESC;
+    SELECT * FROM employees ORDER BY name ASC;
+
+Limiting Results with LIMIT:
+
+    Limiting the number of results returned.
+
+    sql
+
+        SELECT * FROM employees LIMIT 5;
+
+5. Functions and Aggregations
+
+    Using Aggregate Functions:
+        Applying aggregate functions like COUNT, SUM, AVG, MAX, and MIN.
+
+        sql
+
+    SELECT COUNT(*) FROM employees;
+    SELECT AVG(salary) FROM employees;
+    SELECT MAX(salary) FROM employees;
+
+Grouping Data with GROUP BY:
+
+    Grouping results and using aggregate functions.
+
+    sql
+
+        SELECT position, AVG(salary) FROM employees GROUP BY position;
+
+6. Joining Tables
+
+    Understanding Joins:
+        Introduction to different types of joins (INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN).
+
+        sql
+
+        SELECT employees.name, departments.name AS department
+        FROM employees
+        INNER JOIN departments ON employees.department_id = departments.id;
+
+    Advanced Join Techniques:
+        Using multiple joins and understanding join conditions.
+
+7. Subqueries and Nested Queries
+
+    Writing Subqueries:
+        Using subqueries to filter and retrieve data.
+
+        sql
+
+        SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+
+    Correlated Subqueries:
+        Understanding and using correlated subqueries.
+
+8. Modifying Data
+
+    Updating Records:
+        Using the UPDATE statement to modify data.
+
+        sql
+
+    UPDATE employees SET salary = 65000 WHERE id = 1;
+
+Deleting Records:
+
+    Using the DELETE statement to remove data.
+
+    sql
+
+        DELETE FROM employees WHERE id = 1;
+
+9. Managing Database Objects
+
+    Creating and Managing Indexes:
+        Improving query performance with indexes.
+
+        sql
+
+    CREATE INDEX idx_salary ON employees(salary);
+
+Creating Views:
+
+    Creating and using views to simplify complex queries.
+
+    sql
+
+CREATE VIEW high_salary_employees AS
+SELECT * FROM employees WHERE salary > 70000;

@@ -1,0 +1,216 @@
+1. Introduction to Functions
+
+    What is a Function?
+        Understanding the concept and purpose of functions.
+        Examples of built-in functions vs. user-defined functions.
+
+2. Defining and Calling Functions
+
+    Defining Functions:
+        Basic syntax and structure.
+
+        python
+
+    def function_name(parameters):
+        # code block
+        return value
+
+Calling Functions:
+
+    How to call and use functions.
+
+    python
+
+        def greet(name):
+            return f"Hello, {name}!"
+
+        print(greet("Alice"))  # Output: Hello, Alice!
+
+3. Parameters and Arguments
+
+    Positional Arguments:
+        Passing arguments based on their position.
+
+        python
+
+    def add(x, y):
+        return x + y
+
+    print(add(2, 3))  # Output: 5
+
+Keyword Arguments:
+
+    Passing arguments using keyword names.
+
+    python
+
+    def greet(name, message="Hello"):
+        return f"{message}, {name}!"
+
+    print(greet(name="Bob", message="Hi"))  # Output: Hi, Bob!
+
+Default Parameters:
+
+    Using default values for parameters.
+
+    python
+
+    def greet(name, message="Hello"):
+        return f"{message}, {name}!"
+
+    print(greet("Alice"))  # Output: Hello, Alice!
+
+Variable-Length Arguments:
+
+    Using *args and **kwargs for variable-length arguments.
+
+    python
+
+        def print_args(*args):
+            for arg in args:
+                print(arg)
+
+        def print_kwargs(**kwargs):
+            for key, value in kwargs.items():
+                print(f"{key}: {value}")
+
+4. Return Values
+
+    Returning Values:
+        Using the return statement to return values from functions.
+
+        python
+
+    def add(x, y):
+        return x + y
+
+    result = add(5, 7)
+    print(result)  # Output: 12
+
+Returning Multiple Values:
+
+    Returning multiple values using tuples.
+
+    python
+
+        def get_min_max(numbers):
+            return min(numbers), max(numbers)
+
+        min_val, max_val = get_min_max([1, 2, 3, 4, 5])
+        print(min_val, max_val)  # Output: 1 5
+
+5. Scope and Lifetime of Variables
+
+    Local and Global Variables:
+        Understanding the scope of variables.
+
+        python
+
+    def my_function():
+        x = 10  # Local variable
+        print(x)
+
+    x = 20  # Global variable
+    my_function()  # Output: 10
+    print(x)  # Output: 20
+
+Global Keyword:
+
+    Modifying global variables inside functions.
+
+    python
+
+        def my_function():
+            global x
+            x = 10
+
+        x = 20
+        my_function()
+        print(x)  # Output: 10
+
+6. Lambda Functions
+
+    Anonymous Functions:
+        Creating simple, anonymous functions using lambda.
+
+        python
+
+    add = lambda x, y: x + y
+    print(add(3, 5))  # Output: 8
+
+Use Cases:
+
+    Using lambda functions with map(), filter(), and sorted().
+
+    python
+
+        numbers = [1, 2, 3, 4, 5]
+        squared = map(lambda x: x**2, numbers)
+        even_numbers = filter(lambda x: x % 2 == 0, numbers)
+        sorted_numbers = sorted(numbers, key=lambda x: -x)
+
+7. Higher-Order Functions
+
+    Functions as First-Class Objects:
+        Passing functions as arguments to other functions.
+
+        python
+
+    def apply_function(func, value):
+        return func(value)
+
+    print(apply_function(lambda x: x**2, 3))  # Output: 9
+
+Returning Functions:
+
+    Returning functions from other functions.
+
+    python
+
+        def create_multiplier(n):
+            return lambda x: x * n
+
+        double = create_multiplier(2)
+        print(double(5))  # Output: 10
+
+8. Decorators
+
+    Function Decorators:
+        Understanding and creating decorators.
+
+        python
+
+        def my_decorator(func):
+            def wrapper():
+                print("Something is happening before the function is called.")
+                func()
+                print("Something is happening after the function is called.")
+            return wrapper
+
+        @my_decorator
+        def say_hello():
+            print("Hello!")
+
+        say_hello()
+
+    Using Decorators:
+        Practical examples and use cases.
+
+9. Recursion
+
+    Recursive Functions:
+        Understanding and writing recursive functions.
+
+        python
+
+    def factorial(n):
+        if n == 1:
+            return 1
+        else:
+            return n * factorial(n - 1)
+
+    print(factorial(5))  # Output: 120
+
+Base Case and Recursive Case:
+
+    Importance of base cases to prevent infinite recursion.

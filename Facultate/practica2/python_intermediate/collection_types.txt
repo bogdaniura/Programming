@@ -1,0 +1,76 @@
+===
+Introduction
+===
+Welcome to the Intermediate Python course.
+In this course, you will learn about Python collection types, lambda functions, generators, decorators, OOP, and much more.
+We will also build real-world projects and solve several programming challenges.
+This course is designed for intermediate Python developers who already know the basics of Python and want to expand their knowledge.
+===
+Dictionaries
+===
+Python provides a number of built-in collection types, to store multiple values.
+Lists are one of these collection types, and they allow you to store indexed values:
+
+
+===
+Dictionary Funtions
+===
+To determine whether a key is in a dictionary, you can use in and not in, just as you can for a list.
+A useful dictionary function is get. It does the same thing as indexing, but if the key is not found in the dictionary it returns another specified value instead.
+===
+Tuples
+===
+Tuples are very similar to lists, except that they are immutable (they cannot be changed). 
+Also, they are created using parentheses, rather than square brackets.
+You can access the values in the tuple with their index, just as you did with lists:
+Trying to reassign a value in a tuple causes an error.
+Tuples can be created without the parentheses by just separating the values with commas.
+
+===
+Tuple Unpacking
+===
+Tuple unpacking allows you to assign each item in a collection to a variable.
+A variable that is prefaced with an asterisk (*) takes all values from the collection that are left over from the other variables.
+===
+Sets
+===
+Sets are similar to lists or dictionaries. 
+
+They are created using curly braces, and are unordered, which means that they can't be indexed. 
+
+Due to the way they're stored, it's faster to check whether an item is part of a set using the in operator, rather than part of a list.
+You can use the add() function to add new items to the set, and remove() to delete a specific element:
+Sets can be combined using mathematical operations.
+
+The union operator | combines two sets to form a new one containing items in either. 
+
+The intersection operator & gets items only in both. 
+
+The difference operator - gets items in the first set but not in the second. 
+
+The symmetric difference operator ^ gets items in either set, but not both.
+===
+List Comprehensions
+===
+List comprehensions are a useful way of quickly creating lists whose contents obey a rule.
+A list comprehension can also contain an if statement to enforce a condition on values in the list.
+===
+Data Structures
+===
+As we have seen in the previous lessons, Python supports the following collection types: Lists, Dictionaries, Tuples, Sets.
+
+When to use a dictionary:
+
+- When you need a logical association between a key:value pair.
+
+- When you need fast lookup for your data, based on a custom key.
+
+- When your data is being constantly modified. Remember, dictionaries are mutable.
+
+When to use the other types:
+
+- Use lists if you have a collection of data that does not need random access. Try to choose lists when you need a simple, iterable collection that is modified frequently.
+
+- Use a set if you need uniqueness for the elements. 
+
+- Use tuples when your data cannot/should not change.
