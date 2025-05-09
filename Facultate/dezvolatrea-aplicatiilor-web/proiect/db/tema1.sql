@@ -1,28 +1,26 @@
--- Creează baza de date
-CREATE DATABASE IF NOT EXISTS biblioteca;
+-- Structura bazei de date fără diacritice
+DROP DATABASE IF EXISTS biblioteca;
+CREATE DATABASE biblioteca;
 USE biblioteca;
 
--- 1. Tabela Autori
+-- Tabele
 CREATE TABLE autori (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nume VARCHAR(100) NOT NULL,
     nationalitate VARCHAR(50)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
 
--- 2. Tabela Edituri
 CREATE TABLE edituri (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nume VARCHAR(100) NOT NULL,
     adresa VARCHAR(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
 
--- 3. Tabela Categorii
 CREATE TABLE categorii (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nume VARCHAR(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
 
--- 4. Tabela Cărți (relație 1:n cu Autori, Edituri și Categorii)
 CREATE TABLE carti (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titlu VARCHAR(100) NOT NULL,
@@ -30,67 +28,61 @@ CREATE TABLE carti (
     editura_id INT,
     categorie_id INT,
     an_publicare YEAR,
-    FOREIGN KEY (autor_id) REFERENCES autori(id) ON DELETE SET NULL,
-    FOREIGN KEY (editura_id) REFERENCES edituri(id) ON DELETE SET NULL,
-    FOREIGN KEY (categorie_id) REFERENCES categorii(id) ON DELETE SET NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    FOREIGN KEY (autor_id) REFERENCES autori(id),
+    FOREIGN KEY (editura_id) REFERENCES edituri(id),
+    FOREIGN KEY (categorie_id) REFERENCES categorii(id)
+) ENGINE=InnoDB;
 
--- 5. Tabela Cititori
 CREATE TABLE cititori (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nume VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE,
+    email VARCHAR(100),
     data_inregistrare DATE NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
 
--- 6. Tabela Copii Cărți (relație 1:n cu Cărți)
 CREATE TABLE copii_carti (
     id INT PRIMARY KEY AUTO_INCREMENT,
     carte_id INT NOT NULL,
-    status ENUM('disponibil', 'imprumutat', 'în reparație') DEFAULT 'disponibil',
+    status ENUM('disponibil', 'imprumutat', 'in reparatie') DEFAULT 'disponibil',
     conditie VARCHAR(50),
     data_achizitie DATE,
-    FOREIGN KEY (carte_id) REFERENCES carti(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    FOREIGN KEY (carte_id) REFERENCES carti(id)
+) ENGINE=InnoDB;
 
--- 7. Tabela Împrumuturi (relație m:n între Cititori și Copii Cărți)
 CREATE TABLE imprumuturi (
     id INT PRIMARY KEY AUTO_INCREMENT,
     cititor_id INT NOT NULL,
     copie_id INT NOT NULL,
     data_imprumut DATE NOT NULL,
     data_returnare DATE,
-    FOREIGN KEY (cititor_id) REFERENCES cititori(id) ON DELETE CASCADE,
-    FOREIGN KEY (copie_id) REFERENCES copii_carti(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    FOREIGN KEY (cititor_id) REFERENCES cititori(id),
+    FOREIGN KEY (copie_id) REFERENCES copii_carti(id)
+) ENGINE=InnoDB;
 
--- 8. Tabela Recenzii (relație m:n între Cititori și Cărți)
 CREATE TABLE recenzii (
     id INT PRIMARY KEY AUTO_INCREMENT,
     carte_id INT NOT NULL,
     cititor_id INT NOT NULL,
     nota INT CHECK (nota BETWEEN 1 AND 5),
     comentariu TEXT,
-    FOREIGN KEY (carte_id) REFERENCES carti(id) ON DELETE CASCADE,
-    FOREIGN KEY (cititor_id) REFERENCES cititori(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    FOREIGN KEY (carte_id) REFERENCES carti(id),
+    FOREIGN KEY (cititor_id) REFERENCES cititori(id)
+) ENGINE=InnoDB;
 
--- Autori
+-- Datele (fără diacritice)
 INSERT INTO autori (nume, nationalitate) VALUES
-('Albert Camus', 'Franceză'),
-('Agatha Christie', 'Engleză'),
-('Haruki Murakami', 'Japoneză'),
-('Stephen King', 'Americană'),
-('Tudor Arghezi', 'Română');
+('Albert Camus', 'Franceza'),
+('Agatha Christie', 'Engleza'),
+('Haruki Murakami', 'Japoneza'),
+('Stephen King', 'Americana'),
+('Tudor Arghezi', 'Romana');
 
--- Edituri
 INSERT INTO edituri (nume, adresa) VALUES
-('Editura Polirom', 'Iași, România'),
-('Editura Corint', 'București, România'),
-('Gallimard', 'Paris, Franța'),
+('Editura Polirom', 'Iasi, Romania'),
+('Editura Corint', 'Bucuresti, Romania'),
+('Gallimard', 'Paris, Franta'),
 ('Random House', 'New York, SUA');
 
--- Categorii
 INSERT INTO categorii (nume) VALUES
 ('Thriller'),
 ('Filozofie'),
@@ -98,124 +90,91 @@ INSERT INTO categorii (nume) VALUES
 ('Horror'),
 ('Roman');
 
--- Cărți
 INSERT INTO carti (titlu, autor_id, editura_id, categorie_id, an_publicare) VALUES
-('Străinul', 3, 3, 6, 1942),         -- Albert Camus (Filozofie)
-('Crima din Orient Express', 4, 4, 5, 1934), -- Agatha Christie (Thriller)
-('Kafka pe malul mării', 5, 2, 9, 2002),    -- Haruki Murakami (Roman)
-('The Shining', 6, 4, 8, 1977),             -- Stephen King (Horror)
-('Cimitirul animalelor', 6, 4, 8, 1983),    -- Stephen King (Horror)
-('Flori de mucigai', 7, 2, 9, 1931);        -- Tudor Arghezi (Roman)
+('Strainul', 1, 3, 2, 1942),
+('Crima din Orient Express', 2, 4, 1, 1934),
+('Kafka pe malul marii', 3, 2, 5, 2002),
+('The Shining', 4, 4, 4, 1977),
+('Cimitirul animalelor', 4, 4, 4, 1983),
+('Flori de mucigai', 5, 2, 5, 1931);
 
--- Copii Cărți (cu date suplimentare: status, condiție, data achiziției)
-INSERT INTO copii_carti (carte_id, status, conditie, data_achizitie) VALUES 
-(1, 'disponibil', 'excelentă', '2020-05-10'),
-(1, 'imprumutat', 'bună', '2021-02-15'),
-(2, 'disponibil', 'uzură moderată', '2019-11-20');
-
--- Cititori
 INSERT INTO cititori (nume, email, data_inregistrare) VALUES
-('Andrei Vasile', NULL, '2023-03-10'),       -- Fără email (pentru DELETE cu IS NULL)
+('Andrei Vasile', NULL, '2023-03-10'),
 ('Elena Popa', 'elena.popa@example.com', '2023-04-12'),
 ('Mihai Ionescu', 'mihai.ionescu@example.com', '2023-05-01'),
-('Ana Marinescu', NULL, '2022-12-15'),        -- Fără email
+('Ana Marinescu', NULL, '2022-12-15'),
 ('Cristina Moldovan', 'cristina.m@example.com', '2023-06-20');
 
--- Împrumuturi (legătura m:n între cititori și copii_carti)
+INSERT INTO copii_carti (carte_id, status, conditie, data_achizitie) VALUES 
+(1, 'disponibil', 'excelenta', '2020-05-10'),
+(1, 'imprumutat', 'buna', '2021-02-15'),
+(2, 'disponibil', 'uzura moderata', '2019-11-20');
+
 INSERT INTO imprumuturi (cititor_id, copie_id, data_imprumut, data_returnare) VALUES
-(2, 2, '2023-05-01', NULL),     -- Împrumut activ (fără dată returnare)
+(2, 2, '2023-05-01', NULL),
 (3, 3, '2023-05-10', '2023-05-20'),
-(4, 5, '2023-04-15', '2023-04-30'),
-(5, 6, '2023-06-01', NULL),     -- Împrumut activ
-(1, 4, '2023-03-01', '2023-03-15');
+(4, 1, '2023-04-15', '2023-04-30'),
+(5, 2, '2023-06-01', NULL);
 
--- Recenzii
 INSERT INTO recenzii (carte_id, cititor_id, nota, comentariu) VALUES
-(3, 2, 4, 'O lectură profundă, dar puțin abstractă.'),
-(4, 3, 5, 'Captivant! Recomand pentru iubitorii de mister.'),
-(6, 4, 3, NULL),                -- Recenzie fără comentariu (pentru DELETE cu IS NULL)
-(7, 5, 2, 'Prea înfricoșător pentru gustul meu.'),
-(5, 1, 5, 'O experiență literară unică.');
+(3, 2, 4, 'O lectura profunda'),
+(4, 3, 5, 'Captivant!'),
+(6, 4, 3, NULL),
+(5, 1, 5, 'Un clasic');
 
--- Modificăm numele unui autor folosind o condiție compusă
-UPDATE autori SET nume = 'Mihai Eminescu (Modificat)' 
-WHERE id = 1 AND nationalitate = 'Română';
+-- Comenzi INSERT/UPDATE/DELETE
+INSERT INTO autori (nume, nationalitate) VALUES ('George Orwell', 'Engleza');
 
--- Modificăm anul publicării unei cărți folosind operatori relaționali
-UPDATE carti SET an_publicare = 1950 
-WHERE an_publicare < 1950;
+UPDATE cititori SET email = 'contact@biblioteca.ro' 
+WHERE email IS NULL AND data_inregistrare BETWEEN '2022-01-01' AND '2023-01-01';
 
--- Modificăm data de returnare a unui împrumut folosind IS NULL
-UPDATE imprumuturi SET data_returnare = '2023-03-20' 
-WHERE data_returnare IS NULL;
+DELETE FROM recenzii WHERE comentariu IS NULL OR nota IN (1, 2);
 
--- Modificăm genul unei cărți folosind IN
-UPDATE carti SET categorie_id = 3 
-WHERE categorie_id IN (1, 2);
+-- Interogari SELECT (exemple)
+-- a. UNION
+SELECT nume FROM autori WHERE nationalitate = 'Romana'
+UNION
+SELECT nume FROM cititori WHERE email LIKE '%example.com';
 
--- Modificăm data de înregistrare a unui cititor folosind BETWEEN
-UPDATE cititori SET data_inregistrare = '2023-01-01' 
-WHERE data_inregistrare BETWEEN '2023-01-01' AND '2023-01-31';
+SELECT titlu FROM carti 
+WHERE an_publicare < 2000 OR categorie_id = 5;
 
--- Ștergem un cititor folosind o condiție compusă
-DELETE FROM cititori 
-WHERE id = 2 AND email LIKE '%popescu%';
+-- b. INTERSECT (emulat cu IN)
+SELECT nume FROM cititori 
+WHERE id IN (SELECT cititor_id FROM imprumuturi WHERE data_returnare IS NULL);
 
--- Ștergem cărți publicate într-un anumit interval folosind BETWEEN
-DELETE FROM carti 
-WHERE an_publicare BETWEEN 1900 AND 1950;
+-- c. EXCEPT (emulat cu NOT IN)
+SELECT nume FROM cititori 
+WHERE id NOT IN (SELECT cititor_id FROM recenzii);
 
--- Ștergem recenzii care nu au comentarii folosind IS NULL
-DELETE FROM recenzii 
-WHERE comentariu IS NULL;
+-- d. JOIN pe 3 tabele
+SELECT cit.nume, c.titlu, i.data_imprumut
+FROM imprumuturi i
+JOIN cititori cit ON i.cititor_id = cit.id
+JOIN copii_carti cc ON i.copie_id = cc.id
+JOIN carti c ON cc.carte_id = c.id;
 
--- Ștergem autori din anumite naționalități folosind IN
-DELETE FROM autori 
-WHERE nationalitate IN ('Engleză', 'Franceză');
+-- e. Subinterogare cu IN
+SELECT nume FROM cititori 
+WHERE id IN (SELECT cititor_id FROM recenzii WHERE nota > 3);
 
--- Ștergem cărți care conțin un anumit cuvânt în titlu folosind LIKE
-DELETE FROM carti 
-WHERE titlu LIKE '%Poezii%';
+-- f. EXISTS
+SELECT titlu FROM carti c
+WHERE EXISTS (SELECT 1 FROM recenzii r WHERE r.carte_id = c.id AND nota = 5);
 
--- Schimbă starea copiilor cu uzură achiziționate înainte de 2022
-UPDATE copii_carti 
-SET status = 'în reparație' 
-WHERE conditie LIKE '%uzur%' AND data_achizitie < '2022-01-01';
+-- g. Subinterogare in FROM
+SELECT AVG(nota) AS Medie FROM (SELECT nota FROM recenzii) AS temp;
 
--- Șterge împrumuturile din prima jumătate a anului 2023
-DELETE FROM imprumuturi 
-WHERE data_imprumut BETWEEN '2023-01-01' AND '2023-06-30';
+-- h. GROUP BY
+SELECT carte_id, AVG(nota) AS Medie FROM recenzii GROUP BY carte_id HAVING AVG(nota) > 3.5;
 
--- Setează email pentru cititorii fără adresă
-UPDATE cititori 
-SET email = 'necunoscut@example.com' 
-WHERE email IS NULL;
+-- i. ANY/ALL
+SELECT titlu FROM carti 
+WHERE id = ANY(SELECT carte_id FROM recenzii WHERE nota > 4);
 
--- Șterge cărțile din categoria Horror sau Thriller
-DELETE FROM carti 
-WHERE categorie_id IN (5, 8);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- View pentru recenzii bune
+CREATE VIEW vw_recenzii_bune AS
+SELECT c.titlu, r.nota, r.comentariu 
+FROM recenzii r
+JOIN carti c ON r.carte_id = c.id
+WHERE nota >= 4;

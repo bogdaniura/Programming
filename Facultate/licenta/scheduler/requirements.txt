@@ -1,0 +1,5 @@
+APScheduler==3.10.4
+plyer==2.1.0
+rich==13.7.0
+python-daemon==3.0.1
+lockfile==0.12.2 
