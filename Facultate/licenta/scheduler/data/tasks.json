@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "id": "test7",
+        "command": "/home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh",
+        "schedule": "interval:5.0",
+        "is_cron": false,
+        "description": "a",
+        "notifications_enabled": false
+    },
+    {
+        "id": "file_sort",
+        "command": "/home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py",
+        "schedule": "interval:15.0",
+        "is_cron": false,
+        "description": "Sort files from source directory into appropriate subfolders",
+        "notifications_enabled": false
+    }
+]

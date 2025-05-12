@@ -11,21 +11,15 @@ from apscheduler.triggers.interval import IntervalTrigger
 from plyer import notification
 
 class TaskScheduler:
-    def __init__(self, data_dir: str = "data", log_dir: str = "logs"):
+    def __init__(self, data_dir: str = "data", log_dir: str = "logs", notifications_enabled: bool = False):
         self.data_dir = Path(data_dir)
         self.log_dir = Path(log_dir)
         self.tasks_file = self.data_dir / "tasks.json"
+        self.notifications_enabled = notifications_enabled  # Global default
         
         # Ensure directories exist
         self.data_dir.mkdir(exist_ok=True)
         self.log_dir.mkdir(exist_ok=True)
-        
-        # Setup logging
-        logging.basicConfig(
-            filename=self.log_dir / "scheduler.log",
-            level=logging.INFO,
-            format='%(asctime)s - %(levelname)s - %(message)s'
-        )
         
         # Initialize scheduler
         jobstores = {
@@ -63,7 +57,8 @@ class TaskScheduler:
                     command=task['command'],
                     schedule=task['schedule'],
                     is_cron=task.get('is_cron', True),  # Default to True for backward compatibility
-                    description=task.get('description', '')
+                    description=task.get('description', ''),
+                    notifications_enabled=task.get('notifications_enabled', self.notifications_enabled)  # Use global default if not specified
                 )
         except Exception as e:
             logging.error(f"Error loading tasks: {e}")
@@ -87,7 +82,8 @@ class TaskScheduler:
                 'command': job.args[0],
                 'schedule': schedule,
                 'is_cron': is_cron,
-                'description': job.args[1] if len(job.args) > 1 else ''
+                'description': job.args[1] if len(job.args) > 1 else '',
+                'notifications_enabled': job.args[2] if len(job.args) > 2 else self.notifications_enabled
             }
             tasks.append(task)
             
@@ -97,7 +93,7 @@ class TaskScheduler:
         except Exception as e:
             logging.error(f"Error saving tasks: {e}")
             
-    def add_task(self, task_id: str, command: str, schedule: str, is_cron: bool = True, description: str = ""):
+    def add_task(self, task_id: str, command: str, schedule: str, is_cron: bool = True, description: str = "", notifications_enabled: bool = False):
         """Add a new task to the scheduler"""
         try:
             if schedule.startswith('interval:'):
@@ -108,12 +104,16 @@ class TaskScheduler:
                 trigger = CronTrigger.from_crontab(schedule)
             else:
                 trigger = DateTrigger(run_date=datetime.fromisoformat(schedule))
+            
+            # Use provided notifications_enabled or fall back to global setting
+            if notifications_enabled is None:
+                notifications_enabled = self.notifications_enabled
                 
             self.scheduler.add_job(
                 self._execute_task,
                 trigger=trigger,
                 id=task_id,
-                args=[command, description],
+                args=[command, description, notifications_enabled],
                 replace_existing=True
             )
             
@@ -144,38 +144,43 @@ class TaskScheduler:
                 'command': job.args[0],
                 'next_run': job.next_run_time,
                 'schedule': str(job.trigger),
-                'description': job.args[1] if len(job.args) > 1 else ''
+                'description': job.args[1] if len(job.args) > 1 else '',
+                'notifications_enabled': job.args[2] if len(job.args) > 2 else self.notifications_enabled
             }
             tasks.append(task)
         return tasks
         
-    def _execute_task(self, command: str, description: str):
+    def _execute_task(self, command: str, description: str, notifications_enabled: bool):
         """Execute a scheduled task"""
         try:
             import subprocess
             result = subprocess.run(command, shell=True, capture_output=True, text=True)
             
             if result.returncode == 0:
-                logging.info(f"Task executed successfully: {command}")
-                notification.notify(
-                    title='Task Completed',
-                    message=f'Task completed successfully: {description or command}',
-                    timeout=10
-                )
+                # Only log the task execution status, not the job execution status
+                logging.info(f"Task '{description or command}' executed successfully")
+                if notifications_enabled:
+                    notification.notify(
+                        title='Task Completed',
+                        message=f'Task completed successfully: {description or command}',
+                        timeout=10
+                    )
             else:
-                logging.error(f"Task failed: {command}\nError: {result.stderr}")
+                logging.error(f"Task '{description or command}' failed: {result.stderr}")
+                if notifications_enabled:
+                    notification.notify(
+                        title='Task Failed',
+                        message=f'Task failed: {command}\nError: {result.stderr}',
+                        timeout=10
+                    )
+        except Exception as e:
+            logging.error(f"Error executing task '{description or command}': {e}")
+            if notifications_enabled:
                 notification.notify(
-                    title='Task Failed',
-                    message=f'Task failed: {description or command}\nError: {result.stderr}',
+                    title='Task Error',
+                    message=f'Error executing task: {description or command}\nError: {str(e)}',
                     timeout=10
                 )
-        except Exception as e:
-            logging.error(f"Error executing task {command}: {e}")
-            notification.notify(
-                title='Task Error',
-                message=f'Error executing task: {description or command}\nError: {str(e)}',
-                timeout=10
-            )
             
     def start(self):
         """Start the scheduler"""

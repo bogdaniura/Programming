@@ -187,3 +187,1190 @@ KeyboardInterrupt
 2025-05-09 23:18:34,853 - INFO - Removed task test1
 2025-05-09 23:22:09,586 - INFO - Scheduler has been shut down
 2025-05-09 23:22:09,586 - INFO - Scheduler shutdown
+2025-05-09 23:39:46,636 - INFO - Scheduler started
+2025-05-09 23:39:46,636 - INFO - Scheduler started
+2025-05-09 23:40:01,064 - INFO - Scheduler has been shut down
+2025-05-09 23:40:01,064 - INFO - Scheduler shutdown
+2025-05-09 23:43:00,971 - INFO - Scheduler started
+2025-05-09 23:43:00,971 - INFO - Scheduler started
+2025-05-09 23:43:56,914 - INFO - Scheduler started
+2025-05-09 23:43:56,915 - INFO - Scheduler started
+2025-05-09 23:44:33,020 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-09 23:44:33,032 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:44:43,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:44:43 EEST)" (scheduled at 2025-05-09 23:44:43.020246+03:00)
+2025-05-09 23:44:43,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:44:43,031 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:44:53 EEST)" executed successfully
+2025-05-09 23:44:53,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:03 EEST)" (scheduled at 2025-05-09 23:44:53.020246+03:00)
+2025-05-09 23:44:53,028 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:44:53,028 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:03 EEST)" executed successfully
+2025-05-09 23:45:03,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:13 EEST)" (scheduled at 2025-05-09 23:45:03.020246+03:00)
+2025-05-09 23:45:03,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:03,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:13 EEST)" executed successfully
+2025-05-09 23:45:13,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:23 EEST)" (scheduled at 2025-05-09 23:45:13.020246+03:00)
+2025-05-09 23:45:13,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:13,031 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:23 EEST)" executed successfully
+2025-05-09 23:45:23,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:33 EEST)" (scheduled at 2025-05-09 23:45:23.020246+03:00)
+2025-05-09 23:45:23,027 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:23,027 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:33 EEST)" executed successfully
+2025-05-09 23:45:33,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:43 EEST)" (scheduled at 2025-05-09 23:45:33.020246+03:00)
+2025-05-09 23:45:33,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:33,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:43 EEST)" executed successfully
+2025-05-09 23:45:43,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:53 EEST)" (scheduled at 2025-05-09 23:45:43.020246+03:00)
+2025-05-09 23:45:43,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:43,033 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:45:53 EEST)" executed successfully
+2025-05-09 23:45:53,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:03 EEST)" (scheduled at 2025-05-09 23:45:53.020246+03:00)
+2025-05-09 23:45:53,030 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:45:53,030 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:03 EEST)" executed successfully
+2025-05-09 23:46:03,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:13 EEST)" (scheduled at 2025-05-09 23:46:03.020246+03:00)
+2025-05-09 23:46:03,033 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:03,033 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:13 EEST)" executed successfully
+2025-05-09 23:46:13,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:23 EEST)" (scheduled at 2025-05-09 23:46:13.020246+03:00)
+2025-05-09 23:46:13,030 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:13,030 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:23 EEST)" executed successfully
+2025-05-09 23:46:23,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:33 EEST)" (scheduled at 2025-05-09 23:46:23.020246+03:00)
+2025-05-09 23:46:23,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:23,031 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:33 EEST)" executed successfully
+2025-05-09 23:46:33,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:43 EEST)" (scheduled at 2025-05-09 23:46:33.020246+03:00)
+2025-05-09 23:46:33,028 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:33,031 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:43 EEST)" executed successfully
+2025-05-09 23:46:43,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:53 EEST)" (scheduled at 2025-05-09 23:46:43.020246+03:00)
+2025-05-09 23:46:43,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:43,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:46:53 EEST)" executed successfully
+2025-05-09 23:46:53,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:03 EEST)" (scheduled at 2025-05-09 23:46:53.020246+03:00)
+2025-05-09 23:46:53,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:46:53,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:03 EEST)" executed successfully
+2025-05-09 23:47:03,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:13 EEST)" (scheduled at 2025-05-09 23:47:03.020246+03:00)
+2025-05-09 23:47:03,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:03,033 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:13 EEST)" executed successfully
+2025-05-09 23:47:13,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:23 EEST)" (scheduled at 2025-05-09 23:47:13.020246+03:00)
+2025-05-09 23:47:13,030 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:13,030 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:23 EEST)" executed successfully
+2025-05-09 23:47:23,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:33 EEST)" (scheduled at 2025-05-09 23:47:23.020246+03:00)
+2025-05-09 23:47:23,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:23,031 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:33 EEST)" executed successfully
+2025-05-09 23:47:33,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:43 EEST)" (scheduled at 2025-05-09 23:47:33.020246+03:00)
+2025-05-09 23:47:33,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:33,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:43 EEST)" executed successfully
+2025-05-09 23:47:43,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:53 EEST)" (scheduled at 2025-05-09 23:47:43.020246+03:00)
+2025-05-09 23:47:43,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:43,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:47:53 EEST)" executed successfully
+2025-05-09 23:47:53,021 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:48:03 EEST)" (scheduled at 2025-05-09 23:47:53.020246+03:00)
+2025-05-09 23:47:53,032 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:47:53,032 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:48:03 EEST)" executed successfully
+2025-05-09 23:48:03,020 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:48:13 EEST)" (scheduled at 2025-05-09 23:48:03.020246+03:00)
+2025-05-09 23:48:03,031 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:48:03,098 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:48:13 EEST)" executed successfully
+2025-05-09 23:48:09,708 - INFO - Scheduler has been shut down
+2025-05-09 23:48:09,708 - INFO - Scheduler shutdown
+2025-05-09 23:53:48,800 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-09 23:53:48,800 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:53:48,800 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-09 23:53:48,800 - INFO - Scheduler started
+2025-05-09 23:53:48,801 - INFO - Scheduler started
+2025-05-09 23:53:58,801 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:53:58 EEST)" (scheduled at 2025-05-09 23:53:58.799924+03:00)
+2025-05-09 23:53:58,812 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:53:58,812 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:08 EEST)" executed successfully
+2025-05-09 23:54:08,801 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:18 EEST)" (scheduled at 2025-05-09 23:54:08.799924+03:00)
+2025-05-09 23:54:08,811 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:54:08,811 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:18 EEST)" executed successfully
+2025-05-09 23:54:18,801 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:28 EEST)" (scheduled at 2025-05-09 23:54:18.799924+03:00)
+2025-05-09 23:54:18,811 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:54:18,811 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:28 EEST)" executed successfully
+2025-05-09 23:54:28,801 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:38 EEST)" (scheduled at 2025-05-09 23:54:28.799924+03:00)
+2025-05-09 23:54:28,812 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:54:28,812 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:38 EEST)" executed successfully
+2025-05-09 23:54:29,426 - ERROR - Error removing task e: 'No job by the id of e was found'
+2025-05-09 23:54:38,801 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:48 EEST)" (scheduled at 2025-05-09 23:54:38.799924+03:00)
+2025-05-09 23:54:38,812 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:54:38,812 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:54:48 EEST)" executed successfully
+2025-05-09 23:54:39,145 - INFO - Removed job test1
+2025-05-09 23:54:39,156 - INFO - Removed task test1
+2025-05-09 23:57:27,649 - INFO - Scheduler has been shut down
+2025-05-09 23:57:27,650 - INFO - Scheduler shutdown
+2025-05-09 23:57:29,538 - INFO - Scheduler started
+2025-05-09 23:57:29,539 - INFO - Scheduler started
+2025-05-09 23:58:35,144 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-09 23:58:35,145 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:58:45,145 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:58:45 EEST)" (scheduled at 2025-05-09 23:58:45.144091+03:00)
+2025-05-09 23:58:45,156 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:58:45,208 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:58:55 EEST)" executed successfully
+2025-05-09 23:58:55,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:05 EEST)" (scheduled at 2025-05-09 23:58:55.144091+03:00)
+2025-05-09 23:58:55,154 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:58:55,191 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:05 EEST)" executed successfully
+2025-05-09 23:59:05,145 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:15 EEST)" (scheduled at 2025-05-09 23:59:05.144091+03:00)
+2025-05-09 23:59:05,154 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:05,177 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:15 EEST)" executed successfully
+2025-05-09 23:59:15,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:25 EEST)" (scheduled at 2025-05-09 23:59:15.144091+03:00)
+2025-05-09 23:59:15,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:15,199 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:25 EEST)" executed successfully
+2025-05-09 23:59:21,911 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-09 23:59:21,912 - INFO - Added task test2: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-09 23:59:25,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:35 EEST)" (scheduled at 2025-05-09 23:59:25.144091+03:00)
+2025-05-09 23:59:25,156 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:25,182 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:35 EEST)" executed successfully
+2025-05-09 23:59:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:41 EEST)" (scheduled at 2025-05-09 23:59:31.910762+03:00)
+2025-05-09 23:59:31,920 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-09 23:59:31,920 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:41 EEST)" executed successfully
+2025-05-09 23:59:35,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:45 EEST)" (scheduled at 2025-05-09 23:59:35.144091+03:00)
+2025-05-09 23:59:35,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:35,181 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:45 EEST)" executed successfully
+2025-05-09 23:59:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:51 EEST)" (scheduled at 2025-05-09 23:59:41.910762+03:00)
+2025-05-09 23:59:41,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-09 23:59:41,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:51 EEST)" executed successfully
+2025-05-09 23:59:45,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:55 EEST)" (scheduled at 2025-05-09 23:59:45.144091+03:00)
+2025-05-09 23:59:45,154 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:45,180 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-09 23:59:55 EEST)" executed successfully
+2025-05-09 23:59:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:01 EEST)" (scheduled at 2025-05-09 23:59:51.910762+03:00)
+2025-05-09 23:59:51,918 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-09 23:59:51,919 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:01 EEST)" executed successfully
+2025-05-09 23:59:55,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:05 EEST)" (scheduled at 2025-05-09 23:59:55.144091+03:00)
+2025-05-09 23:59:55,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-09 23:59:55,204 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:05 EEST)" executed successfully
+2025-05-10 00:00:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:11 EEST)" (scheduled at 2025-05-10 00:00:01.910762+03:00)
+2025-05-10 00:00:01,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:01,921 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:11 EEST)" executed successfully
+2025-05-10 00:00:05,145 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:15 EEST)" (scheduled at 2025-05-10 00:00:05.144091+03:00)
+2025-05-10 00:00:05,156 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:05,204 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:15 EEST)" executed successfully
+2025-05-10 00:00:11,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:21 EEST)" (scheduled at 2025-05-10 00:00:11.910762+03:00)
+2025-05-10 00:00:11,917 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:11,917 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:21 EEST)" executed successfully
+2025-05-10 00:00:15,145 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:25 EEST)" (scheduled at 2025-05-10 00:00:15.144091+03:00)
+2025-05-10 00:00:15,153 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:15,179 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:25 EEST)" executed successfully
+2025-05-10 00:00:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:31 EEST)" (scheduled at 2025-05-10 00:00:21.910762+03:00)
+2025-05-10 00:00:21,919 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:21,919 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:31 EEST)" executed successfully
+2025-05-10 00:00:25,145 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:35 EEST)" (scheduled at 2025-05-10 00:00:25.144091+03:00)
+2025-05-10 00:00:25,156 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:25,202 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:35 EEST)" executed successfully
+2025-05-10 00:00:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:41 EEST)" (scheduled at 2025-05-10 00:00:31.910762+03:00)
+2025-05-10 00:00:31,919 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:31,919 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:41 EEST)" executed successfully
+2025-05-10 00:00:35,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:45 EEST)" (scheduled at 2025-05-10 00:00:35.144091+03:00)
+2025-05-10 00:00:35,152 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:35,196 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:45 EEST)" executed successfully
+2025-05-10 00:00:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:51 EEST)" (scheduled at 2025-05-10 00:00:41.910762+03:00)
+2025-05-10 00:00:41,920 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:41,921 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:51 EEST)" executed successfully
+2025-05-10 00:00:45,146 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:55 EEST)" (scheduled at 2025-05-10 00:00:45.144091+03:00)
+2025-05-10 00:00:45,154 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:45,181 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:00:55 EEST)" executed successfully
+2025-05-10 00:00:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:01 EEST)" (scheduled at 2025-05-10 00:00:51.910762+03:00)
+2025-05-10 00:00:51,917 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:00:51,917 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:01 EEST)" executed successfully
+2025-05-10 00:00:55,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:05 EEST)" (scheduled at 2025-05-10 00:00:55.144091+03:00)
+2025-05-10 00:00:55,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:00:55,213 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:05 EEST)" executed successfully
+2025-05-10 00:01:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:11 EEST)" (scheduled at 2025-05-10 00:01:01.910762+03:00)
+2025-05-10 00:01:01,918 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:01,918 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:11 EEST)" executed successfully
+2025-05-10 00:01:05,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:15 EEST)" (scheduled at 2025-05-10 00:01:05.144091+03:00)
+2025-05-10 00:01:05,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:01:05,207 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:15 EEST)" executed successfully
+2025-05-10 00:01:11,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:21 EEST)" (scheduled at 2025-05-10 00:01:11.910762+03:00)
+2025-05-10 00:01:11,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:11,921 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:21 EEST)" executed successfully
+2025-05-10 00:01:15,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:25 EEST)" (scheduled at 2025-05-10 00:01:15.144091+03:00)
+2025-05-10 00:01:15,154 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:01:15,185 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:25 EEST)" executed successfully
+2025-05-10 00:01:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:31 EEST)" (scheduled at 2025-05-10 00:01:21.910762+03:00)
+2025-05-10 00:01:21,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:21,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:31 EEST)" executed successfully
+2025-05-10 00:01:25,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:35 EEST)" (scheduled at 2025-05-10 00:01:25.144091+03:00)
+2025-05-10 00:01:25,156 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:01:25,185 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:35 EEST)" executed successfully
+2025-05-10 00:01:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:41 EEST)" (scheduled at 2025-05-10 00:01:31.910762+03:00)
+2025-05-10 00:01:31,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:31,921 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:41 EEST)" executed successfully
+2025-05-10 00:01:35,144 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:45 EEST)" (scheduled at 2025-05-10 00:01:35.144091+03:00)
+2025-05-10 00:01:35,155 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:01:35,202 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:45 EEST)" executed successfully
+2025-05-10 00:01:41,716 - INFO - Removed job test1
+2025-05-10 00:01:41,722 - INFO - Removed task test1
+2025-05-10 00:01:41,722 - ERROR - Error adding task test1: Invalid isoformat string: 'interval[0:00:10]'
+2025-05-10 00:01:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:51 EEST)" (scheduled at 2025-05-10 00:01:41.910762+03:00)
+2025-05-10 00:01:41,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:41,921 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:01:51 EEST)" executed successfully
+2025-05-10 00:01:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:01 EEST)" (scheduled at 2025-05-10 00:01:51.910762+03:00)
+2025-05-10 00:01:51,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:01:51,923 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:01 EEST)" executed successfully
+2025-05-10 00:02:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:11 EEST)" (scheduled at 2025-05-10 00:02:01.910762+03:00)
+2025-05-10 00:02:01,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:01,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:11 EEST)" executed successfully
+2025-05-10 00:02:11,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:21 EEST)" (scheduled at 2025-05-10 00:02:11.910762+03:00)
+2025-05-10 00:02:11,923 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:11,923 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:21 EEST)" executed successfully
+2025-05-10 00:02:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:31 EEST)" (scheduled at 2025-05-10 00:02:21.910762+03:00)
+2025-05-10 00:02:21,920 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:21,920 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:31 EEST)" executed successfully
+2025-05-10 00:02:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:41 EEST)" (scheduled at 2025-05-10 00:02:31.910762+03:00)
+2025-05-10 00:02:31,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:31,923 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:41 EEST)" executed successfully
+2025-05-10 00:02:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:51 EEST)" (scheduled at 2025-05-10 00:02:41.910762+03:00)
+2025-05-10 00:02:41,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:41,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:02:51 EEST)" executed successfully
+2025-05-10 00:02:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:01 EEST)" (scheduled at 2025-05-10 00:02:51.910762+03:00)
+2025-05-10 00:02:51,920 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:02:51,920 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:01 EEST)" executed successfully
+2025-05-10 00:03:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:11 EEST)" (scheduled at 2025-05-10 00:03:01.910762+03:00)
+2025-05-10 00:03:01,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:01,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:11 EEST)" executed successfully
+2025-05-10 00:03:11,912 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:21 EEST)" (scheduled at 2025-05-10 00:03:11.910762+03:00)
+2025-05-10 00:03:11,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:11,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:21 EEST)" executed successfully
+2025-05-10 00:03:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:31 EEST)" (scheduled at 2025-05-10 00:03:21.910762+03:00)
+2025-05-10 00:03:21,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:21,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:31 EEST)" executed successfully
+2025-05-10 00:03:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:41 EEST)" (scheduled at 2025-05-10 00:03:31.910762+03:00)
+2025-05-10 00:03:31,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:31,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:41 EEST)" executed successfully
+2025-05-10 00:03:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:51 EEST)" (scheduled at 2025-05-10 00:03:41.910762+03:00)
+2025-05-10 00:03:41,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:41,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:03:51 EEST)" executed successfully
+2025-05-10 00:03:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:01 EEST)" (scheduled at 2025-05-10 00:03:51.910762+03:00)
+2025-05-10 00:03:51,920 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:03:51,920 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:01 EEST)" executed successfully
+2025-05-10 00:04:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:11 EEST)" (scheduled at 2025-05-10 00:04:01.910762+03:00)
+2025-05-10 00:04:01,921 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:01,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:11 EEST)" executed successfully
+2025-05-10 00:04:11,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:21 EEST)" (scheduled at 2025-05-10 00:04:11.910762+03:00)
+2025-05-10 00:04:11,917 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:11,917 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:21 EEST)" executed successfully
+2025-05-10 00:04:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:31 EEST)" (scheduled at 2025-05-10 00:04:21.910762+03:00)
+2025-05-10 00:04:21,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:21,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:31 EEST)" executed successfully
+2025-05-10 00:04:31,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:41 EEST)" (scheduled at 2025-05-10 00:04:31.910762+03:00)
+2025-05-10 00:04:31,918 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:31,918 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:41 EEST)" executed successfully
+2025-05-10 00:04:41,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:51 EEST)" (scheduled at 2025-05-10 00:04:41.910762+03:00)
+2025-05-10 00:04:41,919 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:41,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:04:51 EEST)" executed successfully
+2025-05-10 00:04:51,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:01 EEST)" (scheduled at 2025-05-10 00:04:51.910762+03:00)
+2025-05-10 00:04:51,918 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:04:51,918 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:01 EEST)" executed successfully
+2025-05-10 00:05:01,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:11 EEST)" (scheduled at 2025-05-10 00:05:01.910762+03:00)
+2025-05-10 00:05:01,919 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:01,920 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:11 EEST)" executed successfully
+2025-05-10 00:05:11,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:21 EEST)" (scheduled at 2025-05-10 00:05:11.910762+03:00)
+2025-05-10 00:05:11,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:11,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:21 EEST)" executed successfully
+2025-05-10 00:05:21,911 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:31 EEST)" (scheduled at 2025-05-10 00:05:21.910762+03:00)
+2025-05-10 00:05:21,922 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:21,922 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:31 EEST)" executed successfully
+2025-05-10 00:05:28,472 - INFO - Scheduler has been shut down
+2025-05-10 00:05:28,473 - INFO - Scheduler shutdown
+2025-05-10 00:05:31,839 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-10 00:05:31,839 - INFO - Added task test2: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:31,839 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:05:31,839 - INFO - Scheduler started
+2025-05-10 00:05:31,840 - INFO - Scheduler started
+2025-05-10 00:05:41,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:41 EEST)" (scheduled at 2025-05-10 00:05:41.839106+03:00)
+2025-05-10 00:05:41,851 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:41,851 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:05:51 EEST)" executed successfully
+2025-05-10 00:05:51,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:01 EEST)" (scheduled at 2025-05-10 00:05:51.839106+03:00)
+2025-05-10 00:05:51,851 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:05:51,851 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:01 EEST)" executed successfully
+2025-05-10 00:06:01,839 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:11 EEST)" (scheduled at 2025-05-10 00:06:01.839106+03:00)
+2025-05-10 00:06:01,850 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:06:01,850 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:11 EEST)" executed successfully
+2025-05-10 00:06:11,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:21 EEST)" (scheduled at 2025-05-10 00:06:11.839106+03:00)
+2025-05-10 00:06:11,851 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:06:11,851 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:21 EEST)" executed successfully
+2025-05-10 00:06:21,839 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:31 EEST)" (scheduled at 2025-05-10 00:06:21.839106+03:00)
+2025-05-10 00:06:21,850 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:06:21,850 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:31 EEST)" executed successfully
+2025-05-10 00:06:31,839 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:41 EEST)" (scheduled at 2025-05-10 00:06:31.839106+03:00)
+2025-05-10 00:06:31,846 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test2_date.sh
+2025-05-10 00:06:31,847 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:06:41 EEST)" executed successfully
+2025-05-10 00:06:36,603 - INFO - Removed job test2
+2025-05-10 00:06:36,604 - INFO - Removed task test2
+2025-05-10 00:06:36,604 - ERROR - Error adding task test2: Invalid isoformat string: 'interval[0:00:10]'
+2025-05-10 00:09:12,840 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:09:12,841 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+2025-05-10 00:09:22,841 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:32 EEST)" (scheduled at 2025-05-10 00:09:22.840261+03:00)
+2025-05-10 00:09:22,846 - ERROR - Task failed: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh: No such file or directory
+
+2025-05-10 00:09:22,908 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:32 EEST)" executed successfully
+2025-05-10 00:09:32,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:42 EEST)" (scheduled at 2025-05-10 00:09:32.840261+03:00)
+2025-05-10 00:09:32,844 - ERROR - Task failed: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh: No such file or directory
+
+2025-05-10 00:09:32,873 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:42 EEST)" executed successfully
+2025-05-10 00:09:42,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:52 EEST)" (scheduled at 2025-05-10 00:09:42.840261+03:00)
+2025-05-10 00:09:42,845 - ERROR - Task failed: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh: No such file or directory
+
+2025-05-10 00:09:42,894 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:09:52 EEST)" executed successfully
+2025-05-10 00:09:52,841 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:10:02 EEST)" (scheduled at 2025-05-10 00:09:52.840261+03:00)
+2025-05-10 00:09:52,845 - ERROR - Task failed: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh: No such file or directory
+
+2025-05-10 00:09:52,894 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:10:02 EEST)" executed successfully
+2025-05-10 00:10:02,840 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:10:12 EEST)" (scheduled at 2025-05-10 00:10:02.840261+03:00)
+2025-05-10 00:10:02,845 - ERROR - Task failed: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh
+Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1.basic.sh: No such file or directory
+
+2025-05-10 00:10:02,848 - INFO - Removed job test1
+2025-05-10 00:10:02,849 - INFO - Removed task test1
+2025-05-10 00:10:02,849 - ERROR - Error adding task test1: Invalid isoformat string: 'interval[0:00:10]'
+2025-05-10 00:10:02,873 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:10:12 EEST)" executed successfully
+2025-05-10 00:12:14,795 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:12:14,795 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:12:24,795 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:34 EEST)" (scheduled at 2025-05-10 00:12:24.794599+03:00)
+2025-05-10 00:12:24,804 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:12:24,849 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:34 EEST)" executed successfully
+2025-05-10 00:12:34,795 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:44 EEST)" (scheduled at 2025-05-10 00:12:34.794599+03:00)
+2025-05-10 00:12:34,806 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:12:34,850 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:44 EEST)" executed successfully
+2025-05-10 00:12:44,795 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:54 EEST)" (scheduled at 2025-05-10 00:12:44.794599+03:00)
+2025-05-10 00:12:44,806 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:12:44,837 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:12:54 EEST)" executed successfully
+2025-05-10 00:12:54,795 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:13:04 EEST)" (scheduled at 2025-05-10 00:12:54.794599+03:00)
+2025-05-10 00:12:54,804 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:12:54,850 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:13:04 EEST)" executed successfully
+2025-05-10 00:12:56,879 - INFO - Removed job test1
+2025-05-10 00:12:56,880 - INFO - Removed task test1
+2025-05-10 00:12:56,880 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:12:56,890 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:13:11,881 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:26 EEST)" (scheduled at 2025-05-10 00:13:11.880303+03:00)
+2025-05-10 00:13:11,892 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:13:11,935 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:26 EEST)" executed successfully
+2025-05-10 00:13:26,881 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:41 EEST)" (scheduled at 2025-05-10 00:13:26.880303+03:00)
+2025-05-10 00:13:26,889 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:13:26,937 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:41 EEST)" executed successfully
+2025-05-10 00:13:41,880 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:56 EEST)" (scheduled at 2025-05-10 00:13:41.880303+03:00)
+2025-05-10 00:13:41,892 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:13:41,919 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 00:13:56 EEST)" executed successfully
+2025-05-10 00:13:54,020 - INFO - Removed job test1
+2025-05-10 00:13:54,021 - INFO - Removed task test1
+2025-05-10 00:13:54,021 - ERROR - Error adding task test1: Invalid isoformat string: 'interval[0:00:10]'
+2025-05-10 00:17:25,151 - INFO - Scheduler has been shut down
+2025-05-10 00:17:25,151 - INFO - Scheduler shutdown
+2025-05-10 00:19:01,267 - INFO - Scheduler started
+2025-05-10 00:19:01,267 - INFO - Scheduler started
+2025-05-10 00:19:43,550 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:19:43,551 - INFO - Added task test1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:19:53,551 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:19:53 EEST)" (scheduled at 2025-05-10 00:19:53.550054+03:00)
+2025-05-10 00:19:53,559 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:19:53,559 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:20:03 EEST)" executed successfully
+2025-05-10 00:20:03,550 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:20:13 EEST)" (scheduled at 2025-05-10 00:20:03.550054+03:00)
+2025-05-10 00:20:03,558 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test1_basic.sh
+2025-05-10 00:20:03,558 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:10], next run at: 2025-05-10 00:20:13 EEST)" executed successfully
+2025-05-10 00:20:11,287 - INFO - Removed job test1
+2025-05-10 00:20:11,288 - INFO - Removed task test1
+2025-05-10 00:20:11,288 - ERROR - Error adding task test1: Invalid isoformat string: 'interval[0:00:10]'
+2025-05-10 00:22:51,837 - INFO - Scheduler has been shut down
+2025-05-10 00:22:51,837 - INFO - Scheduler shutdown
+2025-05-10 00:22:55,856 - INFO - Scheduler started
+2025-05-10 00:22:55,857 - INFO - Scheduler started
+2025-05-10 00:23:47,624 - INFO - Scheduler has been shut down
+2025-05-10 00:23:47,625 - INFO - Scheduler shutdown
+2025-05-10 00:23:49,011 - INFO - Scheduler started
+2025-05-10 00:23:49,012 - INFO - Scheduler started
+2025-05-10 00:23:53,072 - INFO - Scheduler has been shut down
+2025-05-10 00:23:53,072 - INFO - Scheduler shutdown
+2025-05-10 00:23:57,746 - INFO - Scheduler started
+2025-05-10 00:23:57,747 - INFO - Scheduler started
+2025-05-10 00:24:01,971 - INFO - Scheduler has been shut down
+2025-05-10 00:24:01,971 - INFO - Scheduler shutdown
+2025-05-10 00:26:28,802 - INFO - Scheduler started
+2025-05-10 00:26:28,803 - INFO - Scheduler started
+2025-05-10 00:27:53,255 - INFO - Scheduler started
+2025-05-10 00:27:53,255 - INFO - Scheduler started
+2025-05-10 00:28:12,779 - INFO - Scheduler started
+2025-05-10 00:28:12,780 - INFO - Scheduler started
+2025-05-10 00:29:53,284 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:29:53,285 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:29:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:29:58 EEST)" (scheduled at 2025-05-10 00:29:58.283705+03:00)
+2025-05-10 00:30:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:08,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:13,301 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:30:13,372 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:18 EEST)" executed successfully
+2025-05-10 00:30:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:23 EEST)" (scheduled at 2025-05-10 00:30:18.283705+03:00)
+2025-05-10 00:30:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:28,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:33,300 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:30:33,326 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:38 EEST)" executed successfully
+2025-05-10 00:30:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:43 EEST)" (scheduled at 2025-05-10 00:30:38.283705+03:00)
+2025-05-10 00:30:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:48,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:30:53,298 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:30:53,343 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:30:58 EEST)" executed successfully
+2025-05-10 00:30:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:03 EEST)" (scheduled at 2025-05-10 00:30:58.283705+03:00)
+2025-05-10 00:31:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:08,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:13,298 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:31:13,327 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:18 EEST)" executed successfully
+2025-05-10 00:31:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:23 EEST)" (scheduled at 2025-05-10 00:31:18.283705+03:00)
+2025-05-10 00:31:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:28,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:33,297 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:31:33,322 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:38 EEST)" executed successfully
+2025-05-10 00:31:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:43 EEST)" (scheduled at 2025-05-10 00:31:38.283705+03:00)
+2025-05-10 00:31:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:48,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:31:53,300 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:31:53,327 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:31:58 EEST)" executed successfully
+2025-05-10 00:31:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:03 EEST)" (scheduled at 2025-05-10 00:31:58.283705+03:00)
+2025-05-10 00:32:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:08,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:13,298 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:32:13,329 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:18 EEST)" executed successfully
+2025-05-10 00:32:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:23 EEST)" (scheduled at 2025-05-10 00:32:18.283705+03:00)
+2025-05-10 00:32:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:28,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:33,296 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:32:33,342 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:38 EEST)" executed successfully
+2025-05-10 00:32:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:43 EEST)" (scheduled at 2025-05-10 00:32:38.283705+03:00)
+2025-05-10 00:32:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:48,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:32:53,296 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:32:53,325 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:32:58 EEST)" executed successfully
+2025-05-10 00:32:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:03 EEST)" (scheduled at 2025-05-10 00:32:58.283705+03:00)
+2025-05-10 00:33:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:08,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:13,295 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:33:13,321 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:18 EEST)" executed successfully
+2025-05-10 00:33:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:23 EEST)" (scheduled at 2025-05-10 00:33:18.283705+03:00)
+2025-05-10 00:33:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:28,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:33,301 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:33:33,351 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:38 EEST)" executed successfully
+2025-05-10 00:33:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:43 EEST)" (scheduled at 2025-05-10 00:33:38.283705+03:00)
+2025-05-10 00:33:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:48,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:33:53,299 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:33:53,346 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:33:58 EEST)" executed successfully
+2025-05-10 00:33:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:03 EEST)" (scheduled at 2025-05-10 00:33:58.283705+03:00)
+2025-05-10 00:34:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:08,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:13,296 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:34:13,323 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:18 EEST)" executed successfully
+2025-05-10 00:34:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:23 EEST)" (scheduled at 2025-05-10 00:34:18.283705+03:00)
+2025-05-10 00:34:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:28,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:33,296 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:34:33,343 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:38 EEST)" executed successfully
+2025-05-10 00:34:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:43 EEST)" (scheduled at 2025-05-10 00:34:38.283705+03:00)
+2025-05-10 00:34:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:48,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:34:53,299 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:34:53,344 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:34:58 EEST)" executed successfully
+2025-05-10 00:34:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:03 EEST)" (scheduled at 2025-05-10 00:34:58.283705+03:00)
+2025-05-10 00:35:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:08,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:13,301 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:35:13,328 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:18 EEST)" executed successfully
+2025-05-10 00:35:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:23 EEST)" (scheduled at 2025-05-10 00:35:18.283705+03:00)
+2025-05-10 00:35:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:28,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:33,300 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:35:33,346 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:38 EEST)" executed successfully
+2025-05-10 00:35:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:43 EEST)" (scheduled at 2025-05-10 00:35:38.283705+03:00)
+2025-05-10 00:35:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:48,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:35:53,301 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:35:53,327 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:35:58 EEST)" executed successfully
+2025-05-10 00:35:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:03 EEST)" (scheduled at 2025-05-10 00:35:58.283705+03:00)
+2025-05-10 00:36:03,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:08,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:13,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:13,299 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:36:13,327 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:18 EEST)" executed successfully
+2025-05-10 00:36:18,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:23 EEST)" (scheduled at 2025-05-10 00:36:18.283705+03:00)
+2025-05-10 00:36:23,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:28,283 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:33,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:33,298 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:36:33,299 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:38 EEST)" executed successfully
+2025-05-10 00:36:38,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:43 EEST)" (scheduled at 2025-05-10 00:36:38.283705+03:00)
+2025-05-10 00:36:43,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:48,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:53,284 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:36:53,300 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:36:53,300 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:36:58 EEST)" executed successfully
+2025-05-10 00:36:58,284 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:37:03 EEST)" (scheduled at 2025-05-10 00:36:58.283705+03:00)
+2025-05-10 00:37:01,840 - INFO - Removed job test7
+2025-05-10 00:37:01,841 - INFO - Removed task test7
+2025-05-10 00:37:13,301 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:37:13,302 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:37:03 EEST)" executed successfully
+2025-05-10 00:41:02,228 - INFO - Scheduler has been shut down
+2025-05-10 00:41:02,229 - INFO - Scheduler shutdown
+2025-05-10 00:41:03,696 - INFO - Scheduler started
+2025-05-10 00:41:03,697 - INFO - Scheduler started
+2025-05-10 00:45:54,690 - INFO - Scheduler started
+2025-05-10 00:45:54,691 - INFO - Scheduler started
+2025-05-10 00:48:38,444 - INFO - Scheduler has been shut down
+2025-05-10 00:48:38,445 - INFO - Scheduler shutdown
+2025-05-10 00:48:41,896 - INFO - Scheduler started
+2025-05-10 00:48:41,897 - INFO - Scheduler started
+2025-05-10 00:50:13,342 - INFO - Scheduler has been shut down
+2025-05-10 00:50:13,342 - INFO - Scheduler shutdown
+2025-05-10 00:50:15,490 - INFO - Scheduler started
+2025-05-10 00:50:15,491 - INFO - Scheduler started
+2025-05-10 00:50:24,209 - INFO - Scheduler has been shut down
+2025-05-10 00:50:24,210 - INFO - Scheduler shutdown
+2025-05-10 00:50:27,858 - INFO - Scheduler started
+2025-05-10 00:50:27,858 - INFO - Scheduler started
+2025-05-10 00:50:50,920 - INFO - Scheduler has been shut down
+2025-05-10 00:50:50,921 - INFO - Scheduler shutdown
+2025-05-10 00:51:55,479 - INFO - Scheduler started
+2025-05-10 00:51:55,480 - INFO - Scheduler started
+2025-05-10 00:52:35,514 - INFO - Scheduler started
+2025-05-10 00:52:35,515 - INFO - Scheduler started
+2025-05-10 00:53:59,934 - INFO - Scheduler started
+2025-05-10 00:53:59,935 - INFO - Scheduler started
+2025-05-10 00:54:37,587 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 00:54:37,587 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:54:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:54:42 EEST)" (scheduled at 2025-05-10 00:54:42.585726+03:00)
+2025-05-10 00:54:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:54:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:54:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:54:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:54:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:54:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:54:57,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:54:57,652 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:02 EEST)" executed successfully
+2025-05-10 00:55:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:07 EEST)" (scheduled at 2025-05-10 00:55:02.585726+03:00)
+2025-05-10 00:55:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:17,603 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:55:17,626 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:22 EEST)" executed successfully
+2025-05-10 00:55:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:27 EEST)" (scheduled at 2025-05-10 00:55:22.585726+03:00)
+2025-05-10 00:55:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:37,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:55:37,644 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:42 EEST)" executed successfully
+2025-05-10 00:55:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:47 EEST)" (scheduled at 2025-05-10 00:55:42.585726+03:00)
+2025-05-10 00:55:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:55:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:55:57,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:55:57,648 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:02 EEST)" executed successfully
+2025-05-10 00:56:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:07 EEST)" (scheduled at 2025-05-10 00:56:02.585726+03:00)
+2025-05-10 00:56:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:17,598 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:56:17,623 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:22 EEST)" executed successfully
+2025-05-10 00:56:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:27 EEST)" (scheduled at 2025-05-10 00:56:22.585726+03:00)
+2025-05-10 00:56:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:37,603 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:56:37,628 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:42 EEST)" executed successfully
+2025-05-10 00:56:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:47 EEST)" (scheduled at 2025-05-10 00:56:42.585726+03:00)
+2025-05-10 00:56:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:56:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:56:57,598 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:56:57,644 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:02 EEST)" executed successfully
+2025-05-10 00:57:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:07 EEST)" (scheduled at 2025-05-10 00:57:02.585726+03:00)
+2025-05-10 00:57:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:17,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:57:17,642 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:22 EEST)" executed successfully
+2025-05-10 00:57:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:27 EEST)" (scheduled at 2025-05-10 00:57:22.585726+03:00)
+2025-05-10 00:57:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:37,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:57:37,628 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:42 EEST)" executed successfully
+2025-05-10 00:57:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:47 EEST)" (scheduled at 2025-05-10 00:57:42.585726+03:00)
+2025-05-10 00:57:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:57:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:57:57,604 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:57:57,649 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:02 EEST)" executed successfully
+2025-05-10 00:58:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:07 EEST)" (scheduled at 2025-05-10 00:58:02.585726+03:00)
+2025-05-10 00:58:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:17,600 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:58:17,642 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:22 EEST)" executed successfully
+2025-05-10 00:58:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:27 EEST)" (scheduled at 2025-05-10 00:58:22.585726+03:00)
+2025-05-10 00:58:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:37,598 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:58:37,641 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:42 EEST)" executed successfully
+2025-05-10 00:58:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:47 EEST)" (scheduled at 2025-05-10 00:58:42.585726+03:00)
+2025-05-10 00:58:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:58:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:58:57,603 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:58:57,631 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:02 EEST)" executed successfully
+2025-05-10 00:59:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:07 EEST)" (scheduled at 2025-05-10 00:59:02.585726+03:00)
+2025-05-10 00:59:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:17,604 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:59:17,656 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:22 EEST)" executed successfully
+2025-05-10 00:59:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:27 EEST)" (scheduled at 2025-05-10 00:59:22.585726+03:00)
+2025-05-10 00:59:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:37,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:59:37,642 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:42 EEST)" executed successfully
+2025-05-10 00:59:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:47 EEST)" (scheduled at 2025-05-10 00:59:42.585726+03:00)
+2025-05-10 00:59:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 00:59:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 00:59:57,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 00:59:57,647 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:02 EEST)" executed successfully
+2025-05-10 01:00:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:07 EEST)" (scheduled at 2025-05-10 01:00:02.585726+03:00)
+2025-05-10 01:00:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:17,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:00:17,631 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:22 EEST)" executed successfully
+2025-05-10 01:00:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:27 EEST)" (scheduled at 2025-05-10 01:00:22.585726+03:00)
+2025-05-10 01:00:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:37,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:00:37,650 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:42 EEST)" executed successfully
+2025-05-10 01:00:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:47 EEST)" (scheduled at 2025-05-10 01:00:42.585726+03:00)
+2025-05-10 01:00:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:00:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:00:57,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:00:57,647 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:02 EEST)" executed successfully
+2025-05-10 01:01:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:07 EEST)" (scheduled at 2025-05-10 01:01:02.585726+03:00)
+2025-05-10 01:01:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:17,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:01:17,641 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:22 EEST)" executed successfully
+2025-05-10 01:01:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:27 EEST)" (scheduled at 2025-05-10 01:01:22.585726+03:00)
+2025-05-10 01:01:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:37,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:37,597 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:01:37,621 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:42 EEST)" executed successfully
+2025-05-10 01:01:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:47 EEST)" (scheduled at 2025-05-10 01:01:42.585726+03:00)
+2025-05-10 01:01:47,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:01:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:01:57,612 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:01:57,638 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:02 EEST)" executed successfully
+2025-05-10 01:02:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:07 EEST)" (scheduled at 2025-05-10 01:02:02.585726+03:00)
+2025-05-10 01:02:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:17,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:02:17,644 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:22 EEST)" executed successfully
+2025-05-10 01:02:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:27 EEST)" (scheduled at 2025-05-10 01:02:22.585726+03:00)
+2025-05-10 01:02:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:37,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:02:37,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:42 EEST)" executed successfully
+2025-05-10 01:02:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:47 EEST)" (scheduled at 2025-05-10 01:02:42.585726+03:00)
+2025-05-10 01:02:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:02:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:02:57,600 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:02:57,643 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:02 EEST)" executed successfully
+2025-05-10 01:03:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:07 EEST)" (scheduled at 2025-05-10 01:03:02.585726+03:00)
+2025-05-10 01:03:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:17,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:17,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:03:17,626 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:22 EEST)" executed successfully
+2025-05-10 01:03:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:27 EEST)" (scheduled at 2025-05-10 01:03:22.585726+03:00)
+2025-05-10 01:03:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:32,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:37,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:03:37,647 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:42 EEST)" executed successfully
+2025-05-10 01:03:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:47 EEST)" (scheduled at 2025-05-10 01:03:42.585726+03:00)
+2025-05-10 01:03:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:03:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:03:57,600 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:03:57,627 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:02 EEST)" executed successfully
+2025-05-10 01:04:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:07 EEST)" (scheduled at 2025-05-10 01:04:02.585726+03:00)
+2025-05-10 01:04:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:17,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:04:17,628 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:22 EEST)" executed successfully
+2025-05-10 01:04:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:27 EEST)" (scheduled at 2025-05-10 01:04:22.585726+03:00)
+2025-05-10 01:04:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:37,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:04:37,646 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:42 EEST)" executed successfully
+2025-05-10 01:04:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:47 EEST)" (scheduled at 2025-05-10 01:04:42.585726+03:00)
+2025-05-10 01:04:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:04:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:04:57,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:04:57,624 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:02 EEST)" executed successfully
+2025-05-10 01:05:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:07 EEST)" (scheduled at 2025-05-10 01:05:02.585726+03:00)
+2025-05-10 01:05:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:17,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:17,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:05:17,650 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:22 EEST)" executed successfully
+2025-05-10 01:05:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:27 EEST)" (scheduled at 2025-05-10 01:05:22.585726+03:00)
+2025-05-10 01:05:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:37,598 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:05:37,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:42 EEST)" executed successfully
+2025-05-10 01:05:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:47 EEST)" (scheduled at 2025-05-10 01:05:42.585726+03:00)
+2025-05-10 01:05:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:05:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:05:57,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:05:57,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:02 EEST)" executed successfully
+2025-05-10 01:06:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:07 EEST)" (scheduled at 2025-05-10 01:06:02.585726+03:00)
+2025-05-10 01:06:07,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:17,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:06:17,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:22 EEST)" executed successfully
+2025-05-10 01:06:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:27 EEST)" (scheduled at 2025-05-10 01:06:22.585726+03:00)
+2025-05-10 01:06:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:37,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:37,600 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:06:37,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:42 EEST)" executed successfully
+2025-05-10 01:06:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:47 EEST)" (scheduled at 2025-05-10 01:06:42.585726+03:00)
+2025-05-10 01:06:47,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:52,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:57,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:06:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:06:57,596 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:06:57,647 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:02 EEST)" executed successfully
+2025-05-10 01:07:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:07 EEST)" (scheduled at 2025-05-10 01:07:02.585726+03:00)
+2025-05-10 01:07:07,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:17,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:17,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:07:17,627 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:22 EEST)" executed successfully
+2025-05-10 01:07:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:27 EEST)" (scheduled at 2025-05-10 01:07:22.585726+03:00)
+2025-05-10 01:07:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:32,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:37,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:37,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:07:37,629 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:42 EEST)" executed successfully
+2025-05-10 01:07:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:47 EEST)" (scheduled at 2025-05-10 01:07:42.585726+03:00)
+2025-05-10 01:07:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:07:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:07:57,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:07:57,628 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:02 EEST)" executed successfully
+2025-05-10 01:08:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:07 EEST)" (scheduled at 2025-05-10 01:08:02.585726+03:00)
+2025-05-10 01:08:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:12,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:17,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:08:17,629 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:22 EEST)" executed successfully
+2025-05-10 01:08:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:27 EEST)" (scheduled at 2025-05-10 01:08:22.585726+03:00)
+2025-05-10 01:08:27,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:37,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:08:37,650 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:42 EEST)" executed successfully
+2025-05-10 01:08:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:47 EEST)" (scheduled at 2025-05-10 01:08:42.585726+03:00)
+2025-05-10 01:08:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:08:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:08:57,599 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:08:57,626 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:02 EEST)" executed successfully
+2025-05-10 01:09:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:07 EEST)" (scheduled at 2025-05-10 01:09:02.585726+03:00)
+2025-05-10 01:09:07,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:17,602 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:09:17,625 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:22 EEST)" executed successfully
+2025-05-10 01:09:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:27 EEST)" (scheduled at 2025-05-10 01:09:22.585726+03:00)
+2025-05-10 01:09:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:32,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:37,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:37,603 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:09:37,627 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:42 EEST)" executed successfully
+2025-05-10 01:09:42,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:47 EEST)" (scheduled at 2025-05-10 01:09:42.585726+03:00)
+2025-05-10 01:09:47,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:47 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:52,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:57,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:09:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:09:57,601 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:09:57,655 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:02 EEST)" executed successfully
+2025-05-10 01:10:02,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:07 EEST)" (scheduled at 2025-05-10 01:10:02.585726+03:00)
+2025-05-10 01:10:07,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:07 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:12,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:17,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:17,600 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:10:17,626 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:22 EEST)" executed successfully
+2025-05-10 01:10:22,586 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:27 EEST)" (scheduled at 2025-05-10 01:10:22.585726+03:00)
+2025-05-10 01:10:27,585 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:27 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:32,586 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:37,603 - INFO - Task executed successfully: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:10:37,629 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:37 EEST)" executed successfully
+2025-05-10 01:10:37,629 - INFO - Scheduler has been shut down
+2025-05-10 01:10:37,630 - INFO - Scheduler shutdown
+2025-05-10 01:10:42,334 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-10 01:10:42,334 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-10 01:10:42,334 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 01:10:42,334 - INFO - Scheduler started
+2025-05-10 01:10:42,335 - INFO - Scheduler started
+2025-05-10 01:10:47,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:47 EEST)" (scheduled at 2025-05-10 01:10:47.333850+03:00)
+2025-05-10 01:10:52,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:10:57,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:10:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:02,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:02 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:02,352 - INFO - Task 'a' executed successfully
+2025-05-10 01:11:02,406 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:07 EEST)" executed successfully
+2025-05-10 01:11:07,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:12 EEST)" (scheduled at 2025-05-10 01:11:07.333850+03:00)
+2025-05-10 01:11:12,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:17,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:22,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:22 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:22,351 - INFO - Task 'a' executed successfully
+2025-05-10 01:11:22,376 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:27 EEST)" executed successfully
+2025-05-10 01:11:27,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:32 EEST)" (scheduled at 2025-05-10 01:11:27.333850+03:00)
+2025-05-10 01:11:32,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:37,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:42,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:42 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:42,348 - INFO - Task 'a' executed successfully
+2025-05-10 01:11:42,390 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:47 EEST)" executed successfully
+2025-05-10 01:11:46,309 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-10 01:11:46,310 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-05-10 01:11:47,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:52 EEST)" (scheduled at 2025-05-10 01:11:47.333850+03:00)
+2025-05-10 01:11:52,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:11:57,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:11:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:01,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:01 EEST)" (scheduled at 2025-05-10 01:12:01.308621+03:00)
+2025-05-10 01:12:01,364 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:12:01,391 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:16 EEST)" executed successfully
+2025-05-10 01:12:02,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:02 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:02,349 - INFO - Task 'a' executed successfully
+2025-05-10 01:12:02,381 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:07 EEST)" executed successfully
+2025-05-10 01:12:07,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:12 EEST)" (scheduled at 2025-05-10 01:12:07.333850+03:00)
+2025-05-10 01:12:12,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:16,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:31 EEST)" (scheduled at 2025-05-10 01:12:16.308621+03:00)
+2025-05-10 01:12:16,382 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:12:16,403 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:31 EEST)" executed successfully
+2025-05-10 01:12:17,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:22,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:22 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:22,346 - INFO - Task 'a' executed successfully
+2025-05-10 01:12:22,369 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:27 EEST)" executed successfully
+2025-05-10 01:12:27,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:32 EEST)" (scheduled at 2025-05-10 01:12:27.333850+03:00)
+2025-05-10 01:12:31,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:46 EEST)" (scheduled at 2025-05-10 01:12:31.308621+03:00)
+2025-05-10 01:12:31,389 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:12:31,438 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:12:46 EEST)" executed successfully
+2025-05-10 01:12:32,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:37,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:42,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:42 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:42,348 - INFO - Task 'a' executed successfully
+2025-05-10 01:12:42,375 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:47 EEST)" executed successfully
+2025-05-10 01:12:46,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:01 EEST)" (scheduled at 2025-05-10 01:12:46.308621+03:00)
+2025-05-10 01:12:46,362 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:12:46,388 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:01 EEST)" executed successfully
+2025-05-10 01:12:47,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:52 EEST)" (scheduled at 2025-05-10 01:12:47.333850+03:00)
+2025-05-10 01:12:52,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:12:57,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:12:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:01,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:16 EEST)" (scheduled at 2025-05-10 01:13:01.308621+03:00)
+2025-05-10 01:13:01,396 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:13:01,454 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:16 EEST)" executed successfully
+2025-05-10 01:13:02,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:02 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:02,350 - INFO - Task 'a' executed successfully
+2025-05-10 01:13:02,379 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:07 EEST)" executed successfully
+2025-05-10 01:13:07,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:12 EEST)" (scheduled at 2025-05-10 01:13:07.333850+03:00)
+2025-05-10 01:13:12,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:16,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:31 EEST)" (scheduled at 2025-05-10 01:13:16.308621+03:00)
+2025-05-10 01:13:16,368 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:13:16,391 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:31 EEST)" executed successfully
+2025-05-10 01:13:17,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:22,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:22 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:22,348 - INFO - Task 'a' executed successfully
+2025-05-10 01:13:22,400 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:27 EEST)" executed successfully
+2025-05-10 01:13:27,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:32 EEST)" (scheduled at 2025-05-10 01:13:27.333850+03:00)
+2025-05-10 01:13:31,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:46 EEST)" (scheduled at 2025-05-10 01:13:31.308621+03:00)
+2025-05-10 01:13:31,355 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:13:31,382 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:13:46 EEST)" executed successfully
+2025-05-10 01:13:32,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:37,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:42,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:42 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:42,350 - INFO - Task 'a' executed successfully
+2025-05-10 01:13:42,376 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:47 EEST)" executed successfully
+2025-05-10 01:13:46,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:01 EEST)" (scheduled at 2025-05-10 01:13:46.308621+03:00)
+2025-05-10 01:13:46,363 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:13:46,386 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:01 EEST)" executed successfully
+2025-05-10 01:13:47,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:52 EEST)" (scheduled at 2025-05-10 01:13:47.333850+03:00)
+2025-05-10 01:13:52,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:52 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:13:57,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:13:57 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:01,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:16 EEST)" (scheduled at 2025-05-10 01:14:01.308621+03:00)
+2025-05-10 01:14:01,360 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:14:01,384 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:16 EEST)" executed successfully
+2025-05-10 01:14:02,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:02 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:02,348 - INFO - Task 'a' executed successfully
+2025-05-10 01:14:02,348 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:07 EEST)" executed successfully
+2025-05-10 01:14:07,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:12 EEST)" (scheduled at 2025-05-10 01:14:07.333850+03:00)
+2025-05-10 01:14:12,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:12 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:16,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:31 EEST)" (scheduled at 2025-05-10 01:14:16.308621+03:00)
+2025-05-10 01:14:16,375 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:14:16,375 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:31 EEST)" executed successfully
+2025-05-10 01:14:17,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:17 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:22,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:22 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:22,351 - INFO - Task 'a' executed successfully
+2025-05-10 01:14:22,351 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:27 EEST)" executed successfully
+2025-05-10 01:14:27,334 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:32 EEST)" (scheduled at 2025-05-10 01:14:27.333850+03:00)
+2025-05-10 01:14:31,309 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:46 EEST)" (scheduled at 2025-05-10 01:14:31.308621+03:00)
+2025-05-10 01:14:31,384 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-10 01:14:31,385 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-10 01:14:46 EEST)" executed successfully
+2025-05-10 01:14:32,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:32 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:37,334 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:37 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-10 01:14:42,351 - INFO - Task 'a' executed successfully
+2025-05-10 01:14:42,351 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-10 01:14:42 EEST)" executed successfully
+2025-05-10 01:14:42,352 - INFO - Scheduler has been shut down
+2025-05-10 01:14:42,352 - INFO - Scheduler shutdown
+2025-05-12 18:11:54,158 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 18:11:54,160 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-12 18:11:54,160 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 18:11:54,160 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-05-12 18:11:54,161 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 18:11:54,161 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 18:11:54,161 - INFO - Scheduler started
+2025-05-12 18:11:54,162 - INFO - Scheduler started
+2025-05-12 18:11:59,159 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:11:59 EEST)" (scheduled at 2025-05-12 18:11:59.158031+03:00)
+2025-05-12 18:12:04,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:09,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:09,160 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:09 EEST)" (scheduled at 2025-05-12 18:12:09.160264+03:00)
+2025-05-12 18:12:09,253 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 18:12:09,253 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:24 EEST)" executed successfully
+2025-05-12 18:12:14,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:14 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:14,189 - INFO - Task 'a' executed successfully
+2025-05-12 18:12:14,189 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:19 EEST)" executed successfully
+2025-05-12 18:12:19,159 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:24 EEST)" (scheduled at 2025-05-12 18:12:19.158031+03:00)
+2025-05-12 18:12:24,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:24,160 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:39 EEST)" (scheduled at 2025-05-12 18:12:24.160264+03:00)
+2025-05-12 18:12:24,247 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 18:12:24,247 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:39 EEST)" executed successfully
+2025-05-12 18:12:29,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:34,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:34 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:34,175 - INFO - Task 'a' executed successfully
+2025-05-12 18:12:34,235 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:39 EEST)" executed successfully
+2025-05-12 18:12:39,158 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:44 EEST)" (scheduled at 2025-05-12 18:12:39.158031+03:00)
+2025-05-12 18:12:39,160 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:54 EEST)" (scheduled at 2025-05-12 18:12:39.160264+03:00)
+2025-05-12 18:12:39,249 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 18:12:39,249 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:12:54 EEST)" executed successfully
+2025-05-12 18:12:44,158 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:49,159 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:54,159 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:54 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 18:12:54,160 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:13:09 EEST)" (scheduled at 2025-05-12 18:12:54.160264+03:00)
+2025-05-12 18:12:54,175 - INFO - Task 'a' executed successfully
+2025-05-12 18:12:54,216 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:12:59 EEST)" executed successfully
+2025-05-12 18:12:54,275 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 18:12:54,275 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 18:13:09 EEST)" executed successfully
+2025-05-12 18:12:59,159 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:13:04 EEST)" (scheduled at 2025-05-12 18:12:59.158031+03:00)
+2025-05-12 18:13:14,176 - INFO - Task 'a' executed successfully
+2025-05-12 18:13:14,221 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 18:13:04 EEST)" executed successfully
+2025-05-12 18:13:14,221 - INFO - Scheduler has been shut down
+2025-05-12 18:13:14,222 - INFO - Scheduler shutdown
+2025-05-12 19:07:09,513 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 19:07:09,516 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-12 19:07:09,516 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 19:07:09,517 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-05-12 19:07:09,517 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 19:07:09,517 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 19:07:09,517 - INFO - Scheduler started
+2025-05-12 19:07:09,517 - INFO - Scheduler started
+2025-05-12 19:07:14,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:14 EEST)" (scheduled at 2025-05-12 19:07:14.512905+03:00)
+2025-05-12 19:07:19,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:24,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:24,517 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:07:24 EEST)" (scheduled at 2025-05-12 19:07:24.516466+03:00)
+2025-05-12 19:07:24,601 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:07:24,601 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:07:39 EEST)" executed successfully
+2025-05-12 19:07:29,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:29,541 - INFO - Task 'a' executed successfully
+2025-05-12 19:07:29,613 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:34 EEST)" executed successfully
+2025-05-12 19:07:34,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:39 EEST)" (scheduled at 2025-05-12 19:07:34.512905+03:00)
+2025-05-12 19:07:39,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:39,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:07:54 EEST)" (scheduled at 2025-05-12 19:07:39.516466+03:00)
+2025-05-12 19:07:39,594 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:07:39,595 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:07:54 EEST)" executed successfully
+2025-05-12 19:07:44,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:49,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:07:49,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:07:49,573 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:54 EEST)" executed successfully
+2025-05-12 19:07:54,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:59 EEST)" (scheduled at 2025-05-12 19:07:54.512905+03:00)
+2025-05-12 19:07:54,517 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:09 EEST)" (scheduled at 2025-05-12 19:07:54.516466+03:00)
+2025-05-12 19:07:54,595 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:07:54,596 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:09 EEST)" executed successfully
+2025-05-12 19:07:59,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:07:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:04,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:09,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:09,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:24 EEST)" (scheduled at 2025-05-12 19:08:09.516466+03:00)
+2025-05-12 19:08:09,527 - INFO - Task 'a' executed successfully
+2025-05-12 19:08:09,578 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:14 EEST)" executed successfully
+2025-05-12 19:08:09,599 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:08:09,599 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:24 EEST)" executed successfully
+2025-05-12 19:08:14,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:19 EEST)" (scheduled at 2025-05-12 19:08:14.512905+03:00)
+2025-05-12 19:08:19,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:24,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:24,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:39 EEST)" (scheduled at 2025-05-12 19:08:24.516466+03:00)
+2025-05-12 19:08:24,579 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:08:24,579 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:39 EEST)" executed successfully
+2025-05-12 19:08:29,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:29,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:08:29,573 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:34 EEST)" executed successfully
+2025-05-12 19:08:34,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:39 EEST)" (scheduled at 2025-05-12 19:08:34.512905+03:00)
+2025-05-12 19:08:39,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:39,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:54 EEST)" (scheduled at 2025-05-12 19:08:39.516466+03:00)
+2025-05-12 19:08:39,590 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:08:39,590 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:08:54 EEST)" executed successfully
+2025-05-12 19:08:44,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:49,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:08:49,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:08:49,573 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:54 EEST)" executed successfully
+2025-05-12 19:08:54,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:59 EEST)" (scheduled at 2025-05-12 19:08:54.512905+03:00)
+2025-05-12 19:08:54,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:09 EEST)" (scheduled at 2025-05-12 19:08:54.516466+03:00)
+2025-05-12 19:08:54,600 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:08:54,633 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:09 EEST)" executed successfully
+2025-05-12 19:08:59,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:08:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:04,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:09,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:09,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:24 EEST)" (scheduled at 2025-05-12 19:09:09.516466+03:00)
+2025-05-12 19:09:09,527 - INFO - Task 'a' executed successfully
+2025-05-12 19:09:09,579 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:14 EEST)" executed successfully
+2025-05-12 19:09:09,603 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:09:09,673 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:24 EEST)" executed successfully
+2025-05-12 19:09:14,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:19 EEST)" (scheduled at 2025-05-12 19:09:14.512905+03:00)
+2025-05-12 19:09:19,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:24,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:24,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:39 EEST)" (scheduled at 2025-05-12 19:09:24.516466+03:00)
+2025-05-12 19:09:24,603 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:09:24,643 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:39 EEST)" executed successfully
+2025-05-12 19:09:29,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:29,527 - INFO - Task 'a' executed successfully
+2025-05-12 19:09:29,569 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:34 EEST)" executed successfully
+2025-05-12 19:09:34,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:39 EEST)" (scheduled at 2025-05-12 19:09:34.512905+03:00)
+2025-05-12 19:09:39,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:39,517 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:54 EEST)" (scheduled at 2025-05-12 19:09:39.516466+03:00)
+2025-05-12 19:09:39,593 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:09:39,626 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:09:54 EEST)" executed successfully
+2025-05-12 19:09:44,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:49,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:09:49,527 - INFO - Task 'a' executed successfully
+2025-05-12 19:09:49,558 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:54 EEST)" executed successfully
+2025-05-12 19:09:54,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:59 EEST)" (scheduled at 2025-05-12 19:09:54.512905+03:00)
+2025-05-12 19:09:54,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:09 EEST)" (scheduled at 2025-05-12 19:09:54.516466+03:00)
+2025-05-12 19:09:54,521 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:09:54,572 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:09 EEST)" executed successfully
+2025-05-12 19:09:59,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:09:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:04,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:09,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:09,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:24 EEST)" (scheduled at 2025-05-12 19:10:09.516466+03:00)
+2025-05-12 19:10:09,520 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:10:09,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:10:09,558 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:24 EEST)" executed successfully
+2025-05-12 19:10:09,592 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:14 EEST)" executed successfully
+2025-05-12 19:10:14,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:19 EEST)" (scheduled at 2025-05-12 19:10:14.512905+03:00)
+2025-05-12 19:10:19,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:24,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:24,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:39 EEST)" (scheduled at 2025-05-12 19:10:24.516466+03:00)
+2025-05-12 19:10:24,527 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:10:24,562 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:39 EEST)" executed successfully
+2025-05-12 19:10:29,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:29,525 - INFO - Task 'a' executed successfully
+2025-05-12 19:10:29,560 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:34 EEST)" executed successfully
+2025-05-12 19:10:34,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:39 EEST)" (scheduled at 2025-05-12 19:10:34.512905+03:00)
+2025-05-12 19:10:39,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:39,517 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:54 EEST)" (scheduled at 2025-05-12 19:10:39.516466+03:00)
+2025-05-12 19:10:39,522 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:10:39,563 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:10:54 EEST)" executed successfully
+2025-05-12 19:10:44,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:49,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:10:49,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:10:49,575 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:54 EEST)" executed successfully
+2025-05-12 19:10:54,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:59 EEST)" (scheduled at 2025-05-12 19:10:54.512905+03:00)
+2025-05-12 19:10:54,517 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:09 EEST)" (scheduled at 2025-05-12 19:10:54.516466+03:00)
+2025-05-12 19:10:54,520 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:10:54,568 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:09 EEST)" executed successfully
+2025-05-12 19:10:59,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:10:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:04,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:09,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:09,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:24 EEST)" (scheduled at 2025-05-12 19:11:09.516466+03:00)
+2025-05-12 19:11:09,521 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:11:09,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:11:09,556 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:24 EEST)" executed successfully
+2025-05-12 19:11:09,593 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:14 EEST)" executed successfully
+2025-05-12 19:11:14,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:19 EEST)" (scheduled at 2025-05-12 19:11:14.512905+03:00)
+2025-05-12 19:11:19,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:24,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:24,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:39 EEST)" (scheduled at 2025-05-12 19:11:24.516466+03:00)
+2025-05-12 19:11:24,521 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:11:24,559 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:39 EEST)" executed successfully
+2025-05-12 19:11:29,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:29,526 - INFO - Task 'a' executed successfully
+2025-05-12 19:11:29,557 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:34 EEST)" executed successfully
+2025-05-12 19:11:34,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:39 EEST)" (scheduled at 2025-05-12 19:11:34.512905+03:00)
+2025-05-12 19:11:39,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:39,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:54 EEST)" (scheduled at 2025-05-12 19:11:39.516466+03:00)
+2025-05-12 19:11:39,521 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:11:39,557 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:11:54 EEST)" executed successfully
+2025-05-12 19:11:44,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:49,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:11:49,526 - INFO - Task 'a' executed successfully
+2025-05-12 19:11:49,556 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:54 EEST)" executed successfully
+2025-05-12 19:11:54,513 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:59 EEST)" (scheduled at 2025-05-12 19:11:54.512905+03:00)
+2025-05-12 19:11:54,516 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:12:09 EEST)" (scheduled at 2025-05-12 19:11:54.516466+03:00)
+2025-05-12 19:11:54,520 - ERROR - Task 'Sort files from source directory into appropriate subfolders' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py: No such file or directory
+
+2025-05-12 19:11:54,552 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:12:09 EEST)" executed successfully
+2025-05-12 19:11:59,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:11:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:12:04,513 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:12:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:12:09,529 - INFO - Task 'a' executed successfully
+2025-05-12 19:12:09,559 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:12:09 EEST)" executed successfully
+2025-05-12 19:12:09,559 - INFO - Scheduler has been shut down
+2025-05-12 19:12:09,560 - INFO - Scheduler shutdown
+2025-05-12 19:12:53,574 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 19:12:53,575 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-05-12 19:12:53,575 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 19:12:53,576 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-05-12 19:12:53,576 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 19:12:53,576 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-05-12 19:12:53,576 - INFO - Scheduler started
+2025-05-12 19:12:53,576 - INFO - Scheduler started
+2025-05-12 19:12:58,575 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:12:58 EEST)" (scheduled at 2025-05-12 19:12:58.574093+03:00)
+2025-05-12 19:13:03,574 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:13:08,574 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:13:08,575 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:13:08 EEST)" (scheduled at 2025-05-12 19:13:08.575344+03:00)
+2025-05-12 19:13:08,650 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-05-12 19:13:08,650 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-12 19:13:23 EEST)" executed successfully
+2025-05-12 19:13:13,574 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-05-12 19:13:13,592 - INFO - Task 'a' executed successfully
+2025-05-12 19:13:13,592 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:18 EEST)" executed successfully
+2025-05-12 19:13:18,574 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:23 EEST)" (scheduled at 2025-05-12 19:13:18.574093+03:00)
+2025-05-12 19:13:33,591 - INFO - Task 'a' executed successfully
+2025-05-12 19:13:33,591 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-12 19:13:23 EEST)" executed successfully
+2025-05-12 19:13:33,591 - INFO - Scheduler has been shut down
+2025-05-12 19:13:33,592 - INFO - Scheduler shutdown
