@@ -5,7 +5,7 @@
         "schedule": "interval:5.0",
         "is_cron": false,
         "description": "a",
-        "notifications_enabled": false
+        "notifications_enabled": true
     },
     {
         "id": "file_sort",
