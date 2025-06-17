@@ -22,12 +22,7 @@ def run_scheduler():
     menu.run()
 
 def main():
-    # Check if running as daemon
-    if len(sys.argv) > 1 and sys.argv[1] == "--daemon":
-        with daemon.DaemonContext():
-            run_scheduler()
-    else:
-        run_scheduler()
+    run_scheduler()
 
 if __name__ == "__main__":
     main() 

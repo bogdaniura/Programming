@@ -1600,3 +1600,368 @@ Error: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/sched
 2025-05-19 12:06:15,440 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-05-19 12:06:30 EEST)" executed successfully
 2025-05-19 12:06:19,214 - ERROR - Task 'a' failed: 
 2025-05-19 12:06:19,280 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-05-19 12:06:20 EEST)" executed successfully
+2025-06-12 19:53:09,625 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 19:53:09,626 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-12 19:53:09,626 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 19:53:09,626 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-12 19:53:09,626 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 19:53:09,626 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 19:53:09,627 - INFO - Scheduler started
+2025-06-12 19:53:09,627 - INFO - Scheduler started
+2025-06-12 19:53:14,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:14 EEST)" (scheduled at 2025-06-12 19:53:14.625516+03:00)
+2025-06-12 19:53:19,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:24,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:24,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:53:24 EEST)" (scheduled at 2025-06-12 19:53:24.626243+03:00)
+2025-06-12 19:53:24,693 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 19:53:24,693 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:53:39 EEST)" executed successfully
+2025-06-12 19:53:29,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:29,647 - INFO - Task 'a' executed successfully
+2025-06-12 19:53:29,691 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:34 EEST)" executed successfully
+2025-06-12 19:53:34,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:39 EEST)" (scheduled at 2025-06-12 19:53:34.625516+03:00)
+2025-06-12 19:53:39,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:39,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:53:54 EEST)" (scheduled at 2025-06-12 19:53:39.626243+03:00)
+2025-06-12 19:53:39,681 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 19:53:39,681 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:53:54 EEST)" executed successfully
+2025-06-12 19:53:44,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:49,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:53:49,647 - INFO - Task 'a' executed successfully
+2025-06-12 19:53:49,690 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:54 EEST)" executed successfully
+2025-06-12 19:53:54,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:59 EEST)" (scheduled at 2025-06-12 19:53:54.625516+03:00)
+2025-06-12 19:53:54,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:09 EEST)" (scheduled at 2025-06-12 19:53:54.626243+03:00)
+2025-06-12 19:53:54,675 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 19:53:54,675 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:09 EEST)" executed successfully
+2025-06-12 19:53:59,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:53:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:04,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:09,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:09 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:09,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:24 EEST)" (scheduled at 2025-06-12 19:54:09.626243+03:00)
+2025-06-12 19:54:09,648 - INFO - Task 'a' executed successfully
+2025-06-12 19:54:09,691 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:14 EEST)" executed successfully
+2025-06-12 19:54:09,698 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 19:54:09,698 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:24 EEST)" executed successfully
+2025-06-12 19:54:14,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:19 EEST)" (scheduled at 2025-06-12 19:54:14.625516+03:00)
+2025-06-12 19:54:19,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:24,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:24,626 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:39 EEST)" (scheduled at 2025-06-12 19:54:24.626243+03:00)
+2025-06-12 19:54:24,684 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 19:54:24,685 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 19:54:39 EEST)" executed successfully
+2025-06-12 19:54:29,625 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:29 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 19:54:29,646 - INFO - Task 'a' executed successfully
+2025-06-12 19:54:29,693 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 19:54:34 EEST)" executed successfully
+2025-06-12 20:01:13,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:01:13,148 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-12 20:01:13,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:01:13,159 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-12 20:01:13,159 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:01:13,159 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:01:13,160 - INFO - Scheduler started
+2025-06-12 20:01:13,160 - INFO - Scheduler started
+2025-06-12 20:01:18,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:18 EEST)" (scheduled at 2025-06-12 20:01:18.147825+03:00)
+2025-06-12 20:01:23,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:28,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:28,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:01:28 EEST)" (scheduled at 2025-06-12 20:01:28.148447+03:00)
+2025-06-12 20:01:28,208 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:01:28,208 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:01:43 EEST)" executed successfully
+2025-06-12 20:01:33,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:33,174 - INFO - Task 'a' executed successfully
+2025-06-12 20:01:33,212 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:38 EEST)" executed successfully
+2025-06-12 20:01:38,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:43 EEST)" (scheduled at 2025-06-12 20:01:38.147825+03:00)
+2025-06-12 20:01:43,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:43,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:01:58 EEST)" (scheduled at 2025-06-12 20:01:43.148447+03:00)
+2025-06-12 20:01:43,203 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:01:43,203 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:01:58 EEST)" executed successfully
+2025-06-12 20:01:48,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:53,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:01:53,166 - INFO - Task 'a' executed successfully
+2025-06-12 20:01:53,203 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:01:58 EEST)" executed successfully
+2025-06-12 20:01:58,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:03 EEST)" (scheduled at 2025-06-12 20:01:58.147825+03:00)
+2025-06-12 20:01:58,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:13 EEST)" (scheduled at 2025-06-12 20:01:58.148447+03:00)
+2025-06-12 20:01:58,204 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:01:58,204 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:13 EEST)" executed successfully
+2025-06-12 20:02:03,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:08,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:13,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:13,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:28 EEST)" (scheduled at 2025-06-12 20:02:13.148447+03:00)
+2025-06-12 20:02:13,163 - INFO - Task 'a' executed successfully
+2025-06-12 20:02:13,201 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:18 EEST)" executed successfully
+2025-06-12 20:02:13,219 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:02:13,219 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:28 EEST)" executed successfully
+2025-06-12 20:02:18,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:23 EEST)" (scheduled at 2025-06-12 20:02:18.147825+03:00)
+2025-06-12 20:02:23,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:23 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:28,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:28 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:28,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:43 EEST)" (scheduled at 2025-06-12 20:02:28.148447+03:00)
+2025-06-12 20:02:28,203 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:02:28,203 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:43 EEST)" executed successfully
+2025-06-12 20:02:33,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:33 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:33,163 - INFO - Task 'a' executed successfully
+2025-06-12 20:02:33,203 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:38 EEST)" executed successfully
+2025-06-12 20:02:38,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:43 EEST)" (scheduled at 2025-06-12 20:02:38.147825+03:00)
+2025-06-12 20:02:43,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:43 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:43,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:58 EEST)" (scheduled at 2025-06-12 20:02:43.148447+03:00)
+2025-06-12 20:02:43,208 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:02:43,208 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:02:58 EEST)" executed successfully
+2025-06-12 20:02:48,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:48 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:53,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:53 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:02:53,173 - INFO - Task 'a' executed successfully
+2025-06-12 20:02:53,218 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:02:58 EEST)" executed successfully
+2025-06-12 20:02:58,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:03 EEST)" (scheduled at 2025-06-12 20:02:58.147825+03:00)
+2025-06-12 20:02:58,149 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:03:13 EEST)" (scheduled at 2025-06-12 20:02:58.148447+03:00)
+2025-06-12 20:02:58,207 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:02:58,207 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:03:13 EEST)" executed successfully
+2025-06-12 20:03:03,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:03 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:03:08,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:08 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:03:13,148 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:13 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:03:13,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:03:28 EEST)" (scheduled at 2025-06-12 20:03:13.148447+03:00)
+2025-06-12 20:03:13,173 - INFO - Task 'a' executed successfully
+2025-06-12 20:03:13,173 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:18 EEST)" executed successfully
+2025-06-12 20:03:13,205 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:03:13,205 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:03:28 EEST)" executed successfully
+2025-06-12 20:03:18,148 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:23 EEST)" (scheduled at 2025-06-12 20:03:18.147825+03:00)
+2025-06-12 20:03:21,766 - ERROR - Task 'a' failed: 
+2025-06-12 20:03:21,766 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:23 EEST)" executed successfully
+2025-06-12 20:03:44,402 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:03:44,403 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-12 20:03:44,403 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:03:44,403 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-12 20:03:44,403 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:03:44,403 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:03:44,403 - INFO - Scheduler started
+2025-06-12 20:03:44,404 - INFO - Scheduler started
+2025-06-12 20:03:49,404 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:49 EEST)" (scheduled at 2025-06-12 20:03:49.402608+03:00)
+2025-06-12 20:03:54,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:54 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:03:59,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:03:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:03:59,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:03:59 EEST)" (scheduled at 2025-06-12 20:03:59.403206+03:00)
+2025-06-12 20:03:59,459 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:03:59,459 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:14 EEST)" executed successfully
+2025-06-12 20:04:04,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:04,428 - INFO - Task 'a' executed successfully
+2025-06-12 20:04:04,429 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:09 EEST)" executed successfully
+2025-06-12 20:04:09,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:14 EEST)" (scheduled at 2025-06-12 20:04:09.402608+03:00)
+2025-06-12 20:04:14,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:14 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:14,404 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:29 EEST)" (scheduled at 2025-06-12 20:04:14.403206+03:00)
+2025-06-12 20:04:14,461 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:04:14,461 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:29 EEST)" executed successfully
+2025-06-12 20:04:19,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:24,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:24,423 - INFO - Task 'a' executed successfully
+2025-06-12 20:04:24,423 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:29 EEST)" executed successfully
+2025-06-12 20:04:29,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:34 EEST)" (scheduled at 2025-06-12 20:04:29.402608+03:00)
+2025-06-12 20:04:29,404 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:44 EEST)" (scheduled at 2025-06-12 20:04:29.403206+03:00)
+2025-06-12 20:04:29,461 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:04:29,461 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:44 EEST)" executed successfully
+2025-06-12 20:04:34,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:34 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:39,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:44,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:44,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:59 EEST)" (scheduled at 2025-06-12 20:04:44.403206+03:00)
+2025-06-12 20:04:44,426 - INFO - Task 'a' executed successfully
+2025-06-12 20:04:44,426 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:49 EEST)" executed successfully
+2025-06-12 20:04:44,484 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:04:44,485 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:04:59 EEST)" executed successfully
+2025-06-12 20:04:49,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:54 EEST)" (scheduled at 2025-06-12 20:04:49.402608+03:00)
+2025-06-12 20:04:54,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:54 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:59,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:04:59 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:04:59,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:14 EEST)" (scheduled at 2025-06-12 20:04:59.403206+03:00)
+2025-06-12 20:04:59,459 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:04:59,459 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:14 EEST)" executed successfully
+2025-06-12 20:05:04,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:04 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:05:04,428 - INFO - Task 'a' executed successfully
+2025-06-12 20:05:04,428 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:09 EEST)" executed successfully
+2025-06-12 20:05:09,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:14 EEST)" (scheduled at 2025-06-12 20:05:09.402608+03:00)
+2025-06-12 20:05:14,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:14 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:05:14,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:29 EEST)" (scheduled at 2025-06-12 20:05:14.403206+03:00)
+2025-06-12 20:05:14,451 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:05:14,451 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:29 EEST)" executed successfully
+2025-06-12 20:05:19,403 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:19 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:05:24,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:24 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:05:24,427 - INFO - Task 'a' executed successfully
+2025-06-12 20:05:24,427 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:29 EEST)" executed successfully
+2025-06-12 20:05:29,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:34 EEST)" (scheduled at 2025-06-12 20:05:29.402608+03:00)
+2025-06-12 20:05:29,403 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:44 EEST)" (scheduled at 2025-06-12 20:05:29.403206+03:00)
+2025-06-12 20:05:29,456 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-12 20:05:29,456 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-12 20:05:44 EEST)" executed successfully
+2025-06-12 20:05:34,402 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:34 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-12 20:05:38,884 - ERROR - Task 'a' failed: 
+2025-06-12 20:05:38,885 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:05:39 EEST)" executed successfully
+2025-06-12 20:11:42,733 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:11:42,734 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-12 20:11:42,734 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:11:42,734 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-12 20:11:42,734 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:11:42,734 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:11:42,735 - INFO - Scheduler started
+2025-06-12 20:11:42,735 - INFO - Scheduler started
+2025-06-12 20:11:47,735 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:11:47 EEST)" (scheduled at 2025-06-12 20:11:47.733729+03:00)
+2025-06-12 20:12:02,760 - INFO - Task 'a' executed successfully
+2025-06-12 20:12:02,760 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-12 20:11:52 EEST)" executed successfully
+2025-06-12 20:12:02,760 - INFO - Scheduler has been shut down
+2025-06-12 20:12:02,761 - INFO - Scheduler shutdown
+2025-06-12 20:12:07,655 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:12:07,656 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-12 20:12:07,656 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-12 20:12:07,667 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-12 20:12:07,667 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:12:07,667 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-12 20:12:07,667 - INFO - Scheduler started
+2025-06-12 20:12:07,668 - INFO - Scheduler started
+2025-06-17 00:50:29,019 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-17 00:50:29,019 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-17 00:50:29,020 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-17 00:50:29,020 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-17 00:50:29,020 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-17 00:50:29,020 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-17 00:50:29,020 - INFO - Scheduler started
+2025-06-17 00:50:29,021 - INFO - Scheduler started
+2025-06-17 00:50:31,497 - INFO - Scheduler has been shut down
+2025-06-17 00:50:31,498 - INFO - Scheduler shutdown
+2025-06-17 21:50:14,123 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-17 21:50:14,123 - INFO - Added task test7: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh
+2025-06-17 21:50:14,123 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-17 21:50:14,123 - INFO - Added task file_sort: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/sort_test/sort_files.py
+2025-06-17 21:50:14,124 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-17 21:50:14,124 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-17 21:50:14,124 - INFO - Scheduler started
+2025-06-17 21:50:14,124 - INFO - Scheduler started
+2025-06-17 21:50:19,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:19 EEST)" (scheduled at 2025-06-17 21:50:19.123070+03:00)
+2025-06-17 21:50:19,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:19,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:24 EEST)" executed successfully
+2025-06-17 21:50:24,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:29 EEST)" (scheduled at 2025-06-17 21:50:24.123070+03:00)
+2025-06-17 21:50:24,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:24,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:29 EEST)" executed successfully
+2025-06-17 21:50:29,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:34 EEST)" (scheduled at 2025-06-17 21:50:29.123070+03:00)
+2025-06-17 21:50:29,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:50:29 EEST)" (scheduled at 2025-06-17 21:50:29.123626+03:00)
+2025-06-17 21:50:29,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:29,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:34 EEST)" executed successfully
+2025-06-17 21:50:29,186 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:50:29,187 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:50:44 EEST)" executed successfully
+2025-06-17 21:50:34,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:39 EEST)" (scheduled at 2025-06-17 21:50:34.123070+03:00)
+2025-06-17 21:50:34,131 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:34,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:39 EEST)" executed successfully
+2025-06-17 21:50:39,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:44 EEST)" (scheduled at 2025-06-17 21:50:39.123070+03:00)
+2025-06-17 21:50:39,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:39,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:44 EEST)" executed successfully
+2025-06-17 21:50:44,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:49 EEST)" (scheduled at 2025-06-17 21:50:44.123070+03:00)
+2025-06-17 21:50:44,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:50:59 EEST)" (scheduled at 2025-06-17 21:50:44.123626+03:00)
+2025-06-17 21:50:44,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:44,134 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:49 EEST)" executed successfully
+2025-06-17 21:50:44,189 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:50:44,189 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:50:59 EEST)" executed successfully
+2025-06-17 21:50:49,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:54 EEST)" (scheduled at 2025-06-17 21:50:49.123070+03:00)
+2025-06-17 21:50:49,128 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:49,128 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:54 EEST)" executed successfully
+2025-06-17 21:50:54,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:59 EEST)" (scheduled at 2025-06-17 21:50:54.123070+03:00)
+2025-06-17 21:50:54,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:54,141 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:50:59 EEST)" executed successfully
+2025-06-17 21:50:59,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:04 EEST)" (scheduled at 2025-06-17 21:50:59.123070+03:00)
+2025-06-17 21:50:59,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:14 EEST)" (scheduled at 2025-06-17 21:50:59.123626+03:00)
+2025-06-17 21:50:59,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:50:59,133 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:04 EEST)" executed successfully
+2025-06-17 21:50:59,176 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:50:59,177 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:14 EEST)" executed successfully
+2025-06-17 21:51:04,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:09 EEST)" (scheduled at 2025-06-17 21:51:04.123070+03:00)
+2025-06-17 21:51:04,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:04,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:09 EEST)" executed successfully
+2025-06-17 21:51:09,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:14 EEST)" (scheduled at 2025-06-17 21:51:09.123070+03:00)
+2025-06-17 21:51:09,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:09,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:14 EEST)" executed successfully
+2025-06-17 21:51:14,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:19 EEST)" (scheduled at 2025-06-17 21:51:14.123070+03:00)
+2025-06-17 21:51:14,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:29 EEST)" (scheduled at 2025-06-17 21:51:14.123626+03:00)
+2025-06-17 21:51:14,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:14,131 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:19 EEST)" executed successfully
+2025-06-17 21:51:14,181 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:51:14,181 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:29 EEST)" executed successfully
+2025-06-17 21:51:19,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:24 EEST)" (scheduled at 2025-06-17 21:51:19.123070+03:00)
+2025-06-17 21:51:19,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:19,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:24 EEST)" executed successfully
+2025-06-17 21:51:24,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:29 EEST)" (scheduled at 2025-06-17 21:51:24.123070+03:00)
+2025-06-17 21:51:24,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:24,135 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:29 EEST)" executed successfully
+2025-06-17 21:51:29,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:34 EEST)" (scheduled at 2025-06-17 21:51:29.123070+03:00)
+2025-06-17 21:51:29,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:44 EEST)" (scheduled at 2025-06-17 21:51:29.123626+03:00)
+2025-06-17 21:51:29,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:29,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:34 EEST)" executed successfully
+2025-06-17 21:51:29,179 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:51:29,179 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:44 EEST)" executed successfully
+2025-06-17 21:51:32,684 - INFO - Added job "TaskScheduler._execute_task" to job store "default"
+2025-06-17 21:51:32,685 - INFO - Added task cpu_intensive: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/cpu_intensive.sh
+2025-06-17 21:51:34,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:39 EEST)" (scheduled at 2025-06-17 21:51:34.123070+03:00)
+2025-06-17 21:51:34,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:34,131 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:39 EEST)" executed successfully
+2025-06-17 21:51:39,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:44 EEST)" (scheduled at 2025-06-17 21:51:39.123070+03:00)
+2025-06-17 21:51:39,131 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:39,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:44 EEST)" executed successfully
+2025-06-17 21:51:44,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:49 EEST)" (scheduled at 2025-06-17 21:51:44.123070+03:00)
+2025-06-17 21:51:44,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:59 EEST)" (scheduled at 2025-06-17 21:51:44.123626+03:00)
+2025-06-17 21:51:44,130 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:44,130 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:49 EEST)" executed successfully
+2025-06-17 21:51:44,190 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:51:44,191 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:51:59 EEST)" executed successfully
+2025-06-17 21:51:49,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:54 EEST)" (scheduled at 2025-06-17 21:51:49.123070+03:00)
+2025-06-17 21:51:49,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:49,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:54 EEST)" executed successfully
+2025-06-17 21:51:54,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:59 EEST)" (scheduled at 2025-06-17 21:51:54.123070+03:00)
+2025-06-17 21:51:54,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:54,133 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:51:59 EEST)" executed successfully
+2025-06-17 21:51:59,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:04 EEST)" (scheduled at 2025-06-17 21:51:59.123070+03:00)
+2025-06-17 21:51:59,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:14 EEST)" (scheduled at 2025-06-17 21:51:59.123626+03:00)
+2025-06-17 21:51:59,131 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:51:59,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:04 EEST)" executed successfully
+2025-06-17 21:51:59,175 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:51:59,175 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:14 EEST)" executed successfully
+2025-06-17 21:52:04,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:09 EEST)" (scheduled at 2025-06-17 21:52:04.123070+03:00)
+2025-06-17 21:52:04,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:52:04,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:09 EEST)" executed successfully
+2025-06-17 21:52:09,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:14 EEST)" (scheduled at 2025-06-17 21:52:09.123070+03:00)
+2025-06-17 21:52:09,131 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:52:09,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:14 EEST)" executed successfully
+2025-06-17 21:52:14,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:19 EEST)" (scheduled at 2025-06-17 21:52:14.123070+03:00)
+2025-06-17 21:52:14,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:29 EEST)" (scheduled at 2025-06-17 21:52:14.123626+03:00)
+2025-06-17 21:52:14,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:52:14,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:19 EEST)" executed successfully
+2025-06-17 21:52:14,178 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:52:14,179 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:29 EEST)" executed successfully
+2025-06-17 21:52:19,123 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:24 EEST)" (scheduled at 2025-06-17 21:52:19.123070+03:00)
+2025-06-17 21:52:19,131 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:52:19,134 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:24 EEST)" executed successfully
+2025-06-17 21:52:24,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:29 EEST)" (scheduled at 2025-06-17 21:52:24.123070+03:00)
+2025-06-17 21:52:24,132 - ERROR - Task 'a' failed: /bin/sh: line 1: /home/kgbeast/Bogdan/Programming/Facultate/licenta/scheduler/tests/scripts/test7_long.sh: No such file or directory
+
+2025-06-17 21:52:24,132 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:52:29 EEST)" executed successfully
+2025-06-17 21:52:26,243 - INFO - Removed job test7
+2025-06-17 21:52:26,244 - INFO - Removed task test7
+2025-06-17 21:52:29,124 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:44 EEST)" (scheduled at 2025-06-17 21:52:29.123626+03:00)
+2025-06-17 21:52:29,171 - INFO - Task 'Sort files from source directory into appropriate subfolders' executed successfully
+2025-06-17 21:52:29,171 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:15], next run at: 2025-06-17 21:52:44 EEST)" executed successfully
+2025-06-17 21:52:41,368 - INFO - Removed job file_sort
+2025-06-17 21:52:41,369 - INFO - Removed task file_sort
+2025-06-17 21:56:05,741 - INFO - Running job "TaskScheduler._execute_task (trigger: interval[0:02:00], next run at: 2025-06-17 21:58:05 EEST)" (scheduled at 2025-06-17 21:56:05.741255+03:00)
+2025-06-17 21:56:34,085 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:34 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-17 21:56:39,085 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:39 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-17 21:56:44,085 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:44 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-17 21:56:49,085 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:49 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-17 21:57:31,415 - WARNING - Execution of job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:54 EEST)" skipped: maximum number of running instances reached (1)
+2025-06-17 21:57:31,416 - ERROR - Task 'cpu intensive test' failed: 
+2025-06-17 21:57:31,495 - INFO - Job "TaskScheduler._execute_task (trigger: interval[0:00:05], next run at: 2025-06-17 21:56:59 EEST)" executed successfully
